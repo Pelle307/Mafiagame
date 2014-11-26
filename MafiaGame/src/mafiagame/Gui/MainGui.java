@@ -28,27 +28,79 @@ public class MainGui extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        start1 = new mafiagame.Gui.Start();
-        world1 = new mafiagame.Gui.World();
+        start = new javax.swing.JPanel();
+        startGamejButton = new javax.swing.JButton();
+        highScorejButton = new javax.swing.JButton();
+        pictureMafia = new javax.swing.JLabel();
+        world = new javax.swing.JPanel();
+        denmarkjButton = new javax.swing.JButton();
+        columbiajButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        pictureWorld = new javax.swing.JLabel();
+        denmark = new javax.swing.JPanel();
+        pictureDenmark = new javax.swing.JLabel();
+        columbia = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 1000));
         setPreferredSize(new java.awt.Dimension(620, 675));
 
-        jTabbedPane1.addTab("tab1", start1);
+        start.setLayout(null);
 
-        javax.swing.GroupLayout world1Layout = new javax.swing.GroupLayout(world1);
-        world1.setLayout(world1Layout);
-        world1Layout.setHorizontalGroup(
-            world1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 604, Short.MAX_VALUE)
-        );
-        world1Layout.setVerticalGroup(
-            world1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 601, Short.MAX_VALUE)
-        );
+        startGamejButton.setText("Start Game");
+        start.add(startGamejButton);
+        startGamejButton.setBounds(250, 450, 130, 25);
 
-        jTabbedPane1.addTab("tab2", world1);
+        highScorejButton.setText("High Score");
+        start.add(highScorejButton);
+        highScorejButton.setBounds(250, 490, 130, 25);
+
+        pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
+        start.add(pictureMafia);
+        pictureMafia.setBounds(1, -4, 610, 610);
+
+        jTabbedPane1.addTab("tab1", start);
+
+        world.setLayout(null);
+        world.add(denmarkjButton);
+        denmarkjButton.setBounds(410, 120, 20, 20);
+        world.add(columbiajButton);
+        columbiajButton.setBounds(150, 320, 20, 20);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setText("Denmark");
+        world.add(jLabel1);
+        jLabel1.setBounds(380, 100, 90, 22);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setText("Columbia");
+        world.add(jLabel2);
+        jLabel2.setBounds(110, 300, 90, 22);
+
+        pictureWorld.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/world.jpg"))); // NOI18N
+        world.add(pictureWorld);
+        pictureWorld.setBounds(1, -4, 610, 610);
+
+        jTabbedPane1.addTab("tab2", world);
+
+        denmark.setLayout(null);
+
+        pictureDenmark.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/denmark.png"))); // NOI18N
+        denmark.add(pictureDenmark);
+        pictureDenmark.setBounds(0, 0, 610, 600);
+
+        jTabbedPane1.addTab("tab3", denmark);
+
+        columbia.setLayout(null);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/Colombia.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        columbia.add(jLabel3);
+        jLabel3.setBounds(0, 0, 610, 600);
+
+        jTabbedPane1.addTab("tab4", columbia);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,8 +152,20 @@ public class MainGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel columbia;
+    private javax.swing.JButton columbiajButton;
+    private javax.swing.JPanel denmark;
+    private javax.swing.JButton denmarkjButton;
+    private javax.swing.JButton highScorejButton;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private mafiagame.Gui.Start start1;
-    private mafiagame.Gui.World world1;
+    private javax.swing.JLabel pictureDenmark;
+    private javax.swing.JLabel pictureMafia;
+    private javax.swing.JLabel pictureWorld;
+    private javax.swing.JPanel start;
+    private javax.swing.JButton startGamejButton;
+    private javax.swing.JPanel world;
     // End of variables declaration//GEN-END:variables
 }

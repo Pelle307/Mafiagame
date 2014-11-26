@@ -124,7 +124,7 @@ public class MainGui extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void startGamejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGamejButtonActionPerformed
-       control.test();
+        control.test();
     }//GEN-LAST:event_startGamejButtonActionPerformed
 
     /**

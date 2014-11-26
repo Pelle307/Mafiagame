@@ -28,6 +28,7 @@ public class Start extends javax.swing.JPanel {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(null);
@@ -41,7 +42,11 @@ public class Start extends javax.swing.JPanel {
         add(jButton1);
         jButton1.setBounds(260, 430, 100, 25);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/Gui/mobster-drawing2.jpg"))); // NOI18N
+        jButton2.setText("High Score");
+        add(jButton2);
+        jButton2.setBounds(260, 470, 100, 25);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 0, 600, 600);
     }// </editor-fold>//GEN-END:initComponents
@@ -53,6 +58,7 @@ public class Start extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

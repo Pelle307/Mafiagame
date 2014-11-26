@@ -17,5 +17,7 @@ public interface ControlInterface {
     //change location of the player.
     void changeCountry();
     
+    boolean positive();
+    
     
 }

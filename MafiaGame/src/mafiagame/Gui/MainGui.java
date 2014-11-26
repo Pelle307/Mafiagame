@@ -28,11 +28,38 @@ public class MainGui extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        start1 = new mafiagame.Gui.Start();
+        world1 = new mafiagame.Gui.World();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
-        getContentPane().add(jTabbedPane1);
-        jTabbedPane1.setBounds(0, 0, 400, 314);
+        setMaximumSize(new java.awt.Dimension(1000, 1000));
+        setPreferredSize(new java.awt.Dimension(620, 675));
+
+        jTabbedPane1.addTab("tab1", start1);
+
+        javax.swing.GroupLayout world1Layout = new javax.swing.GroupLayout(world1);
+        world1.setLayout(world1Layout);
+        world1Layout.setHorizontalGroup(
+            world1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 604, Short.MAX_VALUE)
+        );
+        world1Layout.setVerticalGroup(
+            world1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 601, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab2", world1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -74,5 +101,7 @@ public class MainGui extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane jTabbedPane1;
+    private mafiagame.Gui.Start start1;
+    private mafiagame.Gui.World world1;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,17 +5,21 @@
  */
 package mafiagame.Gui;
 
+import mafiagame.logic.Controller;
+
 /**
  *
  * @author pellecarlsen
  */
 public class MainGui extends javax.swing.JFrame {
+    Controller control;
 
     /**
      * Creates new form MainGui
      */
     public MainGui() {
         initComponents();
+        control = new Controller();
     }
 
     /**
@@ -44,12 +48,15 @@ public class MainGui extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1000, 1000));
-        setPreferredSize(new java.awt.Dimension(620, 675));
 
         start.setLayout(null);
 
         startGamejButton.setText("Start Game");
+        startGamejButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                startGamejButtonActionPerformed(evt);
+            }
+        });
         start.add(startGamejButton);
         startGamejButton.setBounds(250, 450, 130, 25);
 
@@ -106,15 +113,19 @@ public class MainGui extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 609, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 631, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void startGamejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGamejButtonActionPerformed
+       control.test();
+    }//GEN-LAST:event_startGamejButtonActionPerformed
 
     /**
      * @param args the command line arguments

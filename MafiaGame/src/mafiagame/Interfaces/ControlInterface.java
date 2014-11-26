@@ -16,8 +16,14 @@ public interface ControlInterface {
     void changeAvailability(int availability);
     //change location of the player.
     void changeCountry();
-    
-    boolean positive();
-    
-    
+    //buy cocain.
+    void buyCocain(int price, int availability);
+    //buy heroin.
+    void buyHeroin(int price, int availability);
+    //sell cocain
+    void sellCocain(int price);
+    //sell cocain
+    void sellHeroin(int price);
+    //a boolean that checks if price & availability either increases or decreases. True increases price & availability and false decreases price & availability.
+    boolean positive();   
 }

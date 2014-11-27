@@ -5,17 +5,19 @@
  */
 package mafiagame.Interfaces;
 
+
 /**
  *
  * @author pellecarlsen
  */
 public interface ControlInterface {
     //this method sets the new price.
-    void changePrice();
+    void changePrice(Object Drug);
     //this method sets the new availability
-    void changeAvailability();
+    void changeAvailability(Object Drug);
     //change location of the player.
     void changeCountry();
+    void setCurrentCountry(String country);
     //buy drugs.
     void buyDrugs(int amount,String drug);
     //sell cocain

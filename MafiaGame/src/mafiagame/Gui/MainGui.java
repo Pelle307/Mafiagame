@@ -5,17 +5,20 @@
  */
 package mafiagame.Gui;
 
+import mafiagame.Logic.Controller;
+
 /**
  *
  * @author pellecarlsen
  */
 public class MainGui extends javax.swing.JFrame {
-
+Controller control;
     /**
      * Creates new form MainGui
      */
     public MainGui() {
         initComponents();
+        control = new Controller();
     }
 
     /**
@@ -54,6 +57,11 @@ public class MainGui extends javax.swing.JFrame {
         startGamejButton.setBounds(250, 450, 130, 29);
 
         highScorejButton.setText("High Score");
+        highScorejButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                highScorejButtonActionPerformed(evt);
+            }
+        });
         start.add(highScorejButton);
         highScorejButton.setBounds(250, 490, 130, 29);
 
@@ -106,15 +114,20 @@ public class MainGui extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void highScorejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highScorejButtonActionPerformed
+        // TODO add your handling code here:
+        control.setCurrentCountry("germany");
+    }//GEN-LAST:event_highScorejButtonActionPerformed
 
     /**
      * @param args the command line arguments

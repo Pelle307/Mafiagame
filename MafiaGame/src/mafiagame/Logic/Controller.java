@@ -34,11 +34,13 @@ public class Controller implements ControlInterface {
     Drug hash;
     Drug weed;
     Drug mushrooms;
+    Country currentCountry;
 
     public Controller() {
         r = new Random();
         paul = new Player();
         denmark = new Country("Denmark");
+        currentCountry = denmark;
         columbia = new Country("Columbia");
         germany = new Country("Germany");
         usa = new Country("USA");
@@ -56,7 +58,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void changePrice() {
+    public void changePrice(Object drug) {
         int holder;
         int change;
         if (positive()) {
@@ -71,7 +73,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public int changeAvailability(int availability) {
+    public void changeAvailability(Object drug) {
         int holder, change, newAvailability;
         if (positive()) {
             holder = r.nextInt((40) + 15);
@@ -102,7 +104,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void buyDrugs(int amount,String drug) {
+    public void buyDrugs(int amount, String drug) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -114,6 +116,33 @@ public class Controller implements ControlInterface {
     @Override
     public void sellHeroin(int price) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setCurrentCountry(String country) {
+        String current = country;
+        System.out.println(currentCountry);
+        switch (current) {
+            case "denmark":
+                this.currentCountry = this.denmark;
+                break;
+            case "columbia":
+                this.currentCountry = this.columbia;
+                break;
+            case "germany":
+                this.currentCountry = this.germany;
+                break;
+            case "usa":
+                this.currentCountry = this.usa;
+                break;
+            case "france":
+                this.currentCountry = this.france;
+                break;
+            case "afghanistan":
+                this.currentCountry = this.afghanistan;
+                break;
+        }
+        System.out.println(currentCountry);
     }
 
 }

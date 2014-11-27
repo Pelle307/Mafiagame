@@ -14,6 +14,7 @@ import mafiagame.Interfaces.PlayerInterface;
 public class Player implements PlayerInterface{
 int dollars;
 int hp;
+int turn;
 int currentCocain;
 int currentHeroin;
 

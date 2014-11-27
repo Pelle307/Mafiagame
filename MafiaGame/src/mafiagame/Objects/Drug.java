@@ -5,13 +5,13 @@
  */
 package mafiagame.Objects;
 
-import mafiagame.Interfaces.DrugsInterface;
+import mafiagame.Interfaces.DrugInterface;
 
 /**
  *
  * @author pellecarlsen
  */
-public class Drug implements DrugsInterface {
+public class Drug implements DrugInterface {
 
     String name;
     private int price;

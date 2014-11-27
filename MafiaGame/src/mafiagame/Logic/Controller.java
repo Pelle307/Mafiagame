@@ -40,49 +40,8 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void changePrice(Object drug) {
-        int holder;
-        int change;
-        if (positive()) {
-            holder = r.nextInt((85) + 1);
-            change = (drugs.getPrice * holder) / 100;
-            drugs.setPrice = drugs.getPrice + change;
-        } else {
-            holder = (r.nextInt((85) + 1));
-            change = (drugs.getPrice * holder) / 100;
-            drugs.setPrice = drugs.getPrice - change;
-        }
-    }
-
-    @Override
-    public void changeAvailability(Object drug) {
-        int holder, change, newAvailability;
-        if (positive()) {
-            holder = r.nextInt((40) + 15);
-            change = (availability * holder) / 100;
-            newAvailability = availability + change;
-            return newAvailability;
-        } else {
-            holder = (r.nextInt((40) + 15));
-            change = (availability * holder) / 100;
-            newAvailability = availability - change;
-            return newAvailability;
-        }
-    }
-
-    @Override
     public void changeCountry() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean positive() {
-        int a = r.nextInt(2);
-        if (a == 0) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
     @Override
@@ -124,6 +83,8 @@ public class Controller implements ControlInterface {
                 this.currentCountry = this.afghanistan;
                 break;
         }
+        currentCountry.changeAvailability();
+        currentCountry.changePrice();
         System.out.println(currentCountry);
     }
 

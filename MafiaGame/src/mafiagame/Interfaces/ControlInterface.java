@@ -11,10 +11,6 @@ package mafiagame.Interfaces;
  * @author pellecarlsen
  */
 public interface ControlInterface {
-    //this method sets the new price.
-    void changePrice(Object Drug);
-    //this method sets the new availability
-    void changeAvailability(Object Drug);
     //change location of the player.
     void changeCountry();
     void setCurrentCountry(String country);
@@ -25,5 +21,5 @@ public interface ControlInterface {
     //sell cocain
     void sellHeroin(int price);
     //a boolean that checks if price & availability either increases or decreases. True increases price & availability and false decreases price & availability.
-    boolean positive();   
+      
 }

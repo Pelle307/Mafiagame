@@ -9,10 +9,11 @@ package mafiagame.Interfaces;
  *
  * @author pellecarlsen
  */
-public interface DrugsInterface {
-    int getPrice();
-    int getAvailability();
-    String getName();
-    void setPrice(int price);
-    void setAvailability(int availability);
+public interface CountryInterface {
+    String getCountryName();
+    //this method sets the new price.
+    void changePrice();
+    //this method sets the new availability
+    void changeAvailability();
+    boolean positive();
 }

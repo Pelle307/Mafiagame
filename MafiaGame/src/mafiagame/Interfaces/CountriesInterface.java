@@ -10,5 +10,5 @@ package mafiagame.Interfaces;
  * @author pellecarlsen
  */
 public interface CountriesInterface {
-    String getName();
+    String getCountryName();
 }

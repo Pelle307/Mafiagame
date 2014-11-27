@@ -17,9 +17,9 @@ public interface ControlInterface {
     //change location of the player.
     void changeCountry();
     //buy cocain.
-    void buyCocain(int price, int availability);
+    void buyCocain(int amount);
     //buy heroin.
-    void buyHeroin(int price, int availability);
+    void buyHeroin(int amount);
     //sell cocain
     void sellCocain(int price);
     //sell cocain

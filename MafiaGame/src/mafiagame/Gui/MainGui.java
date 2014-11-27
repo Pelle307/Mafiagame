@@ -51,11 +51,11 @@ public class MainGui extends javax.swing.JFrame {
 
         startGamejButton.setText("Start Game");
         start.add(startGamejButton);
-        startGamejButton.setBounds(250, 450, 130, 25);
+        startGamejButton.setBounds(250, 450, 130, 29);
 
         highScorejButton.setText("High Score");
         start.add(highScorejButton);
-        highScorejButton.setBounds(250, 490, 130, 25);
+        highScorejButton.setBounds(250, 490, 130, 29);
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);

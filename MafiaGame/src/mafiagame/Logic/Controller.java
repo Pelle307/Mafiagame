@@ -56,7 +56,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void changePrice(int price) {
+    public void changePrice() {
         int holder;
         int change;
         if (positive()) {
@@ -71,7 +71,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void changeAvailability(int availability) {
+    public void changeAvailability() {
         int holder;
         int change;
         if (positive()) {
@@ -101,12 +101,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void buyCocain(int amount) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void buyHeroin(int amount) {
+    public void buyDrugs(int amount,String drug) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

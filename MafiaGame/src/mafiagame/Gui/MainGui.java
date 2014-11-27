@@ -87,18 +87,153 @@ public class MainGui extends javax.swing.JFrame {
         pictureDenmark = new javax.swing.JLabel();
         columbia = new javax.swing.JPanel();
         toWorldColumbia = new javax.swing.JButton();
+        sellCocainColumbia = new javax.swing.JButton();
+        buyHeroinColumbia = new javax.swing.JButton();
+        buyAmphetamineColumbia = new javax.swing.JButton();
+        buyAcidColumbia = new javax.swing.JButton();
+        buyAngelDustColumbia = new javax.swing.JButton();
+        buyCrystalMethColumbia = new javax.swing.JButton();
+        buyHashColumbia = new javax.swing.JButton();
+        buyWeedColumbia = new javax.swing.JButton();
+        buyMushroomsColumbia = new javax.swing.JButton();
+        sellHeroinColumbia = new javax.swing.JButton();
+        sellAmphetamineColumbia = new javax.swing.JButton();
+        sellAcidColumbia = new javax.swing.JButton();
+        sellAngelDustColumbia = new javax.swing.JButton();
+        sellCrystalMethColumbia = new javax.swing.JButton();
+        sellHashColumbia = new javax.swing.JButton();
+        sellWeedColumbia = new javax.swing.JButton();
+        sellMushroomsColumbia = new javax.swing.JButton();
+        buyCocainColumbia = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
         pictureColumbia = new javax.swing.JLabel();
         germany = new javax.swing.JPanel();
         toWorldGermany = new javax.swing.JButton();
+        sellCocainGermany = new javax.swing.JButton();
+        buyHeroinGermany = new javax.swing.JButton();
+        buyAmphetamineGermany = new javax.swing.JButton();
+        buyAcidGermany = new javax.swing.JButton();
+        buyAngelDustGermany = new javax.swing.JButton();
+        buyCrystalMethGermany = new javax.swing.JButton();
+        buyHashGermany = new javax.swing.JButton();
+        buyWeedGermany = new javax.swing.JButton();
+        buyMushroomsGermany = new javax.swing.JButton();
+        sellHeroinGermany = new javax.swing.JButton();
+        sellAmphetamineGermany = new javax.swing.JButton();
+        sellAcidGermany = new javax.swing.JButton();
+        sellAngelDustGermany = new javax.swing.JButton();
+        sellCrystalMethGermany = new javax.swing.JButton();
+        sellHashGermany = new javax.swing.JButton();
+        sellWeedGermany = new javax.swing.JButton();
+        sellMushroomsGermany = new javax.swing.JButton();
+        buyCocainGermany = new javax.swing.JButton();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
         pictureGermany = new javax.swing.JLabel();
         france = new javax.swing.JPanel();
         toWorldFrance = new javax.swing.JButton();
+        sellCocainFrance = new javax.swing.JButton();
+        buyHeroinFrance = new javax.swing.JButton();
+        buyAmphetamineFrance = new javax.swing.JButton();
+        buyAcidFrance = new javax.swing.JButton();
+        buyAngelDustFrance = new javax.swing.JButton();
+        buyCrystalMethFrance = new javax.swing.JButton();
+        buyHashFrance = new javax.swing.JButton();
+        buyWeedFrance = new javax.swing.JButton();
+        buyMushroomsFrance = new javax.swing.JButton();
+        sellHeroinFrance = new javax.swing.JButton();
+        sellAmphetamineFrance = new javax.swing.JButton();
+        sellAcidFrance = new javax.swing.JButton();
+        sellAngelDustFrance = new javax.swing.JButton();
+        sellCrystalMethFrance = new javax.swing.JButton();
+        sellHashFrance = new javax.swing.JButton();
+        sellWeedFrance = new javax.swing.JButton();
+        sellMushroomsFrance = new javax.swing.JButton();
+        buyCocainFrance = new javax.swing.JButton();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
         pictureFrance = new javax.swing.JLabel();
         usa = new javax.swing.JPanel();
         toWorldUSA = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        sellCocainUSA = new javax.swing.JButton();
+        buyHeroinUSA = new javax.swing.JButton();
+        buyAmphetamineUSA = new javax.swing.JButton();
+        buyAcidUSA = new javax.swing.JButton();
+        buyAngelDustUSA = new javax.swing.JButton();
+        buyCrystalMethUSA = new javax.swing.JButton();
+        buyHashUSA = new javax.swing.JButton();
+        buyWeedUSA = new javax.swing.JButton();
+        buyMushroomsUSA = new javax.swing.JButton();
+        sellHeroinUSA = new javax.swing.JButton();
+        sellAmphetamineUSA = new javax.swing.JButton();
+        sellAcidUSA = new javax.swing.JButton();
+        sellAngelDustUSA = new javax.swing.JButton();
+        sellCrystalMethUSA = new javax.swing.JButton();
+        sellHashUSA = new javax.swing.JButton();
+        sellWeedUSA = new javax.swing.JButton();
+        sellMushroomsUSA = new javax.swing.JButton();
+        buyCocainUSA = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        pictureUSA = new javax.swing.JLabel();
         afghanistan = new javax.swing.JPanel();
         toWorldAfghanistan = new javax.swing.JButton();
+        sellCocainAfghanistan = new javax.swing.JButton();
+        buyHeroinAfghanistan = new javax.swing.JButton();
+        buyAmphetamineAfghanistan = new javax.swing.JButton();
+        buyAcidAfghanistan = new javax.swing.JButton();
+        buyAngelDustAfghanistan = new javax.swing.JButton();
+        buyCrystalMethAfghanistan = new javax.swing.JButton();
+        buyHashAfghanistan = new javax.swing.JButton();
+        buyWeedAfghanistan = new javax.swing.JButton();
+        buyMushroomsAfghanistan = new javax.swing.JButton();
+        sellHeroinAfghanistan = new javax.swing.JButton();
+        sellAmphetamineAfghanistan = new javax.swing.JButton();
+        sellAcidAfghanistan = new javax.swing.JButton();
+        sellAngelDustAfghanistan = new javax.swing.JButton();
+        sellCrystalMethAfghanistan = new javax.swing.JButton();
+        sellHashAfghanistan = new javax.swing.JButton();
+        sellWeedAfghanistan = new javax.swing.JButton();
+        sellMushroomsAfghanistan = new javax.swing.JButton();
+        buyCocainAfghanistan = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         pictureAfghanistan = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -398,6 +533,159 @@ public class MainGui extends javax.swing.JFrame {
         columbia.add(toWorldColumbia);
         toWorldColumbia.setBounds(500, 570, 90, 25);
 
+        sellCocainColumbia.setText("SELL");
+        columbia.add(sellCocainColumbia);
+        sellCocainColumbia.setBounds(150, 50, 130, 25);
+
+        buyHeroinColumbia.setText("BUY");
+        buyHeroinColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHeroinColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyHeroinColumbia);
+        buyHeroinColumbia.setBounds(410, 80, 130, 25);
+
+        buyAmphetamineColumbia.setText("BUY");
+        buyAmphetamineColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAmphetamineColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyAmphetamineColumbia);
+        buyAmphetamineColumbia.setBounds(410, 110, 130, 25);
+
+        buyAcidColumbia.setText("BUY");
+        buyAcidColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAcidColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyAcidColumbia);
+        buyAcidColumbia.setBounds(410, 140, 130, 25);
+
+        buyAngelDustColumbia.setText("BUY");
+        buyAngelDustColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAngelDustColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyAngelDustColumbia);
+        buyAngelDustColumbia.setBounds(410, 170, 130, 25);
+
+        buyCrystalMethColumbia.setText("BUY");
+        buyCrystalMethColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCrystalMethColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyCrystalMethColumbia);
+        buyCrystalMethColumbia.setBounds(410, 200, 130, 25);
+
+        buyHashColumbia.setText("BUY");
+        buyHashColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHashColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyHashColumbia);
+        buyHashColumbia.setBounds(410, 230, 130, 25);
+
+        buyWeedColumbia.setText("BUY");
+        buyWeedColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyWeedColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyWeedColumbia);
+        buyWeedColumbia.setBounds(410, 260, 130, 25);
+
+        buyMushroomsColumbia.setText("BUY");
+        buyMushroomsColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyMushroomsColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyMushroomsColumbia);
+        buyMushroomsColumbia.setBounds(410, 290, 130, 25);
+
+        sellHeroinColumbia.setText("SELL");
+        columbia.add(sellHeroinColumbia);
+        sellHeroinColumbia.setBounds(150, 80, 130, 25);
+
+        sellAmphetamineColumbia.setText("SELL");
+        columbia.add(sellAmphetamineColumbia);
+        sellAmphetamineColumbia.setBounds(150, 110, 130, 25);
+
+        sellAcidColumbia.setText("SELL");
+        columbia.add(sellAcidColumbia);
+        sellAcidColumbia.setBounds(150, 140, 130, 25);
+
+        sellAngelDustColumbia.setText("SELL");
+        columbia.add(sellAngelDustColumbia);
+        sellAngelDustColumbia.setBounds(150, 170, 130, 25);
+
+        sellCrystalMethColumbia.setText("SELL");
+        columbia.add(sellCrystalMethColumbia);
+        sellCrystalMethColumbia.setBounds(150, 200, 130, 25);
+
+        sellHashColumbia.setText("SELL");
+        columbia.add(sellHashColumbia);
+        sellHashColumbia.setBounds(150, 230, 130, 25);
+
+        sellWeedColumbia.setText("SELL");
+        columbia.add(sellWeedColumbia);
+        sellWeedColumbia.setBounds(150, 260, 130, 25);
+
+        sellMushroomsColumbia.setText("SELL");
+        columbia.add(sellMushroomsColumbia);
+        sellMushroomsColumbia.setBounds(150, 290, 130, 25);
+
+        buyCocainColumbia.setText("BUY");
+        buyCocainColumbia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCocainColumbiaActionPerformed(evt);
+            }
+        });
+        columbia.add(buyCocainColumbia);
+        buyCocainColumbia.setBounds(410, 50, 130, 25);
+
+        jLabel20.setText("Heroin");
+        columbia.add(jLabel20);
+        jLabel20.setBounds(50, 80, 70, 16);
+
+        jLabel21.setText("Amphetamine");
+        columbia.add(jLabel21);
+        jLabel21.setBounds(50, 110, 80, 16);
+
+        jLabel22.setText("Acid");
+        columbia.add(jLabel22);
+        jLabel22.setBounds(50, 140, 80, 16);
+
+        jLabel23.setText("Angel Dust");
+        columbia.add(jLabel23);
+        jLabel23.setBounds(50, 170, 61, 16);
+
+        jLabel24.setText("Crystal Meth");
+        columbia.add(jLabel24);
+        jLabel24.setBounds(50, 200, 90, 16);
+
+        jLabel25.setText("Hash");
+        columbia.add(jLabel25);
+        jLabel25.setBounds(50, 230, 60, 16);
+
+        jLabel26.setText("Weed");
+        columbia.add(jLabel26);
+        jLabel26.setBounds(50, 260, 33, 16);
+
+        jLabel27.setText("Mushrooms");
+        columbia.add(jLabel27);
+        jLabel27.setBounds(50, 290, 80, 16);
+
+        jLabel28.setText("Cocain");
+        columbia.add(jLabel28);
+        jLabel28.setBounds(50, 50, 60, 16);
+
         pictureColumbia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/Colombia.jpg"))); // NOI18N
         pictureColumbia.setText("jLabel3");
         columbia.add(pictureColumbia);
@@ -416,6 +704,159 @@ public class MainGui extends javax.swing.JFrame {
         germany.add(toWorldGermany);
         toWorldGermany.setBounds(500, 570, 90, 25);
 
+        sellCocainGermany.setText("SELL");
+        germany.add(sellCocainGermany);
+        sellCocainGermany.setBounds(150, 50, 130, 25);
+
+        buyHeroinGermany.setText("BUY");
+        buyHeroinGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHeroinGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyHeroinGermany);
+        buyHeroinGermany.setBounds(410, 80, 130, 25);
+
+        buyAmphetamineGermany.setText("BUY");
+        buyAmphetamineGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAmphetamineGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyAmphetamineGermany);
+        buyAmphetamineGermany.setBounds(410, 110, 130, 25);
+
+        buyAcidGermany.setText("BUY");
+        buyAcidGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAcidGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyAcidGermany);
+        buyAcidGermany.setBounds(410, 140, 130, 25);
+
+        buyAngelDustGermany.setText("BUY");
+        buyAngelDustGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAngelDustGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyAngelDustGermany);
+        buyAngelDustGermany.setBounds(410, 170, 130, 25);
+
+        buyCrystalMethGermany.setText("BUY");
+        buyCrystalMethGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCrystalMethGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyCrystalMethGermany);
+        buyCrystalMethGermany.setBounds(410, 200, 130, 25);
+
+        buyHashGermany.setText("BUY");
+        buyHashGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHashGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyHashGermany);
+        buyHashGermany.setBounds(410, 230, 130, 25);
+
+        buyWeedGermany.setText("BUY");
+        buyWeedGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyWeedGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyWeedGermany);
+        buyWeedGermany.setBounds(410, 260, 130, 25);
+
+        buyMushroomsGermany.setText("BUY");
+        buyMushroomsGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyMushroomsGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyMushroomsGermany);
+        buyMushroomsGermany.setBounds(410, 290, 130, 25);
+
+        sellHeroinGermany.setText("SELL");
+        germany.add(sellHeroinGermany);
+        sellHeroinGermany.setBounds(150, 80, 130, 25);
+
+        sellAmphetamineGermany.setText("SELL");
+        germany.add(sellAmphetamineGermany);
+        sellAmphetamineGermany.setBounds(150, 110, 130, 25);
+
+        sellAcidGermany.setText("SELL");
+        germany.add(sellAcidGermany);
+        sellAcidGermany.setBounds(150, 140, 130, 25);
+
+        sellAngelDustGermany.setText("SELL");
+        germany.add(sellAngelDustGermany);
+        sellAngelDustGermany.setBounds(150, 170, 130, 25);
+
+        sellCrystalMethGermany.setText("SELL");
+        germany.add(sellCrystalMethGermany);
+        sellCrystalMethGermany.setBounds(150, 200, 130, 25);
+
+        sellHashGermany.setText("SELL");
+        germany.add(sellHashGermany);
+        sellHashGermany.setBounds(150, 230, 130, 25);
+
+        sellWeedGermany.setText("SELL");
+        germany.add(sellWeedGermany);
+        sellWeedGermany.setBounds(150, 260, 130, 25);
+
+        sellMushroomsGermany.setText("SELL");
+        germany.add(sellMushroomsGermany);
+        sellMushroomsGermany.setBounds(150, 290, 130, 25);
+
+        buyCocainGermany.setText("BUY");
+        buyCocainGermany.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCocainGermanyActionPerformed(evt);
+            }
+        });
+        germany.add(buyCocainGermany);
+        buyCocainGermany.setBounds(410, 50, 130, 25);
+
+        jLabel29.setText("Heroin");
+        germany.add(jLabel29);
+        jLabel29.setBounds(50, 80, 70, 16);
+
+        jLabel30.setText("Amphetamine");
+        germany.add(jLabel30);
+        jLabel30.setBounds(50, 110, 80, 16);
+
+        jLabel31.setText("Acid");
+        germany.add(jLabel31);
+        jLabel31.setBounds(50, 140, 80, 16);
+
+        jLabel32.setText("Angel Dust");
+        germany.add(jLabel32);
+        jLabel32.setBounds(50, 170, 61, 16);
+
+        jLabel33.setText("Crystal Meth");
+        germany.add(jLabel33);
+        jLabel33.setBounds(50, 200, 90, 16);
+
+        jLabel34.setText("Hash");
+        germany.add(jLabel34);
+        jLabel34.setBounds(50, 230, 60, 16);
+
+        jLabel35.setText("Weed");
+        germany.add(jLabel35);
+        jLabel35.setBounds(50, 260, 33, 16);
+
+        jLabel36.setText("Mushrooms");
+        germany.add(jLabel36);
+        jLabel36.setBounds(50, 290, 80, 16);
+
+        jLabel37.setText("Cocain");
+        germany.add(jLabel37);
+        jLabel37.setBounds(50, 50, 60, 16);
+
         pictureGermany.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/germany-distance-map.gif"))); // NOI18N
         germany.add(pictureGermany);
         pictureGermany.setBounds(0, 0, 600, 600);
@@ -432,6 +873,159 @@ public class MainGui extends javax.swing.JFrame {
         });
         france.add(toWorldFrance);
         toWorldFrance.setBounds(500, 570, 90, 25);
+
+        sellCocainFrance.setText("SELL");
+        france.add(sellCocainFrance);
+        sellCocainFrance.setBounds(150, 50, 130, 25);
+
+        buyHeroinFrance.setText("BUY");
+        buyHeroinFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHeroinFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyHeroinFrance);
+        buyHeroinFrance.setBounds(410, 80, 130, 25);
+
+        buyAmphetamineFrance.setText("BUY");
+        buyAmphetamineFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAmphetamineFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyAmphetamineFrance);
+        buyAmphetamineFrance.setBounds(410, 110, 130, 25);
+
+        buyAcidFrance.setText("BUY");
+        buyAcidFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAcidFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyAcidFrance);
+        buyAcidFrance.setBounds(410, 140, 130, 25);
+
+        buyAngelDustFrance.setText("BUY");
+        buyAngelDustFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAngelDustFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyAngelDustFrance);
+        buyAngelDustFrance.setBounds(410, 170, 130, 25);
+
+        buyCrystalMethFrance.setText("BUY");
+        buyCrystalMethFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCrystalMethFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyCrystalMethFrance);
+        buyCrystalMethFrance.setBounds(410, 200, 130, 25);
+
+        buyHashFrance.setText("BUY");
+        buyHashFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHashFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyHashFrance);
+        buyHashFrance.setBounds(410, 230, 130, 25);
+
+        buyWeedFrance.setText("BUY");
+        buyWeedFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyWeedFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyWeedFrance);
+        buyWeedFrance.setBounds(410, 260, 130, 25);
+
+        buyMushroomsFrance.setText("BUY");
+        buyMushroomsFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyMushroomsFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyMushroomsFrance);
+        buyMushroomsFrance.setBounds(410, 290, 130, 25);
+
+        sellHeroinFrance.setText("SELL");
+        france.add(sellHeroinFrance);
+        sellHeroinFrance.setBounds(150, 80, 130, 25);
+
+        sellAmphetamineFrance.setText("SELL");
+        france.add(sellAmphetamineFrance);
+        sellAmphetamineFrance.setBounds(150, 110, 130, 25);
+
+        sellAcidFrance.setText("SELL");
+        france.add(sellAcidFrance);
+        sellAcidFrance.setBounds(150, 140, 130, 25);
+
+        sellAngelDustFrance.setText("SELL");
+        france.add(sellAngelDustFrance);
+        sellAngelDustFrance.setBounds(150, 170, 130, 25);
+
+        sellCrystalMethFrance.setText("SELL");
+        france.add(sellCrystalMethFrance);
+        sellCrystalMethFrance.setBounds(150, 200, 130, 25);
+
+        sellHashFrance.setText("SELL");
+        france.add(sellHashFrance);
+        sellHashFrance.setBounds(150, 230, 130, 25);
+
+        sellWeedFrance.setText("SELL");
+        france.add(sellWeedFrance);
+        sellWeedFrance.setBounds(150, 260, 130, 25);
+
+        sellMushroomsFrance.setText("SELL");
+        france.add(sellMushroomsFrance);
+        sellMushroomsFrance.setBounds(150, 290, 130, 25);
+
+        buyCocainFrance.setText("BUY");
+        buyCocainFrance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCocainFranceActionPerformed(evt);
+            }
+        });
+        france.add(buyCocainFrance);
+        buyCocainFrance.setBounds(410, 50, 130, 25);
+
+        jLabel38.setText("Heroin");
+        france.add(jLabel38);
+        jLabel38.setBounds(50, 80, 70, 16);
+
+        jLabel39.setText("Amphetamine");
+        france.add(jLabel39);
+        jLabel39.setBounds(50, 110, 80, 16);
+
+        jLabel40.setText("Acid");
+        france.add(jLabel40);
+        jLabel40.setBounds(50, 140, 80, 16);
+
+        jLabel41.setText("Angel Dust");
+        france.add(jLabel41);
+        jLabel41.setBounds(50, 170, 61, 16);
+
+        jLabel42.setText("Crystal Meth");
+        france.add(jLabel42);
+        jLabel42.setBounds(50, 200, 90, 16);
+
+        jLabel43.setText("Hash");
+        france.add(jLabel43);
+        jLabel43.setBounds(50, 230, 60, 16);
+
+        jLabel44.setText("Weed");
+        france.add(jLabel44);
+        jLabel44.setBounds(50, 260, 33, 16);
+
+        jLabel45.setText("Mushrooms");
+        france.add(jLabel45);
+        jLabel45.setBounds(50, 290, 80, 16);
+
+        jLabel46.setText("Cocain");
+        france.add(jLabel46);
+        jLabel46.setBounds(50, 50, 60, 16);
 
         pictureFrance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/france.jpg"))); // NOI18N
         france.add(pictureFrance);
@@ -450,9 +1044,162 @@ public class MainGui extends javax.swing.JFrame {
         usa.add(toWorldUSA);
         toWorldUSA.setBounds(500, 570, 90, 25);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/usa.jpg"))); // NOI18N
-        usa.add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 600);
+        sellCocainUSA.setText("SELL");
+        usa.add(sellCocainUSA);
+        sellCocainUSA.setBounds(150, 50, 130, 25);
+
+        buyHeroinUSA.setText("BUY");
+        buyHeroinUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHeroinUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyHeroinUSA);
+        buyHeroinUSA.setBounds(410, 80, 130, 25);
+
+        buyAmphetamineUSA.setText("BUY");
+        buyAmphetamineUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAmphetamineUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyAmphetamineUSA);
+        buyAmphetamineUSA.setBounds(410, 110, 130, 25);
+
+        buyAcidUSA.setText("BUY");
+        buyAcidUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAcidUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyAcidUSA);
+        buyAcidUSA.setBounds(410, 140, 130, 25);
+
+        buyAngelDustUSA.setText("BUY");
+        buyAngelDustUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAngelDustUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyAngelDustUSA);
+        buyAngelDustUSA.setBounds(410, 170, 130, 25);
+
+        buyCrystalMethUSA.setText("BUY");
+        buyCrystalMethUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCrystalMethUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyCrystalMethUSA);
+        buyCrystalMethUSA.setBounds(410, 200, 130, 25);
+
+        buyHashUSA.setText("BUY");
+        buyHashUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHashUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyHashUSA);
+        buyHashUSA.setBounds(410, 230, 130, 25);
+
+        buyWeedUSA.setText("BUY");
+        buyWeedUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyWeedUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyWeedUSA);
+        buyWeedUSA.setBounds(410, 260, 130, 25);
+
+        buyMushroomsUSA.setText("BUY");
+        buyMushroomsUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyMushroomsUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyMushroomsUSA);
+        buyMushroomsUSA.setBounds(410, 290, 130, 25);
+
+        sellHeroinUSA.setText("SELL");
+        usa.add(sellHeroinUSA);
+        sellHeroinUSA.setBounds(150, 80, 130, 25);
+
+        sellAmphetamineUSA.setText("SELL");
+        usa.add(sellAmphetamineUSA);
+        sellAmphetamineUSA.setBounds(150, 110, 130, 25);
+
+        sellAcidUSA.setText("SELL");
+        usa.add(sellAcidUSA);
+        sellAcidUSA.setBounds(150, 140, 130, 25);
+
+        sellAngelDustUSA.setText("SELL");
+        usa.add(sellAngelDustUSA);
+        sellAngelDustUSA.setBounds(150, 170, 130, 25);
+
+        sellCrystalMethUSA.setText("SELL");
+        usa.add(sellCrystalMethUSA);
+        sellCrystalMethUSA.setBounds(150, 200, 130, 25);
+
+        sellHashUSA.setText("SELL");
+        usa.add(sellHashUSA);
+        sellHashUSA.setBounds(150, 230, 130, 25);
+
+        sellWeedUSA.setText("SELL");
+        usa.add(sellWeedUSA);
+        sellWeedUSA.setBounds(150, 260, 130, 25);
+
+        sellMushroomsUSA.setText("SELL");
+        usa.add(sellMushroomsUSA);
+        sellMushroomsUSA.setBounds(150, 290, 130, 25);
+
+        buyCocainUSA.setText("BUY");
+        buyCocainUSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCocainUSAActionPerformed(evt);
+            }
+        });
+        usa.add(buyCocainUSA);
+        buyCocainUSA.setBounds(410, 50, 130, 25);
+
+        jLabel47.setText("Heroin");
+        usa.add(jLabel47);
+        jLabel47.setBounds(50, 80, 70, 16);
+
+        jLabel48.setText("Amphetamine");
+        usa.add(jLabel48);
+        jLabel48.setBounds(50, 110, 80, 16);
+
+        jLabel49.setText("Acid");
+        usa.add(jLabel49);
+        jLabel49.setBounds(50, 140, 80, 16);
+
+        jLabel50.setText("Angel Dust");
+        usa.add(jLabel50);
+        jLabel50.setBounds(50, 170, 61, 16);
+
+        jLabel51.setText("Crystal Meth");
+        usa.add(jLabel51);
+        jLabel51.setBounds(50, 200, 90, 16);
+
+        jLabel52.setText("Hash");
+        usa.add(jLabel52);
+        jLabel52.setBounds(50, 230, 60, 16);
+
+        jLabel53.setText("Weed");
+        usa.add(jLabel53);
+        jLabel53.setBounds(50, 260, 33, 16);
+
+        jLabel54.setText("Mushrooms");
+        usa.add(jLabel54);
+        jLabel54.setBounds(50, 290, 80, 16);
+
+        jLabel55.setText("Cocain");
+        usa.add(jLabel55);
+        jLabel55.setBounds(50, 50, 60, 16);
+
+        pictureUSA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/usa.jpg"))); // NOI18N
+        usa.add(pictureUSA);
+        pictureUSA.setBounds(0, 0, 600, 600);
 
         jTabbedPane.addTab("USA", usa);
 
@@ -467,6 +1214,159 @@ public class MainGui extends javax.swing.JFrame {
         afghanistan.add(toWorldAfghanistan);
         toWorldAfghanistan.setBounds(510, 570, 90, 25);
 
+        sellCocainAfghanistan.setText("SELL");
+        afghanistan.add(sellCocainAfghanistan);
+        sellCocainAfghanistan.setBounds(150, 50, 130, 25);
+
+        buyHeroinAfghanistan.setText("BUY");
+        buyHeroinAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHeroinAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyHeroinAfghanistan);
+        buyHeroinAfghanistan.setBounds(410, 80, 130, 25);
+
+        buyAmphetamineAfghanistan.setText("BUY");
+        buyAmphetamineAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAmphetamineAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyAmphetamineAfghanistan);
+        buyAmphetamineAfghanistan.setBounds(410, 110, 130, 25);
+
+        buyAcidAfghanistan.setText("BUY");
+        buyAcidAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAcidAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyAcidAfghanistan);
+        buyAcidAfghanistan.setBounds(410, 140, 130, 25);
+
+        buyAngelDustAfghanistan.setText("BUY");
+        buyAngelDustAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAngelDustAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyAngelDustAfghanistan);
+        buyAngelDustAfghanistan.setBounds(410, 170, 130, 25);
+
+        buyCrystalMethAfghanistan.setText("BUY");
+        buyCrystalMethAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCrystalMethAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyCrystalMethAfghanistan);
+        buyCrystalMethAfghanistan.setBounds(410, 200, 130, 25);
+
+        buyHashAfghanistan.setText("BUY");
+        buyHashAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHashAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyHashAfghanistan);
+        buyHashAfghanistan.setBounds(410, 230, 130, 25);
+
+        buyWeedAfghanistan.setText("BUY");
+        buyWeedAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyWeedAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyWeedAfghanistan);
+        buyWeedAfghanistan.setBounds(410, 260, 130, 25);
+
+        buyMushroomsAfghanistan.setText("BUY");
+        buyMushroomsAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyMushroomsAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyMushroomsAfghanistan);
+        buyMushroomsAfghanistan.setBounds(410, 290, 130, 25);
+
+        sellHeroinAfghanistan.setText("SELL");
+        afghanistan.add(sellHeroinAfghanistan);
+        sellHeroinAfghanistan.setBounds(150, 80, 130, 25);
+
+        sellAmphetamineAfghanistan.setText("SELL");
+        afghanistan.add(sellAmphetamineAfghanistan);
+        sellAmphetamineAfghanistan.setBounds(150, 110, 130, 25);
+
+        sellAcidAfghanistan.setText("SELL");
+        afghanistan.add(sellAcidAfghanistan);
+        sellAcidAfghanistan.setBounds(150, 140, 130, 25);
+
+        sellAngelDustAfghanistan.setText("SELL");
+        afghanistan.add(sellAngelDustAfghanistan);
+        sellAngelDustAfghanistan.setBounds(150, 170, 130, 25);
+
+        sellCrystalMethAfghanistan.setText("SELL");
+        afghanistan.add(sellCrystalMethAfghanistan);
+        sellCrystalMethAfghanistan.setBounds(150, 200, 130, 25);
+
+        sellHashAfghanistan.setText("SELL");
+        afghanistan.add(sellHashAfghanistan);
+        sellHashAfghanistan.setBounds(150, 230, 130, 25);
+
+        sellWeedAfghanistan.setText("SELL");
+        afghanistan.add(sellWeedAfghanistan);
+        sellWeedAfghanistan.setBounds(150, 260, 130, 25);
+
+        sellMushroomsAfghanistan.setText("SELL");
+        afghanistan.add(sellMushroomsAfghanistan);
+        sellMushroomsAfghanistan.setBounds(150, 290, 130, 25);
+
+        buyCocainAfghanistan.setText("BUY");
+        buyCocainAfghanistan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCocainAfghanistanActionPerformed(evt);
+            }
+        });
+        afghanistan.add(buyCocainAfghanistan);
+        buyCocainAfghanistan.setBounds(410, 50, 130, 25);
+
+        jLabel11.setText("Heroin");
+        afghanistan.add(jLabel11);
+        jLabel11.setBounds(50, 80, 70, 16);
+
+        jLabel12.setText("Amphetamine");
+        afghanistan.add(jLabel12);
+        jLabel12.setBounds(50, 110, 80, 16);
+
+        jLabel13.setText("Acid");
+        afghanistan.add(jLabel13);
+        jLabel13.setBounds(50, 140, 80, 16);
+
+        jLabel14.setText("Angel Dust");
+        afghanistan.add(jLabel14);
+        jLabel14.setBounds(50, 170, 61, 16);
+
+        jLabel15.setText("Crystal Meth");
+        afghanistan.add(jLabel15);
+        jLabel15.setBounds(50, 200, 90, 16);
+
+        jLabel16.setText("Hash");
+        afghanistan.add(jLabel16);
+        jLabel16.setBounds(50, 230, 60, 16);
+
+        jLabel17.setText("Weed");
+        afghanistan.add(jLabel17);
+        jLabel17.setBounds(50, 260, 33, 16);
+
+        jLabel18.setText("Mushrooms");
+        afghanistan.add(jLabel18);
+        jLabel18.setBounds(50, 290, 80, 16);
+
+        jLabel19.setText("Cocain");
+        afghanistan.add(jLabel19);
+        jLabel19.setBounds(50, 50, 60, 16);
+
         pictureAfghanistan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/800px-Afghanistan_locator_map.svg.png"))); // NOI18N
         afghanistan.add(pictureAfghanistan);
         pictureAfghanistan.setBounds(0, 0, 600, 600);
@@ -477,11 +1377,11 @@ public class MainGui extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 613, Short.MAX_VALUE)
+            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 637, Short.MAX_VALUE)
+            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 675, Short.MAX_VALUE)
         );
 
         pack();
@@ -506,30 +1406,35 @@ public class MainGui extends javax.swing.JFrame {
 
     private void germanyjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_germanyjButtonActionPerformed
         control.setCurrentCountry("Germany");
+        setupGermany();
         jTabbedPane.removeAll();
         jTabbedPane.add("GERMANY", germany);
     }//GEN-LAST:event_germanyjButtonActionPerformed
 
     private void francejButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_francejButton1ActionPerformed
         control.setCurrentCountry("France");
+        setupFrance();
         jTabbedPane.removeAll();
         jTabbedPane.add("FRANCE", france);
     }//GEN-LAST:event_francejButton1ActionPerformed
 
     private void afganistanjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_afganistanjButtonActionPerformed
         control.setCurrentCountry("Afghanistan");
+        setupAfghanistan();
         jTabbedPane.removeAll();
         jTabbedPane.add("AFGHANISTAN", afghanistan);
     }//GEN-LAST:event_afganistanjButtonActionPerformed
 
     private void usajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usajButtonActionPerformed
         control.setCurrentCountry("USA");
+        setupUSA();
         jTabbedPane.removeAll();
         jTabbedPane.add("USA", usa);
     }//GEN-LAST:event_usajButtonActionPerformed
 
     private void columbiajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_columbiajButtonActionPerformed
         control.setCurrentCountry("Columbia");
+        setupColumbia();
         jTabbedPane.removeAll();
         jTabbedPane.add("COLUMBIA", columbia);
     }//GEN-LAST:event_columbiajButtonActionPerformed
@@ -600,6 +1505,186 @@ public class MainGui extends javax.swing.JFrame {
         control.buyDrugs("mushrooms");
     }//GEN-LAST:event_buyMushroomsDenmarkActionPerformed
 
+    private void buyHeroinAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHeroinAfghanistanActionPerformed
+        control.buyDrugs("heroin");
+    }//GEN-LAST:event_buyHeroinAfghanistanActionPerformed
+
+    private void buyAmphetamineAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAmphetamineAfghanistanActionPerformed
+        control.buyDrugs("amphetamine");
+    }//GEN-LAST:event_buyAmphetamineAfghanistanActionPerformed
+
+    private void buyAcidAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAcidAfghanistanActionPerformed
+        control.buyDrugs("acid");
+    }//GEN-LAST:event_buyAcidAfghanistanActionPerformed
+
+    private void buyAngelDustAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAngelDustAfghanistanActionPerformed
+        control.buyDrugs("angeDust");
+    }//GEN-LAST:event_buyAngelDustAfghanistanActionPerformed
+
+    private void buyCrystalMethAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCrystalMethAfghanistanActionPerformed
+        control.buyDrugs("crystalMeth");
+    }//GEN-LAST:event_buyCrystalMethAfghanistanActionPerformed
+
+    private void buyHashAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHashAfghanistanActionPerformed
+        control.buyDrugs("hash");
+    }//GEN-LAST:event_buyHashAfghanistanActionPerformed
+
+    private void buyWeedAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyWeedAfghanistanActionPerformed
+        control.buyDrugs("weed");
+    }//GEN-LAST:event_buyWeedAfghanistanActionPerformed
+
+    private void buyMushroomsAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyMushroomsAfghanistanActionPerformed
+        control.buyDrugs("mushrooms");
+    }//GEN-LAST:event_buyMushroomsAfghanistanActionPerformed
+
+    private void buyCocainAfghanistanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainAfghanistanActionPerformed
+        control.buyDrugs("cocain");
+    }//GEN-LAST:event_buyCocainAfghanistanActionPerformed
+
+    private void buyHeroinColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHeroinColumbiaActionPerformed
+        control.buyDrugs("heroin");
+    }//GEN-LAST:event_buyHeroinColumbiaActionPerformed
+
+    private void buyAmphetamineColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAmphetamineColumbiaActionPerformed
+        control.buyDrugs("amphetamine");
+    }//GEN-LAST:event_buyAmphetamineColumbiaActionPerformed
+
+    private void buyAcidColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAcidColumbiaActionPerformed
+        control.buyDrugs("acid");
+    }//GEN-LAST:event_buyAcidColumbiaActionPerformed
+
+    private void buyAngelDustColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAngelDustColumbiaActionPerformed
+        control.buyDrugs("angelDust");
+    }//GEN-LAST:event_buyAngelDustColumbiaActionPerformed
+
+    private void buyCrystalMethColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCrystalMethColumbiaActionPerformed
+        control.buyDrugs("CrystalMeth");
+    }//GEN-LAST:event_buyCrystalMethColumbiaActionPerformed
+
+    private void buyHashColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHashColumbiaActionPerformed
+        control.buyDrugs("hash");
+    }//GEN-LAST:event_buyHashColumbiaActionPerformed
+
+    private void buyWeedColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyWeedColumbiaActionPerformed
+        control.buyDrugs("weed");
+    }//GEN-LAST:event_buyWeedColumbiaActionPerformed
+
+    private void buyMushroomsColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyMushroomsColumbiaActionPerformed
+        control.buyDrugs("mushrooms");
+    }//GEN-LAST:event_buyMushroomsColumbiaActionPerformed
+
+    private void buyCocainColumbiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainColumbiaActionPerformed
+        control.buyDrugs("cocain");
+    }//GEN-LAST:event_buyCocainColumbiaActionPerformed
+
+    private void buyHeroinGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHeroinGermanyActionPerformed
+        control.buyDrugs("heroin");
+    }//GEN-LAST:event_buyHeroinGermanyActionPerformed
+
+    private void buyAmphetamineGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAmphetamineGermanyActionPerformed
+        control.buyDrugs("amphetamine");
+    }//GEN-LAST:event_buyAmphetamineGermanyActionPerformed
+
+    private void buyAcidGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAcidGermanyActionPerformed
+        control.buyDrugs("acid");
+    }//GEN-LAST:event_buyAcidGermanyActionPerformed
+
+    private void buyAngelDustGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAngelDustGermanyActionPerformed
+        control.buyDrugs("angelDust");
+    }//GEN-LAST:event_buyAngelDustGermanyActionPerformed
+
+    private void buyCrystalMethGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCrystalMethGermanyActionPerformed
+        control.buyDrugs("crystalMeth");
+    }//GEN-LAST:event_buyCrystalMethGermanyActionPerformed
+
+    private void buyHashGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHashGermanyActionPerformed
+        control.buyDrugs("hash");
+    }//GEN-LAST:event_buyHashGermanyActionPerformed
+
+    private void buyWeedGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyWeedGermanyActionPerformed
+        control.buyDrugs("weed");
+    }//GEN-LAST:event_buyWeedGermanyActionPerformed
+
+    private void buyMushroomsGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyMushroomsGermanyActionPerformed
+        control.buyDrugs("mushroom");
+    }//GEN-LAST:event_buyMushroomsGermanyActionPerformed
+
+    private void buyCocainGermanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainGermanyActionPerformed
+        control.buyDrugs("cocain");
+    }//GEN-LAST:event_buyCocainGermanyActionPerformed
+
+    private void buyHeroinFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHeroinFranceActionPerformed
+        control.buyDrugs("heroin");
+    }//GEN-LAST:event_buyHeroinFranceActionPerformed
+
+    private void buyAmphetamineFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAmphetamineFranceActionPerformed
+        control.buyDrugs("amphetamine");
+    }//GEN-LAST:event_buyAmphetamineFranceActionPerformed
+
+    private void buyAcidFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAcidFranceActionPerformed
+        control.buyDrugs("acid");
+    }//GEN-LAST:event_buyAcidFranceActionPerformed
+
+    private void buyAngelDustFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAngelDustFranceActionPerformed
+        control.buyDrugs("angelDust");
+    }//GEN-LAST:event_buyAngelDustFranceActionPerformed
+
+    private void buyCrystalMethFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCrystalMethFranceActionPerformed
+        control.buyDrugs("crystalMeth");
+    }//GEN-LAST:event_buyCrystalMethFranceActionPerformed
+
+    private void buyHashFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHashFranceActionPerformed
+        control.buyDrugs("hash");
+    }//GEN-LAST:event_buyHashFranceActionPerformed
+
+    private void buyWeedFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyWeedFranceActionPerformed
+        control.buyDrugs("weed");
+    }//GEN-LAST:event_buyWeedFranceActionPerformed
+
+    private void buyMushroomsFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyMushroomsFranceActionPerformed
+        control.buyDrugs("mushrooms");
+    }//GEN-LAST:event_buyMushroomsFranceActionPerformed
+
+    private void buyCocainFranceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainFranceActionPerformed
+        control.buyDrugs("cocain");
+    }//GEN-LAST:event_buyCocainFranceActionPerformed
+
+    private void buyHeroinUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHeroinUSAActionPerformed
+        control.buyDrugs("heroin");
+    }//GEN-LAST:event_buyHeroinUSAActionPerformed
+
+    private void buyAmphetamineUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAmphetamineUSAActionPerformed
+        control.buyDrugs("amphetamine");
+    }//GEN-LAST:event_buyAmphetamineUSAActionPerformed
+
+    private void buyAcidUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAcidUSAActionPerformed
+        control.buyDrugs("acid");
+    }//GEN-LAST:event_buyAcidUSAActionPerformed
+
+    private void buyAngelDustUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAngelDustUSAActionPerformed
+        control.buyDrugs("angelDust");
+    }//GEN-LAST:event_buyAngelDustUSAActionPerformed
+
+    private void buyCrystalMethUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCrystalMethUSAActionPerformed
+        control.buyDrugs("crystalMeth");
+    }//GEN-LAST:event_buyCrystalMethUSAActionPerformed
+
+    private void buyHashUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHashUSAActionPerformed
+        control.buyDrugs("hash");
+    }//GEN-LAST:event_buyHashUSAActionPerformed
+
+    private void buyWeedUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyWeedUSAActionPerformed
+        control.buyDrugs("weed");
+    }//GEN-LAST:event_buyWeedUSAActionPerformed
+
+    private void buyMushroomsUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyMushroomsUSAActionPerformed
+        control.buyDrugs("mushrooms");
+    }//GEN-LAST:event_buyMushroomsUSAActionPerformed
+
+    private void buyCocainUSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainUSAActionPerformed
+        control.buyDrugs("cocain");
+    }//GEN-LAST:event_buyCocainUSAActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -639,15 +1724,60 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JButton afganistanjButton;
     private javax.swing.JLabel afganistanjLabel;
     private javax.swing.JPanel afghanistan;
+    private javax.swing.JButton buyAcidAfghanistan;
+    private javax.swing.JButton buyAcidColumbia;
     private javax.swing.JButton buyAcidDenmark;
+    private javax.swing.JButton buyAcidFrance;
+    private javax.swing.JButton buyAcidGermany;
+    private javax.swing.JButton buyAcidUSA;
+    private javax.swing.JButton buyAmphetamineAfghanistan;
+    private javax.swing.JButton buyAmphetamineColumbia;
     private javax.swing.JButton buyAmphetamineDenmark;
+    private javax.swing.JButton buyAmphetamineFrance;
+    private javax.swing.JButton buyAmphetamineGermany;
+    private javax.swing.JButton buyAmphetamineUSA;
+    private javax.swing.JButton buyAngelDustAfghanistan;
+    private javax.swing.JButton buyAngelDustColumbia;
     private javax.swing.JButton buyAngelDustDenmark;
+    private javax.swing.JButton buyAngelDustFrance;
+    private javax.swing.JButton buyAngelDustGermany;
+    private javax.swing.JButton buyAngelDustUSA;
+    private javax.swing.JButton buyCocainAfghanistan;
+    private javax.swing.JButton buyCocainColumbia;
     private javax.swing.JButton buyCocainDenmark;
+    private javax.swing.JButton buyCocainFrance;
+    private javax.swing.JButton buyCocainGermany;
+    private javax.swing.JButton buyCocainUSA;
+    private javax.swing.JButton buyCrystalMethAfghanistan;
+    private javax.swing.JButton buyCrystalMethColumbia;
     private javax.swing.JButton buyCrystalMethDenmark;
+    private javax.swing.JButton buyCrystalMethFrance;
+    private javax.swing.JButton buyCrystalMethGermany;
+    private javax.swing.JButton buyCrystalMethUSA;
+    private javax.swing.JButton buyHashAfghanistan;
+    private javax.swing.JButton buyHashColumbia;
     private javax.swing.JButton buyHashDenmark;
+    private javax.swing.JButton buyHashFrance;
+    private javax.swing.JButton buyHashGermany;
+    private javax.swing.JButton buyHashUSA;
+    private javax.swing.JButton buyHeroinAfghanistan;
+    private javax.swing.JButton buyHeroinColumbia;
     private javax.swing.JButton buyHeroinDenmark;
+    private javax.swing.JButton buyHeroinFrance;
+    private javax.swing.JButton buyHeroinGermany;
+    private javax.swing.JButton buyHeroinUSA;
+    private javax.swing.JButton buyMushroomsAfghanistan;
+    private javax.swing.JButton buyMushroomsColumbia;
     private javax.swing.JButton buyMushroomsDenmark;
+    private javax.swing.JButton buyMushroomsFrance;
+    private javax.swing.JButton buyMushroomsGermany;
+    private javax.swing.JButton buyMushroomsUSA;
+    private javax.swing.JButton buyWeedAfghanistan;
+    private javax.swing.JButton buyWeedColumbia;
     private javax.swing.JButton buyWeedDenmark;
+    private javax.swing.JButton buyWeedFrance;
+    private javax.swing.JButton buyWeedGermany;
+    private javax.swing.JButton buyWeedUSA;
     private javax.swing.JPanel columbia;
     private javax.swing.JButton columbiajButton;
     private javax.swing.JLabel columbiajLabel;
@@ -661,12 +1791,56 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JButton germanyjButton;
     private javax.swing.JLabel germanyjLabel;
     private javax.swing.JButton highScorejButton;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -678,16 +1852,62 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JLabel pictureFrance;
     private javax.swing.JLabel pictureGermany;
     private javax.swing.JLabel pictureMafia;
+    private javax.swing.JLabel pictureUSA;
     private javax.swing.JLabel pictureWorld;
+    private javax.swing.JButton sellAcidAfghanistan;
+    private javax.swing.JButton sellAcidColumbia;
     private javax.swing.JButton sellAcidDenmark;
+    private javax.swing.JButton sellAcidFrance;
+    private javax.swing.JButton sellAcidGermany;
+    private javax.swing.JButton sellAcidUSA;
+    private javax.swing.JButton sellAmphetamineAfghanistan;
+    private javax.swing.JButton sellAmphetamineColumbia;
     private javax.swing.JButton sellAmphetamineDenmark;
+    private javax.swing.JButton sellAmphetamineFrance;
+    private javax.swing.JButton sellAmphetamineGermany;
+    private javax.swing.JButton sellAmphetamineUSA;
+    private javax.swing.JButton sellAngelDustAfghanistan;
+    private javax.swing.JButton sellAngelDustColumbia;
     private javax.swing.JButton sellAngelDustDenmark;
+    private javax.swing.JButton sellAngelDustFrance;
+    private javax.swing.JButton sellAngelDustGermany;
+    private javax.swing.JButton sellAngelDustUSA;
+    private javax.swing.JButton sellCocainAfghanistan;
+    private javax.swing.JButton sellCocainColumbia;
     private javax.swing.JButton sellCocainDenmark;
+    private javax.swing.JButton sellCocainFrance;
+    private javax.swing.JButton sellCocainGermany;
+    private javax.swing.JButton sellCocainUSA;
+    private javax.swing.JButton sellCrystalMethAfghanistan;
+    private javax.swing.JButton sellCrystalMethColumbia;
     private javax.swing.JButton sellCrystalMethDenmark;
+    private javax.swing.JButton sellCrystalMethFrance;
+    private javax.swing.JButton sellCrystalMethGermany;
+    private javax.swing.JButton sellCrystalMethUSA;
+    private javax.swing.JButton sellHashAfghanistan;
+    private javax.swing.JButton sellHashColumbia;
     private javax.swing.JButton sellHashDenmark;
+    private javax.swing.JButton sellHashFrance;
+    private javax.swing.JButton sellHashGermany;
+    private javax.swing.JButton sellHashUSA;
+    private javax.swing.JButton sellHeroinAfghanistan;
+    private javax.swing.JButton sellHeroinColumbia;
     private javax.swing.JButton sellHeroinDenmark;
+    private javax.swing.JButton sellHeroinFrance;
+    private javax.swing.JButton sellHeroinGermany;
+    private javax.swing.JButton sellHeroinUSA;
+    private javax.swing.JButton sellMushroomsAfghanistan;
+    private javax.swing.JButton sellMushroomsColumbia;
     private javax.swing.JButton sellMushroomsDenmark;
+    private javax.swing.JButton sellMushroomsFrance;
+    private javax.swing.JButton sellMushroomsGermany;
+    private javax.swing.JButton sellMushroomsUSA;
+    private javax.swing.JButton sellWeedAfghanistan;
+    private javax.swing.JButton sellWeedColumbia;
     private javax.swing.JButton sellWeedDenmark;
+    private javax.swing.JButton sellWeedFrance;
+    private javax.swing.JButton sellWeedGermany;
+    private javax.swing.JButton sellWeedUSA;
     private javax.swing.JPanel start;
     private javax.swing.JButton startGamejButton;
     private javax.swing.JButton toWorldAfghanistan;
@@ -722,4 +1942,108 @@ public void setupDenmark() {
         sellMushroomsDenmark.setText("sell " + control.getDrugPrice("mushrooms") + "$");
     }
 
+    public void setupColumbia() {
+        buyHeroinColumbia.setText("Buy " + control.getDrugPrice("heroin") + "$");
+        buyCocainColumbia.setText("buy " + control.getDrugPrice("cocain") + "$");
+        buyAmphetamineColumbia.setText("Buy " + control.getDrugPrice("amphetamine") + "$");
+        buyAcidColumbia.setText("buy " + control.getDrugPrice("acid") + "$");
+        buyAngelDustColumbia.setText("buy " + control.getDrugPrice("angelDust") + "$");
+        buyCrystalMethColumbia.setText("buy " + control.getDrugPrice("crystalMeth") + "$");
+        buyHashColumbia.setText("buy " + control.getDrugPrice("hash") + "$");
+        buyWeedColumbia.setText("buy " + control.getDrugPrice("weed") + "$");
+        buyMushroomsColumbia.setText("buy " + control.getDrugPrice("mushrooms") + "$");
+        sellHeroinColumbia.setText("sell " + control.getDrugPrice("heroin") + "$");
+        sellCocainColumbia.setText("sell " + control.getDrugPrice("cocain") + "$");
+        sellAmphetamineColumbia.setText("sell " + control.getDrugPrice("amphetamine") + "$");
+        sellAcidColumbia.setText("sell " + control.getDrugPrice("acid") + "$");
+        sellAngelDustColumbia.setText("sell " + control.getDrugPrice("angelDust") + "$");
+        sellCrystalMethColumbia.setText("sell " + control.getDrugPrice("crystalMeth") + "$");
+        sellHashColumbia.setText("sell " + control.getDrugPrice("hash") + "$");
+        sellWeedColumbia.setText("sell " + control.getDrugPrice("weed") + "$");
+        sellMushroomsColumbia.setText("sell " + control.getDrugPrice("mushrooms") + "$");
+    }
+
+    public void setupGermany() {
+        buyHeroinGermany.setText("Buy " + control.getDrugPrice("heroin") + "$");
+        buyCocainGermany.setText("buy " + control.getDrugPrice("cocain") + "$");
+        buyAmphetamineGermany.setText("Buy " + control.getDrugPrice("amphetamine") + "$");
+        buyAcidGermany.setText("buy " + control.getDrugPrice("acid") + "$");
+        buyAngelDustGermany.setText("buy " + control.getDrugPrice("angelDust") + "$");
+        buyCrystalMethGermany.setText("buy " + control.getDrugPrice("crystalMeth") + "$");
+        buyHashGermany.setText("buy " + control.getDrugPrice("hash") + "$");
+        buyWeedGermany.setText("buy " + control.getDrugPrice("weed") + "$");
+        buyMushroomsGermany.setText("buy " + control.getDrugPrice("mushrooms") + "$");
+        sellHeroinGermany.setText("sell " + control.getDrugPrice("heroin") + "$");
+        sellCocainGermany.setText("sell " + control.getDrugPrice("cocain") + "$");
+        sellAmphetamineGermany.setText("sell " + control.getDrugPrice("amphetamine") + "$");
+        sellAcidGermany.setText("sell " + control.getDrugPrice("acid") + "$");
+        sellAngelDustGermany.setText("sell " + control.getDrugPrice("angelDust") + "$");
+        sellCrystalMethGermany.setText("sell " + control.getDrugPrice("crystalMeth") + "$");
+        sellHashGermany.setText("sell " + control.getDrugPrice("hash") + "$");
+        sellWeedGermany.setText("sell " + control.getDrugPrice("weed") + "$");
+        sellMushroomsGermany.setText("sell " + control.getDrugPrice("mushrooms") + "$");
+    }
+
+    public void setupFrance() {
+        buyHeroinFrance.setText("Buy " + control.getDrugPrice("heroin") + "$");
+        buyCocainFrance.setText("buy " + control.getDrugPrice("cocain") + "$");
+        buyAmphetamineFrance.setText("Buy " + control.getDrugPrice("amphetamine") + "$");
+        buyAcidFrance.setText("buy " + control.getDrugPrice("acid") + "$");
+        buyAngelDustFrance.setText("buy " + control.getDrugPrice("angelDust") + "$");
+        buyCrystalMethFrance.setText("buy " + control.getDrugPrice("crystalMeth") + "$");
+        buyHashFrance.setText("buy " + control.getDrugPrice("hash") + "$");
+        buyWeedFrance.setText("buy " + control.getDrugPrice("weed") + "$");
+        buyMushroomsFrance.setText("buy " + control.getDrugPrice("mushrooms") + "$");
+        sellHeroinFrance.setText("sell " + control.getDrugPrice("heroin") + "$");
+        sellCocainFrance.setText("sell " + control.getDrugPrice("cocain") + "$");
+        sellAmphetamineFrance.setText("sell " + control.getDrugPrice("amphetamine") + "$");
+        sellAcidFrance.setText("sell " + control.getDrugPrice("acid") + "$");
+        sellAngelDustFrance.setText("sell " + control.getDrugPrice("angelDust") + "$");
+        sellCrystalMethFrance.setText("sell " + control.getDrugPrice("crystalMeth") + "$");
+        sellHashFrance.setText("sell " + control.getDrugPrice("hash") + "$");
+        sellWeedFrance.setText("sell " + control.getDrugPrice("weed") + "$");
+        sellMushroomsFrance.setText("sell " + control.getDrugPrice("mushrooms") + "$");
+    }
+
+    public void setupUSA() {
+        buyHeroinUSA.setText("Buy " + control.getDrugPrice("heroin") + "$");
+        buyCocainUSA.setText("buy " + control.getDrugPrice("cocain") + "$");
+        buyAmphetamineUSA.setText("Buy " + control.getDrugPrice("amphetamine") + "$");
+        buyAcidUSA.setText("buy " + control.getDrugPrice("acid") + "$");
+        buyAngelDustUSA.setText("buy " + control.getDrugPrice("angelDust") + "$");
+        buyCrystalMethUSA.setText("buy " + control.getDrugPrice("crystalMeth") + "$");
+        buyHashUSA.setText("buy " + control.getDrugPrice("hash") + "$");
+        buyWeedUSA.setText("buy " + control.getDrugPrice("weed") + "$");
+        buyMushroomsUSA.setText("buy " + control.getDrugPrice("mushrooms") + "$");
+        sellHeroinUSA.setText("sell " + control.getDrugPrice("heroin") + "$");
+        sellCocainUSA.setText("sell " + control.getDrugPrice("cocain") + "$");
+        sellAmphetamineUSA.setText("sell " + control.getDrugPrice("amphetamine") + "$");
+        sellAcidUSA.setText("sell " + control.getDrugPrice("acid") + "$");
+        sellAngelDustUSA.setText("sell " + control.getDrugPrice("angelDust") + "$");
+        sellCrystalMethUSA.setText("sell " + control.getDrugPrice("crystalMeth") + "$");
+        sellHashUSA.setText("sell " + control.getDrugPrice("hash") + "$");
+        sellWeedUSA.setText("sell " + control.getDrugPrice("weed") + "$");
+        sellMushroomsUSA.setText("sell " + control.getDrugPrice("mushrooms") + "$");
+    }
+
+    public void setupAfghanistan() {
+        buyHeroinAfghanistan.setText("Buy " + control.getDrugPrice("heroin") + "$");
+        buyCocainAfghanistan.setText("buy " + control.getDrugPrice("cocain") + "$");
+        buyAmphetamineAfghanistan.setText("Buy " + control.getDrugPrice("amphetamine") + "$");
+        buyAcidAfghanistan.setText("buy " + control.getDrugPrice("acid") + "$");
+        buyAngelDustAfghanistan.setText("buy " + control.getDrugPrice("angelDust") + "$");
+        buyCrystalMethAfghanistan.setText("buy " + control.getDrugPrice("crystalMeth") + "$");
+        buyHashAfghanistan.setText("buy " + control.getDrugPrice("hash") + "$");
+        buyWeedAfghanistan.setText("buy " + control.getDrugPrice("weed") + "$");
+        buyMushroomsAfghanistan.setText("buy " + control.getDrugPrice("mushrooms") + "$");
+        sellHeroinAfghanistan.setText("sell " + control.getDrugPrice("heroin") + "$");
+        sellCocainAfghanistan.setText("sell " + control.getDrugPrice("cocain") + "$");
+        sellAmphetamineAfghanistan.setText("sell " + control.getDrugPrice("amphetamine") + "$");
+        sellAcidAfghanistan.setText("sell " + control.getDrugPrice("acid") + "$");
+        sellAngelDustAfghanistan.setText("sell " + control.getDrugPrice("angelDust") + "$");
+        sellCrystalMethAfghanistan.setText("sell " + control.getDrugPrice("crystalMeth") + "$");
+        sellHashAfghanistan.setText("sell " + control.getDrugPrice("hash") + "$");
+        sellWeedAfghanistan.setText("sell " + control.getDrugPrice("weed") + "$");
+        sellMushroomsAfghanistan.setText("sell " + control.getDrugPrice("mushrooms") + "$");
+    }
 }

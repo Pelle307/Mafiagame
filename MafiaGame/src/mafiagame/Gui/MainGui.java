@@ -12,14 +12,17 @@ import mafiagame.Logic.Controller;
  * @author pellecarlsen
  */
 public class MainGui extends javax.swing.JFrame {
-Controller control;
+
+    Controller control;
+
     /**
      * Creates new form MainGui
      */
     public MainGui() {
         initComponents();
         control = new Controller();
-        
+        setupDenmark();
+
         jTabbedPane.removeAll();
         jTabbedPane.add("START", start);
     }
@@ -54,6 +57,33 @@ Controller control;
         pictureWorld = new javax.swing.JLabel();
         denmark = new javax.swing.JPanel();
         toWorldDenmark = new javax.swing.JButton();
+        sellCocainDenmark = new javax.swing.JButton();
+        buyHeroinDenmark = new javax.swing.JButton();
+        buyAmphetamineDenmark = new javax.swing.JButton();
+        buyAcidDenmark = new javax.swing.JButton();
+        buyAngelDustDenmark = new javax.swing.JButton();
+        buyCrystalMethDenmark = new javax.swing.JButton();
+        buyHashDenmark = new javax.swing.JButton();
+        buyWeedDenmark = new javax.swing.JButton();
+        buyMushroomsDenmark = new javax.swing.JButton();
+        sellHeroinDenmark = new javax.swing.JButton();
+        sellAmphetamineDenmark = new javax.swing.JButton();
+        sellAcidDenmark = new javax.swing.JButton();
+        sellAngelDustDenmark = new javax.swing.JButton();
+        sellCrystalMethDenmark = new javax.swing.JButton();
+        sellHashDenmark = new javax.swing.JButton();
+        sellWeedDenmark = new javax.swing.JButton();
+        sellMushroomsDenmark = new javax.swing.JButton();
+        buyCocainDenmark = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         pictureDenmark = new javax.swing.JLabel();
         columbia = new javax.swing.JPanel();
         toWorldColumbia = new javax.swing.JButton();
@@ -84,7 +114,7 @@ Controller control;
             }
         });
         start.add(startGamejButton);
-        startGamejButton.setBounds(250, 450, 130, 29);
+        startGamejButton.setBounds(250, 450, 130, 25);
 
         highScorejButton.setText("High Score");
         highScorejButton.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +123,7 @@ Controller control;
             }
         });
         start.add(highScorejButton);
-        highScorejButton.setBounds(250, 490, 130, 29);
+        highScorejButton.setBounds(250, 490, 130, 25);
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);
@@ -196,7 +226,160 @@ Controller control;
             }
         });
         denmark.add(toWorldDenmark);
-        toWorldDenmark.setBounds(500, 570, 90, 29);
+        toWorldDenmark.setBounds(500, 570, 90, 25);
+
+        sellCocainDenmark.setText("SELL");
+        denmark.add(sellCocainDenmark);
+        sellCocainDenmark.setBounds(150, 50, 130, 25);
+
+        buyHeroinDenmark.setText("BUY");
+        buyHeroinDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHeroinDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyHeroinDenmark);
+        buyHeroinDenmark.setBounds(410, 80, 130, 25);
+
+        buyAmphetamineDenmark.setText("BUY");
+        buyAmphetamineDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAmphetamineDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyAmphetamineDenmark);
+        buyAmphetamineDenmark.setBounds(410, 110, 130, 25);
+
+        buyAcidDenmark.setText("BUY");
+        buyAcidDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAcidDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyAcidDenmark);
+        buyAcidDenmark.setBounds(410, 140, 130, 25);
+
+        buyAngelDustDenmark.setText("BUY");
+        buyAngelDustDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyAngelDustDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyAngelDustDenmark);
+        buyAngelDustDenmark.setBounds(410, 170, 130, 25);
+
+        buyCrystalMethDenmark.setText("BUY");
+        buyCrystalMethDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCrystalMethDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyCrystalMethDenmark);
+        buyCrystalMethDenmark.setBounds(410, 200, 130, 25);
+
+        buyHashDenmark.setText("BUY");
+        buyHashDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyHashDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyHashDenmark);
+        buyHashDenmark.setBounds(410, 230, 130, 25);
+
+        buyWeedDenmark.setText("BUY");
+        buyWeedDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyWeedDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyWeedDenmark);
+        buyWeedDenmark.setBounds(410, 260, 130, 25);
+
+        buyMushroomsDenmark.setText("BUY");
+        buyMushroomsDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyMushroomsDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyMushroomsDenmark);
+        buyMushroomsDenmark.setBounds(410, 290, 130, 25);
+
+        sellHeroinDenmark.setText("SELL");
+        denmark.add(sellHeroinDenmark);
+        sellHeroinDenmark.setBounds(150, 80, 130, 25);
+
+        sellAmphetamineDenmark.setText("SELL");
+        denmark.add(sellAmphetamineDenmark);
+        sellAmphetamineDenmark.setBounds(150, 110, 130, 25);
+
+        sellAcidDenmark.setText("SELL");
+        denmark.add(sellAcidDenmark);
+        sellAcidDenmark.setBounds(150, 140, 130, 25);
+
+        sellAngelDustDenmark.setText("SELL");
+        denmark.add(sellAngelDustDenmark);
+        sellAngelDustDenmark.setBounds(150, 170, 130, 25);
+
+        sellCrystalMethDenmark.setText("SELL");
+        denmark.add(sellCrystalMethDenmark);
+        sellCrystalMethDenmark.setBounds(150, 200, 130, 25);
+
+        sellHashDenmark.setText("SELL");
+        denmark.add(sellHashDenmark);
+        sellHashDenmark.setBounds(150, 230, 130, 25);
+
+        sellWeedDenmark.setText("SELL");
+        denmark.add(sellWeedDenmark);
+        sellWeedDenmark.setBounds(150, 260, 130, 25);
+
+        sellMushroomsDenmark.setText("SELL");
+        denmark.add(sellMushroomsDenmark);
+        sellMushroomsDenmark.setBounds(150, 290, 130, 25);
+
+        buyCocainDenmark.setText("BUY");
+        buyCocainDenmark.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buyCocainDenmarkActionPerformed(evt);
+            }
+        });
+        denmark.add(buyCocainDenmark);
+        buyCocainDenmark.setBounds(410, 50, 130, 25);
+
+        jLabel2.setText("Heroin");
+        denmark.add(jLabel2);
+        jLabel2.setBounds(50, 80, 70, 16);
+
+        jLabel3.setText("Amphetamine");
+        denmark.add(jLabel3);
+        jLabel3.setBounds(50, 110, 80, 16);
+
+        jLabel4.setText("Acid");
+        denmark.add(jLabel4);
+        jLabel4.setBounds(50, 140, 80, 16);
+
+        jLabel5.setText("Angel Dust");
+        denmark.add(jLabel5);
+        jLabel5.setBounds(50, 170, 61, 16);
+
+        jLabel6.setText("Crystal Meth");
+        denmark.add(jLabel6);
+        jLabel6.setBounds(50, 200, 90, 16);
+
+        jLabel7.setText("Hash");
+        denmark.add(jLabel7);
+        jLabel7.setBounds(50, 230, 60, 16);
+
+        jLabel8.setText("Weed");
+        denmark.add(jLabel8);
+        jLabel8.setBounds(50, 260, 33, 16);
+
+        jLabel9.setText("Mushrooms");
+        denmark.add(jLabel9);
+        jLabel9.setBounds(50, 290, 80, 16);
+
+        jLabel10.setText("Cocain");
+        denmark.add(jLabel10);
+        jLabel10.setBounds(50, 50, 60, 16);
 
         pictureDenmark.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/denmark.png"))); // NOI18N
         denmark.add(pictureDenmark);
@@ -213,7 +396,7 @@ Controller control;
             }
         });
         columbia.add(toWorldColumbia);
-        toWorldColumbia.setBounds(500, 570, 90, 29);
+        toWorldColumbia.setBounds(500, 570, 90, 25);
 
         pictureColumbia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/Colombia.jpg"))); // NOI18N
         pictureColumbia.setText("jLabel3");
@@ -231,7 +414,7 @@ Controller control;
             }
         });
         germany.add(toWorldGermany);
-        toWorldGermany.setBounds(500, 570, 90, 29);
+        toWorldGermany.setBounds(500, 570, 90, 25);
 
         pictureGermany.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/germany-distance-map.gif"))); // NOI18N
         germany.add(pictureGermany);
@@ -248,7 +431,7 @@ Controller control;
             }
         });
         france.add(toWorldFrance);
-        toWorldFrance.setBounds(500, 570, 90, 29);
+        toWorldFrance.setBounds(500, 570, 90, 25);
 
         pictureFrance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/france.jpg"))); // NOI18N
         france.add(pictureFrance);
@@ -265,7 +448,7 @@ Controller control;
             }
         });
         usa.add(toWorldUSA);
-        toWorldUSA.setBounds(500, 570, 90, 29);
+        toWorldUSA.setBounds(500, 570, 90, 25);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/usa.jpg"))); // NOI18N
         usa.add(jLabel1);
@@ -282,7 +465,7 @@ Controller control;
             }
         });
         afghanistan.add(toWorldAfghanistan);
-        toWorldAfghanistan.setBounds(510, 570, 90, 29);
+        toWorldAfghanistan.setBounds(510, 570, 90, 25);
 
         pictureAfghanistan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/800px-Afghanistan_locator_map.svg.png"))); // NOI18N
         afghanistan.add(pictureAfghanistan);
@@ -316,6 +499,7 @@ Controller control;
 
     private void denmarkjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_denmarkjButtonActionPerformed
         control.setCurrentCountry("Denmark");
+        setupDenmark();
         jTabbedPane.removeAll();
         jTabbedPane.add("DENMARK", denmark);
     }//GEN-LAST:event_denmarkjButtonActionPerformed
@@ -380,6 +564,42 @@ Controller control;
         jTabbedPane.add("WORLD", world);
     }//GEN-LAST:event_toWorldAfghanistanActionPerformed
 
+    private void buyCocainDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainDenmarkActionPerformed
+        control.buyDrugs("cocain");
+    }//GEN-LAST:event_buyCocainDenmarkActionPerformed
+
+    private void buyHeroinDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHeroinDenmarkActionPerformed
+        control.buyDrugs("heroin");
+    }//GEN-LAST:event_buyHeroinDenmarkActionPerformed
+
+    private void buyAmphetamineDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAmphetamineDenmarkActionPerformed
+        control.buyDrugs("amphetamine");
+    }//GEN-LAST:event_buyAmphetamineDenmarkActionPerformed
+
+    private void buyAcidDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAcidDenmarkActionPerformed
+        control.buyDrugs("acid");
+    }//GEN-LAST:event_buyAcidDenmarkActionPerformed
+
+    private void buyAngelDustDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyAngelDustDenmarkActionPerformed
+        control.buyDrugs("angelDust");
+    }//GEN-LAST:event_buyAngelDustDenmarkActionPerformed
+
+    private void buyCrystalMethDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCrystalMethDenmarkActionPerformed
+        control.buyDrugs("crystalMeth");
+    }//GEN-LAST:event_buyCrystalMethDenmarkActionPerformed
+
+    private void buyHashDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyHashDenmarkActionPerformed
+        control.buyDrugs("hash");
+    }//GEN-LAST:event_buyHashDenmarkActionPerformed
+
+    private void buyWeedDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyWeedDenmarkActionPerformed
+        control.buyDrugs("weed");
+    }//GEN-LAST:event_buyWeedDenmarkActionPerformed
+
+    private void buyMushroomsDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyMushroomsDenmarkActionPerformed
+        control.buyDrugs("mushrooms");
+    }//GEN-LAST:event_buyMushroomsDenmarkActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -419,6 +639,15 @@ Controller control;
     private javax.swing.JButton afganistanjButton;
     private javax.swing.JLabel afganistanjLabel;
     private javax.swing.JPanel afghanistan;
+    private javax.swing.JButton buyAcidDenmark;
+    private javax.swing.JButton buyAmphetamineDenmark;
+    private javax.swing.JButton buyAngelDustDenmark;
+    private javax.swing.JButton buyCocainDenmark;
+    private javax.swing.JButton buyCrystalMethDenmark;
+    private javax.swing.JButton buyHashDenmark;
+    private javax.swing.JButton buyHeroinDenmark;
+    private javax.swing.JButton buyMushroomsDenmark;
+    private javax.swing.JButton buyWeedDenmark;
     private javax.swing.JPanel columbia;
     private javax.swing.JButton columbiajButton;
     private javax.swing.JLabel columbiajLabel;
@@ -433,6 +662,15 @@ Controller control;
     private javax.swing.JLabel germanyjLabel;
     private javax.swing.JButton highScorejButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTabbedPane jTabbedPane;
     private javax.swing.JLabel pictureAfghanistan;
     private javax.swing.JLabel pictureColumbia;
@@ -441,6 +679,15 @@ Controller control;
     private javax.swing.JLabel pictureGermany;
     private javax.swing.JLabel pictureMafia;
     private javax.swing.JLabel pictureWorld;
+    private javax.swing.JButton sellAcidDenmark;
+    private javax.swing.JButton sellAmphetamineDenmark;
+    private javax.swing.JButton sellAngelDustDenmark;
+    private javax.swing.JButton sellCocainDenmark;
+    private javax.swing.JButton sellCrystalMethDenmark;
+    private javax.swing.JButton sellHashDenmark;
+    private javax.swing.JButton sellHeroinDenmark;
+    private javax.swing.JButton sellMushroomsDenmark;
+    private javax.swing.JButton sellWeedDenmark;
     private javax.swing.JPanel start;
     private javax.swing.JButton startGamejButton;
     private javax.swing.JButton toWorldAfghanistan;
@@ -454,4 +701,25 @@ Controller control;
     private javax.swing.JLabel usajLabel;
     private javax.swing.JPanel world;
     // End of variables declaration//GEN-END:variables
+public void setupDenmark() {
+        buyHeroinDenmark.setText("Buy " + control.getDrugPrice("heroin") + "$");
+        buyCocainDenmark.setText("buy " + control.getDrugPrice("cocain") + "$");
+        buyAmphetamineDenmark.setText("Buy " + control.getDrugPrice("amphetamine") + "$");
+        buyAcidDenmark.setText("buy " + control.getDrugPrice("acid") + "$");
+        buyAngelDustDenmark.setText("buy " + control.getDrugPrice("angelDust") + "$");
+        buyCrystalMethDenmark.setText("buy " + control.getDrugPrice("crystalMeth") + "$");
+        buyHashDenmark.setText("buy " + control.getDrugPrice("hash") + "$");
+        buyWeedDenmark.setText("buy " + control.getDrugPrice("weed") + "$");
+        buyMushroomsDenmark.setText("buy " + control.getDrugPrice("mushrooms") + "$");
+        sellHeroinDenmark.setText("sell " + control.getDrugPrice("heroin") + "$");
+        sellCocainDenmark.setText("sell " + control.getDrugPrice("cocain") + "$");
+        sellAmphetamineDenmark.setText("sell " + control.getDrugPrice("amphetamine") + "$");
+        sellAcidDenmark.setText("sell " + control.getDrugPrice("acid") + "$");
+        sellAngelDustDenmark.setText("sell " + control.getDrugPrice("angelDust") + "$");
+        sellCrystalMethDenmark.setText("sell " + control.getDrugPrice("crystalMeth") + "$");
+        sellHashDenmark.setText("sell " + control.getDrugPrice("hash") + "$");
+        sellWeedDenmark.setText("sell " + control.getDrugPrice("weed") + "$");
+        sellMushroomsDenmark.setText("sell " + control.getDrugPrice("mushrooms") + "$");
+    }
+
 }

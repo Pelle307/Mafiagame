@@ -14,13 +14,9 @@ import mafiagame.Interfaces.ControlInterface;
  * @author Ebbe
  */
 public class Controller implements ControlInterface {
-    Cocain coke;
-    Heroin h;
     Random r;
 
     public Controller() {
-        coke = new Cocain(1200,30);
-        h = new Heroin(1600,15);
         r = new Random();
     }
 
@@ -30,12 +26,12 @@ public class Controller implements ControlInterface {
         int change;
         if (positive()) {
             holder = r.nextInt((85)+1);
-            change = (coke.getPrice() * holder) / 100;
-            coke.setPrice(coke.getPrice() + change);
+            change = (drugs.getPrice * holder) / 100;
+            drugs.setPrice = drugs.getPrice + change;
         } else {
             holder = (r.nextInt((85)+1));
-            change = (coke.getPrice() * holder) / 100;
-            coke.setPrice(coke.getPrice() - change);
+            change = (drugs.getPrice * holder) / 100;
+            drugs.setPrice = drugs.getPrice - change;
         }
     }
 
@@ -45,12 +41,12 @@ public class Controller implements ControlInterface {
         int change;
         if (positive()) {
             holder = r.nextInt((40)+15);
-            change = (coke.getAvailability() * holder) /100;
-            coke.setAvailability(coke.getAvailability() + change);
+            change = (drugs.getAvailability * holder) /100;
+            drugs.setAvailability = drugs.getAvailability + change;
         } else {
             holder = (r.nextInt((40)+15));
-            change = (coke.getAvailability() * holder) / 100;
-            coke.setAvailability(coke.getAvailability() - change);
+            change = (drugs.getAvailability * holder) / 100;
+            drugs.setAvailability = drugs.getAvailability - change;
         }
     }
 
@@ -85,5 +81,6 @@ public class Controller implements ControlInterface {
     @Override
     public void sellHeroin(int price) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }    
+    }
+    
 }

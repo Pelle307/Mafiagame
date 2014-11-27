@@ -159,5 +159,40 @@ public class Country{
             return false;
         }
     }
+    
+    public int getDrugPrice(String drug) {
+        int drugPrice = 0;
+        switch(drug) {
+            case "cocain":
+                drugPrice = cocain.getPrice();
+                break;
+            case "heroin":
+                drugPrice = heroin.getPrice();
+                break;
+            case "amphetamine":
+                drugPrice = amphetamine.getPrice();
+                break;
+            case "crystalMeth":
+                drugPrice = crystalMeth.getPrice();
+                break;
+            case "acid":
+                drugPrice = acid.getPrice();
+                break;
+            case "weed":
+                drugPrice = weed.getPrice();
+                break;
+            case "hash":
+                drugPrice = hash.getPrice();
+                break;
+            case "angelDust":
+                drugPrice = angelDust.getPrice();
+                break;
+            case "mushrooms":
+                drugPrice = mushrooms.getPrice();
+                break;
+        }
+        return drugPrice;
+        
+    }
 
 }

@@ -122,6 +122,41 @@ public class Controller implements ControlInterface {
         System.out.println(currentCountry);
     }
 
+    public int getDrugPrice(String drug) {
+        int drugPrice = 0;
+        switch (drug) {
+            case "cocain":
+                drugPrice = currentCountry.getDrugPrice("cocain");
+                break;
+            case "heroin":
+                drugPrice = currentCountry.getDrugPrice("heroin");
+                break;
+            case "amphetamine":
+                drugPrice = currentCountry.getDrugPrice("amphetamine");
+                break;
+            case "crystalMeth":
+                drugPrice = currentCountry.getDrugPrice("crystalMeth");
+                break;
+            case "acid":
+                drugPrice = currentCountry.getDrugPrice("acid");
+                break;
+            case "weed":
+                drugPrice = currentCountry.getDrugPrice("weed");
+                break;
+            case "hash":
+                drugPrice = currentCountry.getDrugPrice("hash");
+                break;
+            case "angelDust":
+                drugPrice = currentCountry.getDrugPrice("angelDust");
+                break;
+            case "mushrooms":
+                drugPrice = currentCountry.getDrugPrice("mushrooms");
+                break;
+
+        }
+        return drugPrice;
+    }
+
     public void test() {
         drugs = StringReader.readString(paul.getDrugs());
         System.out.println(drugs);

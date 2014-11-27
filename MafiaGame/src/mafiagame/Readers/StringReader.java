@@ -46,12 +46,4 @@ public class StringReader {
         // }
         return drugs;
     }
-    public static String saveString(ArrayList<Integer> drug,String s){
-        Scanner scan = new Scanner(s);
-        ArrayList<Integer> drugs = drug;
-        
-        String drugString = drugs.toString();
-        return drugString;
-        
-    }
 }

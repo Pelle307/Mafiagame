@@ -64,22 +64,22 @@ public class Controller implements ControlInterface {
         String current = country;
         System.out.println(currentCountry);
         switch (current) {
-            case "denmark":
+            case "Denmark":
                 this.currentCountry = this.denmark;
                 break;
-            case "columbia":
+            case "Columbia":
                 this.currentCountry = this.columbia;
                 break;
-            case "germany":
+            case "Germany":
                 this.currentCountry = this.germany;
                 break;
-            case "usa":
+            case "USA":
                 this.currentCountry = this.usa;
                 break;
-            case "france":
+            case "France":
                 this.currentCountry = this.france;
                 break;
-            case "afghanistan":
+            case "Afghanistan":
                 this.currentCountry = this.afghanistan;
                 break;
         }

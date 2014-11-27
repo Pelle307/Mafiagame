@@ -84,7 +84,7 @@ Controller control;
             }
         });
         start.add(startGamejButton);
-        startGamejButton.setBounds(250, 450, 130, 29);
+        startGamejButton.setBounds(250, 450, 130, 25);
 
         highScorejButton.setText("High Score");
         highScorejButton.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ Controller control;
             }
         });
         start.add(highScorejButton);
-        highScorejButton.setBounds(250, 490, 130, 29);
+        highScorejButton.setBounds(250, 490, 130, 25);
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);
@@ -294,11 +294,11 @@ Controller control;
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane)
+            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 613, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane)
+            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 637, Short.MAX_VALUE)
         );
 
         pack();
@@ -306,7 +306,6 @@ Controller control;
 
     private void highScorejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highScorejButtonActionPerformed
         // TODO add your handling code here:
-        control.setCurrentCountry("germany");
     }//GEN-LAST:event_highScorejButtonActionPerformed
 
     private void startGamejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGamejButtonActionPerformed
@@ -315,31 +314,37 @@ Controller control;
     }//GEN-LAST:event_startGamejButtonActionPerformed
 
     private void denmarkjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_denmarkjButtonActionPerformed
+        control.setCurrentCountry("Denmark");
         jTabbedPane.removeAll();
         jTabbedPane.add("DENMARK", denmark);
     }//GEN-LAST:event_denmarkjButtonActionPerformed
 
     private void germanyjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_germanyjButtonActionPerformed
+        control.setCurrentCountry("Germany");
         jTabbedPane.removeAll();
         jTabbedPane.add("GERMANY", germany);
     }//GEN-LAST:event_germanyjButtonActionPerformed
 
     private void francejButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_francejButton1ActionPerformed
+        control.setCurrentCountry("France");
         jTabbedPane.removeAll();
         jTabbedPane.add("FRANCE", france);
     }//GEN-LAST:event_francejButton1ActionPerformed
 
     private void afganistanjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_afganistanjButtonActionPerformed
+        control.setCurrentCountry("Afghanistan");
         jTabbedPane.removeAll();
         jTabbedPane.add("AFGHANISTAN", afghanistan);
     }//GEN-LAST:event_afganistanjButtonActionPerformed
 
     private void usajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usajButtonActionPerformed
+        control.setCurrentCountry("USA");
         jTabbedPane.removeAll();
         jTabbedPane.add("USA", usa);
     }//GEN-LAST:event_usajButtonActionPerformed
 
     private void columbiajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_columbiajButtonActionPerformed
+        control.setCurrentCountry("Columbia");
         jTabbedPane.removeAll();
         jTabbedPane.add("COLUMBIA", columbia);
     }//GEN-LAST:event_columbiajButtonActionPerformed

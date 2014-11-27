@@ -25,15 +25,6 @@ public class Controller implements ControlInterface {
     Country usa;
     Country france;
     Country afghanistan;
-    Drug heroin;
-    Drug cocain;
-    Drug amphetamine;
-    Drug acid;
-    Drug angelDust;
-    Drug crystalMeth;
-    Drug hash;
-    Drug weed;
-    Drug mushrooms;
     Country currentCountry;
 
     public Controller() {
@@ -46,15 +37,6 @@ public class Controller implements ControlInterface {
         usa = new Country("USA");
         france = new Country("France");
         afghanistan = new Country("Afghanistan");
-        heroin = new Drug("Heroin", 1600, 15);
-        cocain = new Drug("Cocain", 1200, 30);
-        amphetamine = new Drug("Amphetamine", 200, 50);
-        acid = new Drug("Acid", 550, 33);
-        angelDust = new Drug("Angel dust", 400, 60);
-        crystalMeth = new Drug("Crystal meth", 800, 38);
-        hash = new Drug("Hash", 180, 100);
-        weed = new Drug("Weed", 150, 115);
-        mushrooms = new Drug("Mushrooms", 120, 95);
     }
 
     @Override

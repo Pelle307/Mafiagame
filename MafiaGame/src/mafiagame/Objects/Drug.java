@@ -48,4 +48,11 @@ public class Drug implements DrugInterface {
         this.availability = availability;
     }
 
+    @Override
+    public String toString() {
+        return "name=" + name + ", price=" + price + ", availability=" + availability + '}';
+    }
+    
+    
+
 }

@@ -100,6 +100,8 @@ public class Country implements CountryInterface {
                 drug.setPrice(price);
 
             }
+            System.out.println(drug);
+            System.out.println("price " + drug.getPrice());
         }
     }
 

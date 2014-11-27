@@ -83,9 +83,9 @@ public class Controller implements ControlInterface {
                 this.currentCountry = this.afghanistan;
                 break;
         }
+        System.out.println(currentCountry);
         currentCountry.changeAvailability();
         currentCountry.changePrice();
-        System.out.println(currentCountry);
     }
 
 }

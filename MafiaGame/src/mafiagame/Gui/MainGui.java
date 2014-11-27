@@ -84,7 +84,7 @@ Controller control;
             }
         });
         start.add(startGamejButton);
-        startGamejButton.setBounds(250, 450, 130, 25);
+        startGamejButton.setBounds(250, 450, 130, 29);
 
         highScorejButton.setText("High Score");
         highScorejButton.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ Controller control;
             }
         });
         start.add(highScorejButton);
-        highScorejButton.setBounds(250, 490, 130, 25);
+        highScorejButton.setBounds(250, 490, 130, 29);
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);
@@ -196,7 +196,7 @@ Controller control;
             }
         });
         denmark.add(toWorldDenmark);
-        toWorldDenmark.setBounds(500, 570, 90, 25);
+        toWorldDenmark.setBounds(500, 570, 90, 29);
 
         pictureDenmark.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/denmark.png"))); // NOI18N
         denmark.add(pictureDenmark);
@@ -213,7 +213,7 @@ Controller control;
             }
         });
         columbia.add(toWorldColumbia);
-        toWorldColumbia.setBounds(500, 570, 90, 25);
+        toWorldColumbia.setBounds(500, 570, 90, 29);
 
         pictureColumbia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/Colombia.jpg"))); // NOI18N
         pictureColumbia.setText("jLabel3");
@@ -231,7 +231,7 @@ Controller control;
             }
         });
         germany.add(toWorldGermany);
-        toWorldGermany.setBounds(500, 570, 90, 25);
+        toWorldGermany.setBounds(500, 570, 90, 29);
 
         pictureGermany.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/germany-distance-map.gif"))); // NOI18N
         germany.add(pictureGermany);
@@ -248,7 +248,7 @@ Controller control;
             }
         });
         france.add(toWorldFrance);
-        toWorldFrance.setBounds(500, 570, 90, 25);
+        toWorldFrance.setBounds(500, 570, 90, 29);
 
         pictureFrance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/france.jpg"))); // NOI18N
         france.add(pictureFrance);
@@ -265,7 +265,7 @@ Controller control;
             }
         });
         usa.add(toWorldUSA);
-        toWorldUSA.setBounds(500, 570, 90, 25);
+        toWorldUSA.setBounds(500, 570, 90, 29);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/usa.jpg"))); // NOI18N
         usa.add(jLabel1);
@@ -282,7 +282,7 @@ Controller control;
             }
         });
         afghanistan.add(toWorldAfghanistan);
-        toWorldAfghanistan.setBounds(510, 570, 90, 25);
+        toWorldAfghanistan.setBounds(510, 570, 90, 29);
 
         pictureAfghanistan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/800px-Afghanistan_locator_map.svg.png"))); // NOI18N
         afghanistan.add(pictureAfghanistan);
@@ -306,6 +306,7 @@ Controller control;
 
     private void highScorejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highScorejButtonActionPerformed
         // TODO add your handling code here:
+        control.test();
     }//GEN-LAST:event_highScorejButtonActionPerformed
 
     private void startGamejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGamejButtonActionPerformed

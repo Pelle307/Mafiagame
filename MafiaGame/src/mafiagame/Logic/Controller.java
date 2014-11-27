@@ -5,17 +5,20 @@
  */
 package mafiagame.Logic;
 
+import java.util.ArrayList;
 import java.util.Random;
 import mafiagame.Interfaces.ControlInterface;
 import mafiagame.Objects.Country;
 import mafiagame.Objects.Drug;
 import mafiagame.Objects.Player;
+import mafiagame.Readers.StringReader;
 
 /**
  *
  * @author Ebbe
  */
 public class Controller implements ControlInterface {
+    ArrayList<Integer> drugs = new ArrayList();
 
     Random r;
     Player paul;
@@ -83,9 +86,13 @@ public class Controller implements ControlInterface {
                 this.currentCountry = this.afghanistan;
                 break;
         }
-        System.out.println(currentCountry);
+        
         currentCountry.changeAvailability();
         currentCountry.changePrice();
+        System.out.println(currentCountry);
     }
-
+public void test(){
+    drugs = StringReader.readString(paul.getDrugs());
+    System.out.println(drugs);
+}
 }

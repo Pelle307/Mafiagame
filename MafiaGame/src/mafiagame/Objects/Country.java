@@ -6,13 +6,12 @@
 package mafiagame.Objects;
 
 import java.util.Random;
-import mafiagame.Interfaces.CountryInterface;
 
 /**
  *
  * @author pellecarlsen
  */
-public class Country implements CountryInterface {
+public class Country{
 
     String countryName;
     Random r;
@@ -46,12 +45,10 @@ public class Country implements CountryInterface {
         return "countryName =" + countryName;
     }
 
-    @Override
     public String getCountryName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public void changePrice() {
         Drug drug = this.heroin;
         int price;
@@ -90,22 +87,19 @@ public class Country implements CountryInterface {
             }
             if (positive()) {
                 holder = r.nextInt((85) + 1);
-                change = (drug.getPrice() * holder) / 100;
+                change = (drug.getBasePrice() * holder) / 100;
                 price = drug.getPrice() + change;
                 drug.setPrice(price);
             } else {
                 holder = r.nextInt((85) + 1);
-                change = (drug.getPrice() * holder) / 100;
+                change = (drug.getBasePrice() * holder) / 100;
                 price = drug.getPrice() - change;
                 drug.setPrice(price);
 
             }
-            System.out.println(drug);
-            System.out.println("price " + drug.getPrice());
         }
     }
 
-    @Override
     public void changeAvailability() {
         Drug drug = this.heroin;
         int availability;
@@ -144,12 +138,12 @@ public class Country implements CountryInterface {
             }
             if (positive()) {
                 holder = r.nextInt((40) + 15);
-                change = (drug.getAvailability() * holder) / 100;
+                change = (drug.getBaseAvailability() * holder) / 100;
                 availability = drug.getAvailability() + change;
                 drug.setAvailability(availability);
             } else {
                 holder = r.nextInt((40) + 15);
-                change = (drug.getAvailability() * holder) / 100;
+                change = (drug.getBaseAvailability() * holder) / 100;
                 availability = drug.getAvailability() - change;
                 drug.setAvailability(availability);
 
@@ -157,7 +151,6 @@ public class Country implements CountryInterface {
         }
     }
 
-    @Override
     public boolean positive() {
         int a = r.nextInt(2);
         if (a == 0) {

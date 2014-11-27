@@ -5,54 +5,53 @@
  */
 package mafiagame.Objects;
 
-import mafiagame.Interfaces.DrugInterface;
 
 /**
  *
  * @author pellecarlsen
  */
-public class Drug implements DrugInterface {
+public class Drug{
 
     String name;
     private int price;
+    private int basePrice;
     private int availability;
+    private int baseAvailability;
 
     public Drug(String name, int price, int availability) {
         this.name = name;
         this.price = price;
+        this.basePrice = price;
         this.availability = availability;
+        this.baseAvailability = availability;
     }
 
-    @Override
     public int getPrice() {
         return this.price;
     }
 
-    @Override
     public int getAvailability() {
         return this.availability;
     }
 
-    @Override
+    public int getBasePrice() {
+        return this.basePrice;
+    }
+
+    public int getBaseAvailability() {
+        return baseAvailability;
+    }
+
     public String getName() {
         return this.name;
     }
 
-    @Override
     public void setPrice(int price) {
         this.price = price;
     }
 
-    @Override
     public void setAvailability(int availability) {
         this.availability = availability;
     }
-
-    @Override
-    public String toString() {
-        return "name=" + name + ", price=" + price + ", availability=" + availability + '}';
-    }
-    
-    
 
 }

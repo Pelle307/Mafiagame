@@ -71,17 +71,18 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void changeAvailability() {
-        int holder;
-        int change;
+    public int changeAvailability(int availability) {
+        int holder, change, newAvailability;
         if (positive()) {
             holder = r.nextInt((40) + 15);
-            change = (drugs.getAvailability * holder) / 100;
-            drugs.setAvailability = drugs.getAvailability + change;
+            change = (availability * holder) / 100;
+            newAvailability = availability + change;
+            return newAvailability;
         } else {
             holder = (r.nextInt((40) + 15));
-            change = (drugs.getAvailability * holder) / 100;
-            drugs.setAvailability = drugs.getAvailability - change;
+            change = (availability * holder) / 100;
+            newAvailability = availability - change;
+            return newAvailability;
         }
     }
 

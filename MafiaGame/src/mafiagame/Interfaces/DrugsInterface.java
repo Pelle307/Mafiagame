@@ -12,6 +12,7 @@ package mafiagame.Interfaces;
 public interface DrugsInterface {
     int getPrice();
     int getAvailability();
+    String getName();
     void setPrice(int price);
     void setAvailability(int availability);
 }

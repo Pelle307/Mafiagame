@@ -5,67 +5,64 @@
  */
 package mafiagame.Objects;
 
-import mafiagame.Interfaces.PlayerInterface;
-
 /**
  *
  * @author pellecarlsen
  */
-public class Player implements PlayerInterface{
-int dollars;
-int hp;
-int turn;
-int currentCocain;
-int currentHeroin;
+public class Player {
 
-    @Override
+    int dollars;
+    int hp;
+    int turn;
+    int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid = 0;
+
+    public Player() {
+        dollars = 5000;
+        hp = 100;
+        turn = 20;
+    }
+
     public int getDollars() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.dollars;
     }
 
-    @Override
     public int getHp() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.hp;
     }
 
-    @Override
-    public int getCurrentHeroin() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getDrugs() {
+        String drugs;
+        drugs = heroin + "," + cocain + "," + amphetamine + ","
+                + acid + "," + angelDust + "," + crystalMeth + "," + hash
+                + "," + weed + "," + mushrooms;
+        System.out.println(drugs);
+        return drugs;
     }
 
-    @Override
-    public int getCurrentCocain() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public int getTurn() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public void setDollars(int dollars) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public void setHp(int hp) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
-    public void setCurrentHeroin(int heroin) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setDrugs(String heroin, String cocain, String amphetamine, String acid, String angelDust, String crystalMeth, String hash, String weed, String mushrooms) {
+        String drugs = heroin + "," + cocain + "," + amphetamine + ","
+                + acid + "," + angelDust + "," + crystalMeth + "," + hash
+                + "," + weed + "," + mushrooms;
     }
 
-    @Override
     public void setCurrentCocain(int cocain) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public void setTurn(int turn) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

@@ -38,8 +38,16 @@ Controller control;
         world = new javax.swing.JPanel();
         denmarkjButton = new javax.swing.JButton();
         columbiajButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        germanyjButton = new javax.swing.JButton();
+        francejButton1 = new javax.swing.JButton();
+        usajButton = new javax.swing.JButton();
+        afganistanjButton = new javax.swing.JButton();
+        denmarkjLabel = new javax.swing.JLabel();
+        columbiajLabel = new javax.swing.JLabel();
+        germanyjLabel = new javax.swing.JLabel();
+        francejLabel = new javax.swing.JLabel();
+        usajLabel = new javax.swing.JLabel();
+        afganistanjLabel = new javax.swing.JLabel();
         pictureWorld = new javax.swing.JLabel();
         denmark = new javax.swing.JPanel();
         pictureDenmark = new javax.swing.JLabel();
@@ -54,7 +62,7 @@ Controller control;
 
         startGamejButton.setText("Start Game");
         start.add(startGamejButton);
-        startGamejButton.setBounds(250, 450, 130, 29);
+        startGamejButton.setBounds(250, 450, 130, 25);
 
         highScorejButton.setText("High Score");
         highScorejButton.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +71,7 @@ Controller control;
             }
         });
         start.add(highScorejButton);
-        highScorejButton.setBounds(250, 490, 130, 29);
+        highScorejButton.setBounds(250, 490, 130, 25);
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);
@@ -76,16 +84,44 @@ Controller control;
         denmarkjButton.setBounds(410, 120, 20, 20);
         world.add(columbiajButton);
         columbiajButton.setBounds(150, 320, 20, 20);
+        world.add(germanyjButton);
+        germanyjButton.setBounds(420, 150, 20, 20);
+        world.add(francejButton1);
+        francejButton1.setBounds(390, 150, 20, 20);
+        world.add(usajButton);
+        usajButton.setBounds(100, 170, 20, 20);
+        world.add(afganistanjButton);
+        afganistanjButton.setBounds(510, 220, 20, 20);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Denmark");
-        world.add(jLabel1);
-        jLabel1.setBounds(380, 100, 90, 22);
+        denmarkjLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        denmarkjLabel.setText("Denmark");
+        world.add(denmarkjLabel);
+        denmarkjLabel.setBounds(380, 100, 90, 22);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setText("Columbia");
-        world.add(jLabel2);
-        jLabel2.setBounds(110, 300, 90, 22);
+        columbiajLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        columbiajLabel.setText("Columbia");
+        world.add(columbiajLabel);
+        columbiajLabel.setBounds(110, 300, 90, 22);
+
+        germanyjLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        germanyjLabel.setText("Germany");
+        world.add(germanyjLabel);
+        germanyjLabel.setBounds(400, 170, 100, 22);
+
+        francejLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        francejLabel.setText("France");
+        world.add(francejLabel);
+        francejLabel.setBounds(310, 150, 70, 22);
+
+        usajLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        usajLabel.setText("USA");
+        world.add(usajLabel);
+        usajLabel.setBounds(90, 150, 36, 22);
+
+        afganistanjLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        afganistanjLabel.setText("afghanistan");
+        world.add(afganistanjLabel);
+        afganistanjLabel.setBounds(460, 240, 120, 22);
 
         pictureWorld.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/world.jpg"))); // NOI18N
         world.add(pictureWorld);
@@ -114,11 +150,11 @@ Controller control;
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
         );
 
         pack();
@@ -165,13 +201,19 @@ Controller control;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton afganistanjButton;
+    private javax.swing.JLabel afganistanjLabel;
     private javax.swing.JPanel columbia;
     private javax.swing.JButton columbiajButton;
+    private javax.swing.JLabel columbiajLabel;
     private javax.swing.JPanel denmark;
     private javax.swing.JButton denmarkjButton;
+    private javax.swing.JLabel denmarkjLabel;
+    private javax.swing.JButton francejButton1;
+    private javax.swing.JLabel francejLabel;
+    private javax.swing.JButton germanyjButton;
+    private javax.swing.JLabel germanyjLabel;
     private javax.swing.JButton highScorejButton;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel pictureDenmark;
@@ -179,6 +221,8 @@ Controller control;
     private javax.swing.JLabel pictureWorld;
     private javax.swing.JPanel start;
     private javax.swing.JButton startGamejButton;
+    private javax.swing.JButton usajButton;
+    private javax.swing.JLabel usajLabel;
     private javax.swing.JPanel world;
     // End of variables declaration//GEN-END:variables
 }

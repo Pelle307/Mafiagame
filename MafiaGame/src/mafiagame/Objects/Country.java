@@ -5,15 +5,17 @@
  */
 package mafiagame.Objects;
 
-import mafiagame.Interfaces.CountriesInterface;
+import java.util.Random;
+import mafiagame.Interfaces.CountryInterface;
 
 /**
  *
  * @author pellecarlsen
  */
-public class Country implements CountriesInterface {
+public class Country implements CountryInterface {
 
     String countryName;
+    Random r;
     Drug heroin;
     Drug cocain;
     Drug amphetamine;
@@ -26,6 +28,7 @@ public class Country implements CountriesInterface {
 
     public Country(String name) {
         this.countryName = name;
+        r = new Random();
         heroin = new Drug("Heroin", 1600, 15);
         cocain = new Drug("Cocain", 1200, 30);
         amphetamine = new Drug("Amphetamine", 200, 50);
@@ -35,7 +38,7 @@ public class Country implements CountriesInterface {
         hash = new Drug("Hash", 180, 100);
         weed = new Drug("Weed", 150, 115);
         mushrooms = new Drug("Mushrooms", 120, 95);
-        
+
     }
 
     @Override
@@ -46,6 +49,120 @@ public class Country implements CountriesInterface {
     @Override
     public String getCountryName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void changePrice() {
+        Drug drug = this.heroin;
+        int price;
+        int holder;
+        int change;
+
+        for (int i = 0; i < 9; i++) {
+            switch (i) {
+                case 0:
+                    drug = this.heroin;
+                    break;
+                case 1:
+                    drug = this.hash;
+                    break;
+                case 2:
+                    drug = this.weed;
+                    break;
+                case 3:
+                    drug = this.crystalMeth;
+                    break;
+                case 4:
+                    drug = this.cocain;
+                    break;
+                case 5:
+                    drug = this.mushrooms;
+                    break;
+                case 6:
+                    drug = this.angelDust;
+                    break;
+                case 7:
+                    drug = this.acid;
+                    break;
+                case 8:
+                    drug = this.amphetamine;
+                    break;
+            }
+            if (positive()) {
+                holder = r.nextInt((85) + 1);
+                change = (drug.getPrice() * holder) / 100;
+                price = drug.getPrice() + change;
+                drug.setPrice(price);
+            } else {
+                holder = r.nextInt((85) + 1);
+                change = (drug.getPrice() * holder) / 100;
+                price = drug.getPrice() - change;
+                drug.setPrice(price);
+
+            }
+        }
+    }
+
+    @Override
+    public void changeAvailability() {
+        Drug drug = this.heroin;
+        int availability;
+        int holder;
+        int change;
+
+        for (int i = 0; i < 9; i++) {
+            switch (i) {
+                case 0:
+                    drug = this.heroin;
+                    break;
+                case 1:
+                    drug = this.hash;
+                    break;
+                case 2:
+                    drug = this.weed;
+                    break;
+                case 3:
+                    drug = this.crystalMeth;
+                    break;
+                case 4:
+                    drug = this.cocain;
+                    break;
+                case 5:
+                    drug = this.mushrooms;
+                    break;
+                case 6:
+                    drug = this.angelDust;
+                    break;
+                case 7:
+                    drug = this.acid;
+                    break;
+                case 8:
+                    drug = this.amphetamine;
+                    break;
+            }
+            if (positive()) {
+                holder = r.nextInt((40) + 15);
+                change = (drug.getAvailability() * holder) / 100;
+                availability = drug.getAvailability() + change;
+                drug.setAvailability(availability);
+            } else {
+                holder = r.nextInt((40) + 15);
+                change = (drug.getAvailability() * holder) / 100;
+                availability = drug.getAvailability() - change;
+                drug.setAvailability(availability);
+
+            }
+        }
+    }
+
+    @Override
+    public boolean positive() {
+        int a = r.nextInt(2);
+        if (a == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

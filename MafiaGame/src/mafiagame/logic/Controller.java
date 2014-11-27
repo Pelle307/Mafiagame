@@ -25,40 +25,32 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void changePrice() {
+    public void changePrice(int price) {
         int holder;
         int change;
         if (positive()) {
             holder = r.nextInt((85)+1);
             change = (coke.getPrice() * holder) / 100;
             coke.setPrice(coke.getPrice() + change);
-            change = (h.getPrice() * holder) / 100;
-            h.setPrice(h.getPrice() + change);
         } else {
             holder = (r.nextInt((85)+1));
             change = (coke.getPrice() * holder) / 100;
             coke.setPrice(coke.getPrice() - change);
-            change = (h.getPrice() * holder) / 100;
-            h.setPrice(h.getPrice() - change);
         }
     }
 
     @Override
-    public void changeAvailability() {
+    public void changeAvailability(int availability) {
         int holder;
         int change;
         if (positive()) {
             holder = r.nextInt((40)+15);
             change = (coke.getAvailability() * holder) /100;
             coke.setAvailability(coke.getAvailability() + change);
-            change = (h.getAvailability() * holder) /100;
-            h.setAvailability(h.getAvailability() + change);
         } else {
             holder = (r.nextInt((40)+15));
             change = (coke.getAvailability() * holder) / 100;
             coke.setAvailability(coke.getAvailability() - change);
-            change = (h.getAvailability() * holder) / 100;
-            h.setAvailability(h.getAvailability() - change);
         }
     }
 
@@ -94,11 +86,4 @@ public class Controller implements ControlInterface {
     public void sellHeroin(int price) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }    
-    
-    public void test() {
-        changePrice();
-        changeAvailability();
-        System.out.println("price and availability of cocain " + coke.getPrice() + " " + coke.getAvailability());
-        System.out.println("price and availability of heroin " + h.getPrice() + " " + h.getAvailability());
-    }
 }

@@ -11,9 +11,9 @@ package mafiagame.Interfaces;
  */
 public interface ControlInterface {
     //this method sets the new price.
-    void changePrice();
+    void changePrice(int price);
     //this method sets the new availability
-    void changeAvailability();
+    void changeAvailability(int availability);
     //change location of the player.
     void changeCountry();
     //buy cocain.

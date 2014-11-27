@@ -5,6 +5,9 @@
  */
 package mafiagame.Objects;
 
+import java.util.ArrayList;
+import mafiagame.Readers.StringReader;
+
 /**
  *
  * @author pellecarlsen
@@ -51,10 +54,38 @@ public class Player {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setDrugs(String heroin, String cocain, String amphetamine, String acid, String angelDust, String crystalMeth, String hash, String weed, String mushrooms) {
-        String drugs = heroin + "," + cocain + "," + amphetamine + ","
-                + acid + "," + angelDust + "," + crystalMeth + "," + hash
-                + "," + weed + "," + mushrooms;
+    public void setDrugs(String s, int i) {
+        int amountChange = 0;
+        switch (s) {
+            case "cocain":
+                this.cocain += amountChange;
+                break;
+            case "heroin":
+                this.heroin += amountChange;
+                break;
+            case "amphetamine":
+                this.amphetamine += amountChange;
+                break;
+            case "crystalMeth":
+                this.crystalMeth += amountChange;
+                break;
+            case "acid":
+                this.acid += amountChange;
+                break;
+            case "weed":
+                this.weed += amountChange;
+                break;
+            case "hash":
+                this.hash += amountChange;
+                break;
+            case "angelDust":
+                this.angelDust += amountChange;
+                break;
+            case "mushrooms":
+                this.mushrooms += amountChange;
+                break;
+
+        }
     }
 
     public void setCurrentCocain(int cocain) {

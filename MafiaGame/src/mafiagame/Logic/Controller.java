@@ -18,6 +18,7 @@ import mafiagame.Readers.StringReader;
  * @author Ebbe
  */
 public class Controller implements ControlInterface {
+
     ArrayList<Integer> drugs = new ArrayList();
 
     Random r;
@@ -48,8 +49,37 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void buyDrugs(int amount, String drug) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void buyDrugs(String drug) {
+        switch (drug) {
+            case "cocain":
+                paul.setDrugs("cocain", 1);
+                break;
+            case "heroin":
+                paul.setDrugs("heroin", 1);
+                break;
+            case "amphetamine":
+                paul.setDrugs("amphetamine", 1);
+                break;
+            case "crystalMeth":
+                paul.setDrugs("crystalMeth", 1);
+                break;
+            case "acid":
+                paul.setDrugs("acid", 1);
+                break;
+            case "weed":
+                paul.setDrugs("weed", 1);
+                break;
+            case "hash":
+                paul.setDrugs("hash", 1);
+                break;
+            case "angelDust":
+                paul.setDrugs("angelDust", 1);
+                break;
+            case "mushrooms":
+                paul.setDrugs("mushrooms", 1);
+                break;
+
+        }
     }
 
     @Override
@@ -86,13 +116,14 @@ public class Controller implements ControlInterface {
                 this.currentCountry = this.afghanistan;
                 break;
         }
-        
+
         currentCountry.changeAvailability();
         currentCountry.changePrice();
         System.out.println(currentCountry);
     }
-public void test(){
-    drugs = StringReader.readString(paul.getDrugs());
-    System.out.println(drugs);
-}
+
+    public void test() {
+        drugs = StringReader.readString(paul.getDrugs());
+        System.out.println(drugs);
+    }
 }

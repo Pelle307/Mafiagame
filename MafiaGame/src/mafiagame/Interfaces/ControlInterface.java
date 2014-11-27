@@ -15,7 +15,7 @@ public interface ControlInterface {
     void changeCountry();
     void setCurrentCountry(String country);
     //buy drugs.
-    void buyDrugs(int amount,String drug);
+    void buyDrugs(String drug);
     //sell cocain
     void sellCocain(int price);
     //sell cocain

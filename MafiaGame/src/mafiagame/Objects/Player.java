@@ -22,7 +22,7 @@ public class Player {
     public Player() {
         dollars = 5000;
         hp = 100;
-        turn = 20;
+        turn = 1;
     }
 
     public int getDollars() {
@@ -72,7 +72,7 @@ public class Player {
     }
 
     public int getTurn() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return turn;
     }
 
     public void setDollars(int dollars) {
@@ -84,7 +84,7 @@ public class Player {
     }
 
     public void setDrugs(String s, int i) {
-        int amountChange = 1;
+        int amountChange = i;
         switch (s) {
             case "cocain":
                 this.cocain += amountChange;
@@ -121,7 +121,7 @@ public class Player {
     }
 
     public void setTurn(int turn) {
-        this.turn += turn;
+        this.turn -= turn;
     }
 
 }

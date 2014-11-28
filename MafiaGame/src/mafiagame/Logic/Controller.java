@@ -55,54 +55,70 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
                     paul.setDrugs("cocain", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("cocain"));
+                    didBuy = true;
                 }
                 break;
             case "heroin":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("heroin")) && currentCountry.getDrugAvailability("heroin") > 0) {
                     paul.setDrugs("heroin", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("heroin"));
+                    didBuy = true;
                 }
                 break;
             case "amphetamine":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("amphetamine")) && currentCountry.getDrugAvailability("amphetamine") > 0) {
                     paul.setDrugs("amphetamine", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("amphetamine"));
+                    didBuy = true;
                 }
                 break;
             case "crystalMeth":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("crystalMeth")) && currentCountry.getDrugAvailability("crystalMeth") > 0) {
                     paul.setDrugs("crystalMeth", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("crystalMeth"));
+                    didBuy = true;
                 }
                 break;
             case "acid":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("acid")) && currentCountry.getDrugAvailability("acid") > 0) {
                     paul.setDrugs("acid", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("acid"));
+                    didBuy = true;
                 }
                 break;
             case "weed":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
                     paul.setDrugs("cocain", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("cocain"));
+                    didBuy = true;
                 }
                 break;
             case "hash":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("hash")) && currentCountry.getDrugAvailability("hash") > 0) {
                     paul.setDrugs("hash", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("hash"));
+                    didBuy = true;
                 }
                 break;
             case "angelDust":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("angelDust")) && currentCountry.getDrugAvailability("angelDust") > 0) {
                     paul.setDrugs("angelDust", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("angelDust"));
+                    didBuy = true;
                 }
                 break;
             case "mushrooms":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("mushrooms")) && currentCountry.getDrugAvailability("mushrooms") > 0) {
                     paul.setDrugs("mushrooms", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("mushrooms"));
+                    didBuy = true;
+                }
+                break;
+            case "valium":
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("valium")) && currentCountry.getDrugAvailability("valium") > 0) {
+                    paul.setDrugs("valium", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("valium"));
+                    didBuy = true;
                 }
                 break;
 
@@ -144,7 +160,7 @@ public class Controller implements ControlInterface {
                 this.currentCountry = this.afghanistan;
                 break;
         }
-
+        paul.setTurn(-1);
         currentCountry.changeAvailability();
         currentCountry.changePrice();
         System.out.println(currentCountry);
@@ -181,14 +197,17 @@ public class Controller implements ControlInterface {
             case "mushrooms":
                 drugPrice = currentCountry.getDrugPrice("mushrooms");
                 break;
+            case "valium":
+                drugPrice = currentCountry.getDrugPrice("valium");
+                break;
 
         }
         return drugPrice;
     }
 
     public void test() {
-        drugs = StringReader.readString(paul.getDrugs());
-        System.out.println(drugs);
+        currentCountry.changePrice();
+        System.out.println(currentCountry.getDrugPrice("heroin"));
     }
 
     @Override
@@ -196,33 +215,35 @@ public class Controller implements ControlInterface {
     int drugAvailability = 0;
         switch (drug) {
             case "cocain":
-                drugAvailability = currentCountry.getDrugPrice("cocain");
+                drugAvailability = currentCountry.getDrugAvailability("cocain");
                 break;
             case "heroin":
-                drugAvailability = currentCountry.getDrugPrice("heroin");
+                drugAvailability = currentCountry.getDrugAvailability("heroin");
                 break;
             case "amphetamine":
-                drugAvailability = currentCountry.getDrugPrice("amphetamine");
+                drugAvailability = currentCountry.getDrugAvailability("amphetamine");
                 break;
             case "crystalMeth":
-                drugAvailability = currentCountry.getDrugPrice("crystalMeth");
+                drugAvailability = currentCountry.getDrugAvailability("crystalMeth");
                 break;
             case "acid":
-                drugAvailability = currentCountry.getDrugPrice("acid");
+                drugAvailability = currentCountry.getDrugAvailability("acid");
                 break;
             case "weed":
-                drugAvailability = currentCountry.getDrugPrice("weed");
+                drugAvailability = currentCountry.getDrugAvailability("weed");
                 break;
             case "hash":
-                drugAvailability = currentCountry.getDrugPrice("hash");
+                drugAvailability = currentCountry.getDrugAvailability("hash");
                 break;
             case "angelDust":
-                drugAvailability = currentCountry.getDrugPrice("angelDust");
+                drugAvailability = currentCountry.getDrugAvailability("angelDust");
                 break;
             case "mushrooms":
-                drugAvailability = currentCountry.getDrugPrice("mushrooms");
+                drugAvailability = currentCountry.getDrugAvailability("mushrooms");
                 break;
-
+            case "valium":
+                drugAvailability = currentCountry.getDrugAvailability("valium");
+                break;
         }
         return drugAvailability;    }
 }

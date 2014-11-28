@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * @author pellecarlsen
  */
-public class Country{
+public class Country {
 
     String countryName;
     Random r;
@@ -24,6 +24,7 @@ public class Country{
     Drug hash;
     Drug weed;
     Drug mushrooms;
+    Drug valium;
 
     public Country(String name) {
         this.countryName = name;
@@ -37,6 +38,7 @@ public class Country{
         hash = new Drug("Hash", 180, 100);
         weed = new Drug("Weed", 150, 115);
         mushrooms = new Drug("Mushrooms", 120, 95);
+        valium = new Drug("Valium", 290, 80);
 
     }
 
@@ -54,47 +56,69 @@ public class Country{
         int price;
         int holder;
         int change;
-
+        int goldenNumber = 0;
+        int randomNumber;
         for (int i = 0; i < 9; i++) {
             switch (i) {
                 case 0:
                     drug = this.heroin;
+                    goldenNumber = 15;
                     break;
                 case 1:
                     drug = this.hash;
+                    goldenNumber = 4;
                     break;
                 case 2:
                     drug = this.weed;
+                    goldenNumber = 5;
                     break;
                 case 3:
                     drug = this.crystalMeth;
+                    goldenNumber = 12;
                     break;
                 case 4:
                     drug = this.cocain;
+                    goldenNumber = 10;
                     break;
                 case 5:
                     drug = this.mushrooms;
+                    goldenNumber = 7;
                     break;
                 case 6:
                     drug = this.angelDust;
+                    goldenNumber = 7;
                     break;
                 case 7:
                     drug = this.acid;
+                    goldenNumber = 5;
                     break;
                 case 8:
                     drug = this.amphetamine;
+                    goldenNumber = 7;
+                    break;
+                case 9:
+                    drug = this.valium;
+                    goldenNumber = 7;
                     break;
             }
             if (positive()) {
                 holder = r.nextInt((85) + 1);
                 change = (drug.getBasePrice() * holder) / 100;
-                price = drug.getPrice() + change;
+                price = drug.getBasePrice() + change;
                 drug.setPrice(price);
             } else {
                 holder = r.nextInt((85) + 1);
                 change = (drug.getBasePrice() * holder) / 100;
-                price = drug.getPrice() - change;
+                price = drug.getBasePrice() - change;
                 drug.setPrice(price);
+            }
+            randomNumber = r.nextInt((100) + 1);
+            if (randomNumber <= goldenNumber) {
+                if (positive()) {
+                    drug.setPrice(drug.getPrice() * 10);
+                } else {
+                    drug.setPrice(drug.getPrice() / 10);
+                }
 
             }
         }
@@ -135,18 +159,20 @@ public class Country{
                 case 8:
                     drug = this.amphetamine;
                     break;
+                case 9:
+                    drug = this.valium;
+                    break;
             }
             if (positive()) {
                 holder = r.nextInt((40) + 15);
                 change = (drug.getBaseAvailability() * holder) / 100;
-                availability = drug.getAvailability() + change;
+                availability = drug.getBaseAvailability() + change;
                 drug.setAvailability(availability);
             } else {
                 holder = r.nextInt((40) + 15);
                 change = (drug.getBaseAvailability() * holder) / 100;
-                availability = drug.getAvailability() - change;
+                availability = drug.getBaseAvailability() - change;
                 drug.setAvailability(availability);
-
             }
         }
     }
@@ -159,10 +185,10 @@ public class Country{
             return false;
         }
     }
-    
+
     public int getDrugPrice(String drug) {
         int drugPrice = 0;
-        switch(drug) {
+        switch (drug) {
             case "cocain":
                 drugPrice = cocain.getPrice();
                 break;
@@ -190,13 +216,17 @@ public class Country{
             case "mushrooms":
                 drugPrice = mushrooms.getPrice();
                 break;
+            case "valium":
+                drugPrice = valium.getPrice();
+                break;
         }
         return drugPrice;
-        
+
     }
-    public int getDrugAvailability(String drug){        
+
+    public int getDrugAvailability(String drug) {
         int drugAvailability = 0;
-        switch(drug) {
+        switch (drug) {
             case "cocain":
                 drugAvailability = cocain.getAvailability();
                 break;
@@ -223,6 +253,9 @@ public class Country{
                 break;
             case "mushrooms":
                 drugAvailability = mushrooms.getAvailability();
+                break;
+            case "valium":
+                drugAvailability = valium.getAvailability();
                 break;
         }
         return drugAvailability;

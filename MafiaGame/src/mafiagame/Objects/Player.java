@@ -17,7 +17,7 @@ public class Player {
     int dollars;
     int hp;
     int turn;
-    int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid = 0;
+    int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid,valium = 0;
 
     public Player() {
         dollars = 5000;
@@ -47,7 +47,7 @@ public class Player {
     }
 
     public void setDollars(int dollars) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.dollars += dollars;
     }
 
     public void setHp(int hp) {
@@ -84,16 +84,16 @@ public class Player {
             case "mushrooms":
                 this.mushrooms += amountChange;
                 break;
+            case "valium":
+                this.valium += amountChange;
+                break;
+                
 
         }
     }
 
-    public void setCurrentCocain(int cocain) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     public void setTurn(int turn) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    this.turn+=turn;
     }
 
 }

@@ -21,7 +21,6 @@ public class MainGui extends javax.swing.JFrame {
     public MainGui() {
         initComponents();
         control = new Controller();
-
         jTabbedPane.removeAll();
         jTabbedPane.add("START", start);
     }
@@ -116,7 +115,8 @@ public class MainGui extends javax.swing.JFrame {
         pictureUSA = new javax.swing.JLabel();
         pictureAfghanistan = new javax.swing.JLabel();
         highScore = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 1000));
@@ -540,12 +540,7 @@ public class MainGui extends javax.swing.JFrame {
 
         jTabbedPane.addTab("COUNTRIES", denmark);
 
-        jTextField1.setText("EBBE LUGTER!!!!!");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
+        jScrollPane1.setViewportView(jList1);
 
         javax.swing.GroupLayout highScoreLayout = new javax.swing.GroupLayout(highScore);
         highScore.setLayout(highScoreLayout);
@@ -553,14 +548,15 @@ public class MainGui extends javax.swing.JFrame {
             highScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(highScoreLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 621, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         highScoreLayout.setVerticalGroup(
             highScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(highScoreLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 632, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         jTabbedPane.addTab("HIGH SCORE", highScore);
@@ -580,7 +576,8 @@ public class MainGui extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void highScorejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highScorejButtonActionPerformed
-        // TODO add your handling code here:
+        jTabbedPane.removeAll();
+        jTabbedPane.add("HIGH SCORE", highScore);
         control.test();
     }//GEN-LAST:event_highScorejButtonActionPerformed
 
@@ -748,10 +745,6 @@ public class MainGui extends javax.swing.JFrame {
         currentAvailability();
     }//GEN-LAST:event_sellValiumActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -843,8 +836,9 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JList jList1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel pictureAfghanistan;
     private javax.swing.JLabel pictureColumbia;
     private javax.swing.JLabel pictureDenmark;

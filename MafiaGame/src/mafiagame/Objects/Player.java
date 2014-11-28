@@ -5,9 +5,6 @@
  */
 package mafiagame.Objects;
 
-import java.util.ArrayList;
-import mafiagame.Readers.StringReader;
-
 /**
  *
  * @author pellecarlsen

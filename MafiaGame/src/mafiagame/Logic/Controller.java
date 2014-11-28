@@ -10,7 +10,7 @@ import java.util.Random;
 import mafiagame.Interfaces.ControlInterface;
 import mafiagame.Objects.Country;
 import mafiagame.Objects.Player;
-import mafiagame.Readers.StringReader;
+import mafiagame.Readers.Filehandler;
 
 /**
  *
@@ -18,7 +18,7 @@ import mafiagame.Readers.StringReader;
  */
 public class Controller implements ControlInterface {
 
-    ArrayList<Integer> drugs = new ArrayList();
+    ArrayList<Integer> scoreArray = new ArrayList();
 
     Random r;
     Player paul;
@@ -373,16 +373,38 @@ public class Controller implements ControlInterface {
         }
         return drugAvailability;
     }
-    public int getTurn(){
+
+    public int getTurn() {
         int turn = paul.getTurn();
         return turn;
     }
-public boolean endGame(){
-    if (paul.getTurn() == 20)
-        return true;
-    else return false;
-}
+
+    public boolean endGame() {
+        if (paul.getTurn() == 20) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public int getPlayer$() {
         return paul.getDollars();
+    }
+
+    public ArrayList<Integer> loadScore() {
+        scoreArray = Filehandler.loadScore("highScore.txt");
+        return scoreArray;
+    }
+
+    public void saveScore() {
+        Filehandler.saveScore(scoreArray, "highScore.txt");
+    }
+
+    public ArrayList<Integer> getScoreArray() {
+        return scoreArray;
+    }
+
+    public void setScoreArray(ArrayList<Integer> scoreArray) {
+        this.scoreArray = scoreArray;
     }
 }

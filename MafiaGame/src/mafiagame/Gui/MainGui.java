@@ -21,7 +21,6 @@ public class MainGui extends javax.swing.JFrame {
     public MainGui() {
         initComponents();
         control = new Controller();
-        setupCountry();
 
         jTabbedPane.removeAll();
         jTabbedPane.add("START", start);
@@ -56,6 +55,7 @@ public class MainGui extends javax.swing.JFrame {
         afganistanjLabel = new javax.swing.JLabel();
         pictureWorld = new javax.swing.JLabel();
         denmark = new javax.swing.JPanel();
+        LabelTurn = new javax.swing.JLabel();
         toWorldDenmark = new javax.swing.JButton();
         sellCocain = new javax.swing.JButton();
         buyHeroin = new javax.swing.JButton();
@@ -107,12 +107,16 @@ public class MainGui extends javax.swing.JFrame {
         jFieldBuyMushrooms = new javax.swing.JTextField();
         jFieldBuyValium = new javax.swing.JTextField();
         jFieldSellCocain = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        playerCurrency = new javax.swing.JTextField();
         pictureDenmark = new javax.swing.JLabel();
         pictureColumbia = new javax.swing.JLabel();
         pictureGermany = new javax.swing.JLabel();
         pictureFrance = new javax.swing.JLabel();
         pictureUSA = new javax.swing.JLabel();
         pictureAfghanistan = new javax.swing.JLabel();
+        highScore = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1000, 1000));
@@ -139,7 +143,7 @@ public class MainGui extends javax.swing.JFrame {
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);
-        pictureMafia.setBounds(1, -4, 610, 610);
+        pictureMafia.setBounds(10, -20, 610, 610);
 
         jTabbedPane.addTab("START", start);
 
@@ -230,6 +234,8 @@ public class MainGui extends javax.swing.JFrame {
         jTabbedPane.addTab("WORLD", world);
 
         denmark.setLayout(null);
+        denmark.add(LabelTurn);
+        LabelTurn.setBounds(20, 10, 80, 30);
 
         toWorldDenmark.setText("To World");
         toWorldDenmark.addActionListener(new java.awt.event.ActionListener() {
@@ -241,6 +247,11 @@ public class MainGui extends javax.swing.JFrame {
         toWorldDenmark.setBounds(500, 570, 90, 25);
 
         sellCocain.setText("SELL");
+        sellCocain.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellCocainActionPerformed(evt);
+            }
+        });
         denmark.add(sellCocain);
         sellCocain.setBounds(150, 50, 130, 25);
 
@@ -317,38 +328,83 @@ public class MainGui extends javax.swing.JFrame {
         buyMushrooms.setBounds(410, 290, 130, 25);
 
         sellHeroin.setText("SELL");
+        sellHeroin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellHeroinActionPerformed(evt);
+            }
+        });
         denmark.add(sellHeroin);
         sellHeroin.setBounds(150, 80, 130, 25);
 
         sellAmphetamine.setText("SELL");
+        sellAmphetamine.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellAmphetamineActionPerformed(evt);
+            }
+        });
         denmark.add(sellAmphetamine);
         sellAmphetamine.setBounds(150, 110, 130, 25);
 
         sellAcid.setText("SELL");
+        sellAcid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellAcidActionPerformed(evt);
+            }
+        });
         denmark.add(sellAcid);
         sellAcid.setBounds(150, 140, 130, 25);
 
         sellAngelDust.setText("SELL");
+        sellAngelDust.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellAngelDustActionPerformed(evt);
+            }
+        });
         denmark.add(sellAngelDust);
         sellAngelDust.setBounds(150, 170, 130, 25);
 
         sellCrystalMeth.setText("SELL");
+        sellCrystalMeth.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellCrystalMethActionPerformed(evt);
+            }
+        });
         denmark.add(sellCrystalMeth);
         sellCrystalMeth.setBounds(150, 200, 130, 25);
 
         sellHash.setText("SELL");
+        sellHash.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellHashActionPerformed(evt);
+            }
+        });
         denmark.add(sellHash);
         sellHash.setBounds(150, 230, 130, 25);
 
         sellWeed.setText("SELL");
+        sellWeed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellWeedActionPerformed(evt);
+            }
+        });
         denmark.add(sellWeed);
         sellWeed.setBounds(150, 260, 130, 25);
 
         sellValium.setText("SELL");
+        sellValium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellValiumActionPerformed(evt);
+            }
+        });
         denmark.add(sellValium);
         sellValium.setBounds(150, 320, 130, 25);
 
         sellMushrooms.setText("SELL");
+        sellMushrooms.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellMushroomsActionPerformed(evt);
+            }
+        });
         denmark.add(sellMushrooms);
         sellMushrooms.setBounds(150, 290, 130, 25);
 
@@ -450,6 +506,13 @@ public class MainGui extends javax.swing.JFrame {
         denmark.add(jFieldSellCocain);
         jFieldSellCocain.setBounds(290, 50, 40, 22);
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel11.setText("Player Currency:");
+        denmark.add(jLabel11);
+        jLabel11.setBounds(60, 440, 130, 17);
+        denmark.add(playerCurrency);
+        playerCurrency.setBounds(60, 470, 120, 22);
+
         pictureDenmark.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/denmark.png"))); // NOI18N
         denmark.add(pictureDenmark);
         pictureDenmark.setBounds(0, 0, 610, 600);
@@ -475,7 +538,32 @@ public class MainGui extends javax.swing.JFrame {
         denmark.add(pictureAfghanistan);
         pictureAfghanistan.setBounds(0, 0, 600, 600);
 
-        jTabbedPane.addTab("DENMARK", denmark);
+        jTabbedPane.addTab("COUNTRIES", denmark);
+
+        jTextField1.setText("EBBE LUGTER!!!!!");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout highScoreLayout = new javax.swing.GroupLayout(highScore);
+        highScore.setLayout(highScoreLayout);
+        highScoreLayout.setHorizontalGroup(
+            highScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(highScoreLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 621, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        highScoreLayout.setVerticalGroup(
+            highScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(highScoreLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 632, Short.MAX_VALUE))
+        );
+
+        jTabbedPane.addTab("HIGH SCORE", highScore);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -485,7 +573,7 @@ public class MainGui extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 675, Short.MAX_VALUE)
+            .addComponent(jTabbedPane)
         );
 
         pack();
@@ -499,6 +587,7 @@ public class MainGui extends javax.swing.JFrame {
     private void startGamejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGamejButtonActionPerformed
         jTabbedPane.removeAll();
         jTabbedPane.add("DENMARK", denmark);
+        setupCountry();
     }//GEN-LAST:event_startGamejButtonActionPerformed
 
     private void denmarkjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_denmarkjButtonActionPerformed
@@ -550,8 +639,13 @@ public class MainGui extends javax.swing.JFrame {
     }//GEN-LAST:event_columbiajButtonActionPerformed
 
     private void toWorldDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toWorldDenmarkActionPerformed
-        jTabbedPane.removeAll();
-        jTabbedPane.add("WORLD", world);
+        if (control.endGame()) {
+            jTabbedPane.removeAll();
+            jTabbedPane.add("HIGH SCORE", highScore);
+        } else {
+            jTabbedPane.removeAll();
+            jTabbedPane.add("WORLD", world);
+        }
     }//GEN-LAST:event_toWorldDenmarkActionPerformed
 
     private void buyCocainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buyCocainActionPerformed
@@ -604,6 +698,60 @@ public class MainGui extends javax.swing.JFrame {
         currentAvailability();
     }//GEN-LAST:event_buyValiumActionPerformed
 
+    private void sellCocainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellCocainActionPerformed
+        control.sellDrugs("cocain");
+        currentAvailability();
+    }//GEN-LAST:event_sellCocainActionPerformed
+
+    private void sellHeroinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellHeroinActionPerformed
+        control.sellDrugs("heroin");
+        currentAvailability();
+    }//GEN-LAST:event_sellHeroinActionPerformed
+
+    private void sellAmphetamineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellAmphetamineActionPerformed
+        control.sellDrugs("amphetamine");
+        currentAvailability();
+    }//GEN-LAST:event_sellAmphetamineActionPerformed
+
+    private void sellAcidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellAcidActionPerformed
+        control.sellDrugs("acid");
+        currentAvailability();
+    }//GEN-LAST:event_sellAcidActionPerformed
+
+    private void sellAngelDustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellAngelDustActionPerformed
+        control.sellDrugs("angelDust");
+        currentAvailability();
+    }//GEN-LAST:event_sellAngelDustActionPerformed
+
+    private void sellCrystalMethActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellCrystalMethActionPerformed
+        control.sellDrugs("crystalMeth");
+        currentAvailability();
+    }//GEN-LAST:event_sellCrystalMethActionPerformed
+
+    private void sellHashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellHashActionPerformed
+        control.sellDrugs("hash");
+        currentAvailability();
+    }//GEN-LAST:event_sellHashActionPerformed
+
+    private void sellWeedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellWeedActionPerformed
+        control.sellDrugs("weed");
+        currentAvailability();
+    }//GEN-LAST:event_sellWeedActionPerformed
+
+    private void sellMushroomsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellMushroomsActionPerformed
+        control.sellDrugs("mushrooms");
+        currentAvailability();
+    }//GEN-LAST:event_sellMushroomsActionPerformed
+
+    private void sellValiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellValiumActionPerformed
+        control.sellDrugs("valium");
+        currentAvailability();
+    }//GEN-LAST:event_sellValiumActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -640,6 +788,7 @@ public class MainGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelTurn;
     private javax.swing.JButton afganistanjButton;
     private javax.swing.JLabel afganistanjLabel;
     private javax.swing.JButton buyAcid;
@@ -661,6 +810,7 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JLabel francejLabel;
     private javax.swing.JButton germanyjButton;
     private javax.swing.JLabel germanyjLabel;
+    private javax.swing.JPanel highScore;
     private javax.swing.JButton highScorejButton;
     private javax.swing.JTextField jFieldBuyAcid;
     private javax.swing.JTextField jFieldBuyAmphetamine;
@@ -684,6 +834,7 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JTextField jFieldSellWeed;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -693,6 +844,7 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTabbedPane jTabbedPane;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel pictureAfghanistan;
     private javax.swing.JLabel pictureColumbia;
     private javax.swing.JLabel pictureDenmark;
@@ -701,6 +853,7 @@ public class MainGui extends javax.swing.JFrame {
     private javax.swing.JLabel pictureMafia;
     private javax.swing.JLabel pictureUSA;
     private javax.swing.JLabel pictureWorld;
+    private javax.swing.JTextField playerCurrency;
     private javax.swing.JButton sellAcid;
     private javax.swing.JButton sellAmphetamine;
     private javax.swing.JButton sellAngelDust;
@@ -741,6 +894,8 @@ public class MainGui extends javax.swing.JFrame {
         sellMushrooms.setText("sell " + control.getDrugPrice("mushrooms") + "$");
         sellValium.setText("sell " + control.getDrugPrice("valium") + "$");
         currentAvailability();
+        LabelTurn.setText("day " + control.getTurn() + "");
+        System.out.println(control.getTurn());
     }
 
     public void currentAvailability() {
@@ -764,6 +919,7 @@ public class MainGui extends javax.swing.JFrame {
         jFieldSellWeed.setText(control.getPlayerDrugs("weed") + "");
         jFieldSellMushrooms.setText(control.getPlayerDrugs("mushrooms") + "");
         jFieldSellValium.setText(control.getPlayerDrugs("valium") + "");
+        playerCurrency.setText(control.getPlayer$() + "");
     }
 
     public void currentCountryDenmark() {

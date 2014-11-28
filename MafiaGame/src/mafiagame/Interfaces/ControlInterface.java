@@ -12,12 +12,11 @@ package mafiagame.Interfaces;
  */
 public interface ControlInterface {
     //change location of the player.
-    void changeCountry();
     void setCurrentCountry(String country);
     //buy drugs.
     boolean buyDrugs(String drug);
     //sell cocain
-    void sellDrugs(String drug);
+    boolean sellDrugs(String drug);
     //a boolean that checks if price & availability either increases or decreases. True increases price & availability and false decreases price & availability.
     int getDrugAvailability(String drug);
     int getDrugPrice(String drug);

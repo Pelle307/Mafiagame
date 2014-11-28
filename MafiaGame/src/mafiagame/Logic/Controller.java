@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import mafiagame.Interfaces.ControlInterface;
 import mafiagame.Objects.Country;
-import mafiagame.Objects.Drug;
 import mafiagame.Objects.Player;
 import mafiagame.Readers.StringReader;
 
@@ -49,37 +48,66 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public void buyDrugs(String drug) {
+    public boolean buyDrugs(String drug) {
+        boolean didBuy = false;
         switch (drug) {
             case "cocain":
-                paul.setDrugs("cocain", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
+                    paul.setDrugs("cocain", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("cocain"));
+                }
                 break;
             case "heroin":
-                paul.setDrugs("heroin", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("heroin")) && currentCountry.getDrugAvailability("heroin") > 0) {
+                    paul.setDrugs("heroin", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("heroin"));
+                }
                 break;
             case "amphetamine":
-                paul.setDrugs("amphetamine", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("amphetamine")) && currentCountry.getDrugAvailability("amphetamine") > 0) {
+                    paul.setDrugs("amphetamine", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("amphetamine"));
+                }
                 break;
             case "crystalMeth":
-                paul.setDrugs("crystalMeth", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("crystalMeth")) && currentCountry.getDrugAvailability("crystalMeth") > 0) {
+                    paul.setDrugs("crystalMeth", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("crystalMeth"));
+                }
                 break;
             case "acid":
-                paul.setDrugs("acid", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("acid")) && currentCountry.getDrugAvailability("acid") > 0) {
+                    paul.setDrugs("acid", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("acid"));
+                }
                 break;
             case "weed":
-                paul.setDrugs("weed", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
+                    paul.setDrugs("cocain", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("cocain"));
+                }
                 break;
             case "hash":
-                paul.setDrugs("hash", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("hash")) && currentCountry.getDrugAvailability("hash") > 0) {
+                    paul.setDrugs("hash", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("hash"));
+                }
                 break;
             case "angelDust":
-                paul.setDrugs("angelDust", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("angelDust")) && currentCountry.getDrugAvailability("angelDust") > 0) {
+                    paul.setDrugs("angelDust", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("angelDust"));
+                }
                 break;
             case "mushrooms":
-                paul.setDrugs("mushrooms", 1);
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("mushrooms")) && currentCountry.getDrugAvailability("mushrooms") > 0) {
+                    paul.setDrugs("mushrooms", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("mushrooms"));
+                }
                 break;
 
         }
+        return didBuy;
     }
 
     @Override
@@ -122,6 +150,7 @@ public class Controller implements ControlInterface {
         System.out.println(currentCountry);
     }
 
+    @Override
     public int getDrugPrice(String drug) {
         int drugPrice = 0;
         switch (drug) {
@@ -161,4 +190,39 @@ public class Controller implements ControlInterface {
         drugs = StringReader.readString(paul.getDrugs());
         System.out.println(drugs);
     }
+
+    @Override
+    public int getDrugAvailability(String drug) {
+    int drugAvailability = 0;
+        switch (drug) {
+            case "cocain":
+                drugAvailability = currentCountry.getDrugPrice("cocain");
+                break;
+            case "heroin":
+                drugAvailability = currentCountry.getDrugPrice("heroin");
+                break;
+            case "amphetamine":
+                drugAvailability = currentCountry.getDrugPrice("amphetamine");
+                break;
+            case "crystalMeth":
+                drugAvailability = currentCountry.getDrugPrice("crystalMeth");
+                break;
+            case "acid":
+                drugAvailability = currentCountry.getDrugPrice("acid");
+                break;
+            case "weed":
+                drugAvailability = currentCountry.getDrugPrice("weed");
+                break;
+            case "hash":
+                drugAvailability = currentCountry.getDrugPrice("hash");
+                break;
+            case "angelDust":
+                drugAvailability = currentCountry.getDrugPrice("angelDust");
+                break;
+            case "mushrooms":
+                drugAvailability = currentCountry.getDrugPrice("mushrooms");
+                break;
+
+        }
+        return drugAvailability;    }
 }

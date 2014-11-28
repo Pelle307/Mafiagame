@@ -15,11 +15,12 @@ public interface ControlInterface {
     void changeCountry();
     void setCurrentCountry(String country);
     //buy drugs.
-    void buyDrugs(String drug);
+    boolean buyDrugs(String drug);
     //sell cocain
     void sellCocain(int price);
     //sell cocain
     void sellHeroin(int price);
     //a boolean that checks if price & availability either increases or decreases. True increases price & availability and false decreases price & availability.
-      
+    int getDrugAvailability(String drug);
+    int getDrugPrice(String drug);
 }

@@ -194,5 +194,38 @@ public class Country{
         return drugPrice;
         
     }
+    public int getDrugAvailability(String drug){        
+        int drugAvailability = 0;
+        switch(drug) {
+            case "cocain":
+                drugAvailability = cocain.getAvailability();
+                break;
+            case "heroin":
+                drugAvailability = heroin.getAvailability();
+                break;
+            case "amphetamine":
+                drugAvailability = amphetamine.getAvailability();
+                break;
+            case "crystalMeth":
+                drugAvailability = crystalMeth.getAvailability();
+                break;
+            case "acid":
+                drugAvailability = acid.getAvailability();
+                break;
+            case "weed":
+                drugAvailability = weed.getAvailability();
+                break;
+            case "hash":
+                drugAvailability = hash.getAvailability();
+                break;
+            case "angelDust":
+                drugAvailability = angelDust.getAvailability();
+                break;
+            case "mushrooms":
+                drugAvailability = mushrooms.getAvailability();
+                break;
+        }
+        return drugAvailability;
+    }
 
 }

@@ -54,7 +54,10 @@ public class Controller implements ControlInterface {
             case "cocain":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
                     paul.setDrugs("cocain", 1);
+                    System.out.println(paul.getDollars());
+                    System.out.println(paul.getDrug("cocain"));
                     paul.setDollars(-currentCountry.getDrugPrice("cocain"));
+                    currentCountry.setDrugAvailability("cocain");
                     didBuy = true;
                 }
                 break;
@@ -62,6 +65,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("heroin")) && currentCountry.getDrugAvailability("heroin") > 0) {
                     paul.setDrugs("heroin", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("heroin"));
+                    currentCountry.setDrugAvailability("heroin");
                     didBuy = true;
                 }
                 break;
@@ -69,6 +73,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("amphetamine")) && currentCountry.getDrugAvailability("amphetamine") > 0) {
                     paul.setDrugs("amphetamine", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("amphetamine"));
+                    currentCountry.setDrugAvailability("amphetamine");
                     didBuy = true;
                 }
                 break;
@@ -76,6 +81,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("crystalMeth")) && currentCountry.getDrugAvailability("crystalMeth") > 0) {
                     paul.setDrugs("crystalMeth", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("crystalMeth"));
+                    currentCountry.setDrugAvailability("crystalMeth");
                     didBuy = true;
                 }
                 break;
@@ -83,13 +89,15 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("acid")) && currentCountry.getDrugAvailability("acid") > 0) {
                     paul.setDrugs("acid", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("acid"));
+                    currentCountry.setDrugAvailability("acid");
                     didBuy = true;
                 }
                 break;
             case "weed":
-                if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
-                    paul.setDrugs("cocain", 1);
-                    paul.setDollars(-currentCountry.getDrugPrice("cocain"));
+                if ((paul.getDollars() >= currentCountry.getDrugPrice("weed")) && currentCountry.getDrugAvailability("weed") > 0) {
+                    paul.setDrugs("weed", 1);
+                    paul.setDollars(-currentCountry.getDrugPrice("weed"));
+                    currentCountry.setDrugAvailability("weed");
                     didBuy = true;
                 }
                 break;
@@ -97,6 +105,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("hash")) && currentCountry.getDrugAvailability("hash") > 0) {
                     paul.setDrugs("hash", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("hash"));
+                    currentCountry.setDrugAvailability("hash");
                     didBuy = true;
                 }
                 break;
@@ -104,6 +113,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("angelDust")) && currentCountry.getDrugAvailability("angelDust") > 0) {
                     paul.setDrugs("angelDust", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("angelDust"));
+                    currentCountry.setDrugAvailability("angelDust");
                     didBuy = true;
                 }
                 break;
@@ -111,6 +121,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("mushrooms")) && currentCountry.getDrugAvailability("mushrooms") > 0) {
                     paul.setDrugs("mushrooms", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("mushrooms"));
+                    currentCountry.setDrugAvailability("mushrooms");
                     didBuy = true;
                 }
                 break;
@@ -118,6 +129,7 @@ public class Controller implements ControlInterface {
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("valium")) && currentCountry.getDrugAvailability("valium") > 0) {
                     paul.setDrugs("valium", 1);
                     paul.setDollars(-currentCountry.getDrugPrice("valium"));
+                    currentCountry.setDrugAvailability("valium");
                     didBuy = true;
                 }
                 break;
@@ -126,18 +138,54 @@ public class Controller implements ControlInterface {
         return didBuy;
     }
 
-    @Override
-    public void sellCocain(int price) {
+    public int getPlayerDrugs(String drug) {
+
+        int drugAvailability = 0;
+        switch (drug) {
+            case "cocain":
+                drugAvailability = paul.getDrug("cocain");
+                break;
+            case "heroin":
+                drugAvailability = paul.getDrug("heroin");
+                break;
+            case "amphetamine":
+                drugAvailability = paul.getDrug("amphetamine");
+                break;
+            case "crystalMeth":
+                drugAvailability = paul.getDrug("crystalMeth");
+                break;
+            case "acid":
+                drugAvailability = paul.getDrug("acid");
+                break;
+            case "weed":
+                drugAvailability = paul.getDrug("weed");
+                break;
+            case "hash":
+                drugAvailability = paul.getDrug("hash");
+                break;
+            case "angelDust":
+                drugAvailability = paul.getDrug("angelDust");
+                break;
+            case "mushrooms":
+                drugAvailability = paul.getDrug("mushrooms");
+                break;
+            case "valium":
+                drugAvailability = paul.getDrug("valium");
+                break;
+
+        }
+        return drugAvailability;
+    
+}
+
+@Override
+        public void sellDrugs(String drug) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
-    public void sellHeroin(int price) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     @Override
-    public void setCurrentCountry(String country) {
+        public void setCurrentCountry(String country) {
         String current = country;
         System.out.println(currentCountry);
         switch (current) {
@@ -167,7 +215,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public int getDrugPrice(String drug) {
+        public int getDrugPrice(String drug) {
         int drugPrice = 0;
         switch (drug) {
             case "cocain":
@@ -211,7 +259,7 @@ public class Controller implements ControlInterface {
     }
 
     @Override
-    public int getDrugAvailability(String drug) {
+        public int getDrugAvailability(String drug) {
     int drugAvailability = 0;
         switch (drug) {
             case "cocain":

@@ -17,7 +17,7 @@ public class Player {
     int dollars;
     int hp;
     int turn;
-    int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid,valium = 0;
+    int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid, valium = 0;
 
     public Player() {
         dollars = 5000;
@@ -33,12 +33,41 @@ public class Player {
         return this.hp;
     }
 
-    public String getDrugs() {
-        String drugs;
-        drugs = heroin + "," + cocain + "," + amphetamine + ","
-                + acid + "," + angelDust + "," + crystalMeth + "," + hash
-                + "," + weed + "," + mushrooms;
-        System.out.println(drugs);
+    public int getDrug(String drug) {
+        int drugs = 0;
+        switch (drug) {
+            case "cocain":
+                drugs = this.cocain;
+                break;
+            case "heroin":
+                drugs = this.heroin;
+                break;
+            case "amphetamine":
+                drugs = this.amphetamine;
+                break;
+            case "crystalMeth":
+                drugs = this.crystalMeth;
+                break;
+            case "acid":
+                drugs = this.acid;
+                break;
+            case "weed":
+                drugs = this.weed;
+                break;
+            case "hash":
+                drugs = this.hash;
+                break;
+            case "angelDust":
+                drugs = this.angelDust;
+                break;
+            case "mushrooms":
+                drugs = this.mushrooms;
+                break;
+            case "valium":
+                drugs = this.valium;
+                break;
+
+        }
         return drugs;
     }
 
@@ -55,7 +84,7 @@ public class Player {
     }
 
     public void setDrugs(String s, int i) {
-        int amountChange = 0;
+        int amountChange = 1;
         switch (s) {
             case "cocain":
                 this.cocain += amountChange;
@@ -87,13 +116,12 @@ public class Player {
             case "valium":
                 this.valium += amountChange;
                 break;
-                
 
         }
     }
 
     public void setTurn(int turn) {
-    this.turn+=turn;
+        this.turn += turn;
     }
 
 }

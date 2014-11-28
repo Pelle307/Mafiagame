@@ -260,5 +260,39 @@ public class Country {
         }
         return drugAvailability;
     }
-
+    public void setDrugAvailability(String drug){
+        switch (drug) {
+            case "cocain":
+                cocain.setAvailability(-1);
+                break;
+            case "heroin":
+                heroin.setAvailability(-1);
+                break;
+            case "amphetamine":
+                amphetamine.setAvailability(-1);
+                break;
+            case "crystalMeth":
+                crystalMeth.setAvailability(-1);
+                break;
+            case "acid":
+                acid.setAvailability(-1);
+                break;
+            case "weed":
+                weed.setAvailability(-1);
+                break;
+            case "hash":
+                hash.setAvailability(-1);
+                break;
+            case "angelDust":
+                angelDust.setAvailability(-1);
+                break;
+            case "mushrooms":
+                mushrooms.setAvailability(-1);
+                break;
+            case "valium":
+                valium.setAvailability(-1);
+                break;
+        }
+        
+    }
 }

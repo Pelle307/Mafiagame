@@ -50,8 +50,9 @@ public class Drug{
         this.price = price;
     }
 
-    public void setAvailability(int availability) {
-        this.availability = availability;
+    public void setAvailability(int j) {
+        int i = j;
+        this.availability += j;
     }
 
 }

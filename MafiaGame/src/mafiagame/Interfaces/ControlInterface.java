@@ -17,9 +17,7 @@ public interface ControlInterface {
     //buy drugs.
     boolean buyDrugs(String drug);
     //sell cocain
-    void sellCocain(int price);
-    //sell cocain
-    void sellHeroin(int price);
+    void sellDrugs(String drug);
     //a boolean that checks if price & availability either increases or decreases. True increases price & availability and false decreases price & availability.
     int getDrugAvailability(String drug);
     int getDrugPrice(String drug);

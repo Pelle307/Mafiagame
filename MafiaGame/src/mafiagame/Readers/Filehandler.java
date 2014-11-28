@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import mafiagame.Objects.Score;
 
 /**
  *
@@ -29,9 +30,9 @@ public class Filehandler {
      * file. If something goes wrong and an exception is raised this method will
      * return null!
      */
-    public static ArrayList<Integer> loadScore(String filename) {
+    public static ArrayList<Score> loadScore(String filename) {
         Scanner file_scanner = null;
-        ArrayList<Integer> scoreArray = new ArrayList();
+        ArrayList<Score> scoreArray = new ArrayList();
 
         try {
             file_scanner = new Scanner(new File(filename));  //Connection to the file using the Scanner object
@@ -43,8 +44,11 @@ public class Filehandler {
 
         while (file_scanner.hasNextLine()) {  //File found. Reading one line. 
             String linje = file_scanner.nextLine();
-            Scanner sc = new Scanner(linje);
-            int score = sc.nextInt();
+            Scanner sc = new Scanner(linje).useDelimiter(",");
+            String name = sc.next();
+            int s = sc.nextInt();
+            
+            Score score = new Score(name, s);
             scoreArray.add(score);  //Reading in a single line and saving in the ArrayList
         }
 
@@ -63,7 +67,7 @@ public class Filehandler {
      * project folder).
      * @return true if everything went well. False if an exception was raised.
      */
-    public static boolean saveScore(ArrayList<Integer> scoreArray, String filename) {
+    public static boolean saveScore(ArrayList<Score> scoreArray, String filename) {
         if (scoreArray == null) {
             return false;
         }  //Checking parameter for null.
@@ -72,8 +76,8 @@ public class Filehandler {
         try {
             output = new FileWriter(new File(filename));  //Opening connection to file.
 
-            for (Integer score : scoreArray) {   //running through the ArrayList.                    
-                output.write(score.toString() + "\r\n");//Each String object is written as a line in file.
+            for (Score scoreLine : scoreArray) {   //running through the ArrayList.                    
+                output.write(scoreLine.toString() + "\r\n");//Each String object is written as a line in file.
             }
 
             output.close();  //Closing the file

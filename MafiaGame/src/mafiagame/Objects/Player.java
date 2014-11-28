@@ -10,7 +10,7 @@ package mafiagame.Objects;
  * @author pellecarlsen
  */
 public class Player {
-
+    
     int dollars;
     int hp;
     int turn;

@@ -10,6 +10,7 @@ import java.util.Random;
 import mafiagame.Interfaces.ControlInterface;
 import mafiagame.Objects.Country;
 import mafiagame.Objects.Player;
+import mafiagame.Objects.Score;
 import mafiagame.Readers.Filehandler;
 
 /**
@@ -18,7 +19,7 @@ import mafiagame.Readers.Filehandler;
  */
 public class Controller implements ControlInterface {
 
-    ArrayList<Integer> scoreArray = new ArrayList();
+    ArrayList<Score> scoreArray;
 
     Random r;
     Player paul;
@@ -32,6 +33,7 @@ public class Controller implements ControlInterface {
 
     public Controller() {
         r = new Random();
+        scoreArray = new ArrayList();
         paul = new Player();
         denmark = new Country("Denmark");
         currentCountry = denmark;
@@ -331,11 +333,6 @@ public class Controller implements ControlInterface {
         return drugPrice;
     }
 
-    public void test() {
-        currentCountry.changePrice();
-        System.out.println(currentCountry.getDrugPrice("heroin"));
-    }
-
     @Override
     public int getDrugAvailability(String drug) {
         int drugAvailability = 0;
@@ -391,7 +388,7 @@ public class Controller implements ControlInterface {
         return paul.getDollars();
     }
 
-    public ArrayList<Integer> loadScore() {
+    public ArrayList<Score> loadScore() {
         scoreArray = Filehandler.loadScore("highScore.txt");
         return scoreArray;
     }
@@ -399,12 +396,15 @@ public class Controller implements ControlInterface {
     public void saveScore() {
         Filehandler.saveScore(scoreArray, "highScore.txt");
     }
+    
+    public void addToList(String s, int i) {
+        Score score = new Score(s, i);
+        scoreArray.add(score);
+    }
 
-    public ArrayList<Integer> getScoreArray() {
+    public ArrayList<Score> getScoreArray() {
         return scoreArray;
     }
-
-    public void setScoreArray(ArrayList<Integer> scoreArray) {
-        this.scoreArray = scoreArray;
-    }
+    
+    
 }

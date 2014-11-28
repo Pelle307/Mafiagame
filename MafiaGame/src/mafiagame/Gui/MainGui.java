@@ -5,7 +5,13 @@
  */
 package mafiagame.Gui;
 
+import javax.swing.DefaultListModel;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import mafiagame.Logic.Controller;
+import mafiagame.Readers.Filehandler;
 
 /**
  *
@@ -14,6 +20,7 @@ import mafiagame.Logic.Controller;
 public class MainGui extends javax.swing.JFrame {
 
     Controller control;
+    DefaultListModel model = new DefaultListModel();
 
     /**
      * Creates new form MainGui
@@ -21,6 +28,8 @@ public class MainGui extends javax.swing.JFrame {
     public MainGui() {
         initComponents();
         control = new Controller();
+        control.loadScore();
+        jList1.setModel(model);
         jTabbedPane.removeAll();
         jTabbedPane.add("START", start);
     }
@@ -578,7 +587,9 @@ public class MainGui extends javax.swing.JFrame {
     private void highScorejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highScorejButtonActionPerformed
         jTabbedPane.removeAll();
         jTabbedPane.add("HIGH SCORE", highScore);
-        control.test();
+        for (int i = 0; i < control.getScoreArray().size(); i++) {
+            model.addElement(control.getScoreArray().get(i));
+        }
     }//GEN-LAST:event_highScorejButtonActionPerformed
 
     private void startGamejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startGamejButtonActionPerformed
@@ -637,6 +648,10 @@ public class MainGui extends javax.swing.JFrame {
 
     private void toWorldDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toWorldDenmarkActionPerformed
         if (control.endGame()) {
+            savePopupWindow();
+            for (int i = 0; i < control.getScoreArray().size(); i++) {
+                model.addElement(control.getScoreArray().get(i));
+            }
             jTabbedPane.removeAll();
             jTabbedPane.add("HIGH SCORE", highScore);
         } else {
@@ -953,5 +968,17 @@ public class MainGui extends javax.swing.JFrame {
         pictureFrance.setVisible(false);
         pictureUSA.setVisible(false);
         pictureAfghanistan.setVisible(true);
+    }
+
+    public void savePopupWindow() {
+        JLabel jname = new JLabel("Your score is " + control.getPlayer$() + " please insert your name to save");
+        JTextField name = new JTextField();
+        Object[] ob = {jname, name};
+        int result = JOptionPane.showConfirmDialog(null, ob, "SCORE", JOptionPane.OK_CANCEL_OPTION);
+        if (result == JOptionPane.OK_OPTION) {
+            String playerName = name.getText();
+            control.addToList(playerName, control.getPlayer$());
+            control.saveScore();
+        }
     }
 }

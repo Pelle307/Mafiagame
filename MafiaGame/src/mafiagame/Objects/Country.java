@@ -47,10 +47,6 @@ public class Country {
         return "countryName =" + countryName;
     }
 
-    public String getCountryName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     public void changePrice(int turn) {
         
         this.heroin.changePrice();
@@ -61,7 +57,7 @@ public class Country {
         this.crystalMeth.changePrice();
         this.hash.changeTwoChoice(turn);
         this.weed.changePrice();
-        this.mushrooms.changePrice();
+        this.mushrooms.changePriceSecondsOfTheClock();
         this.valium.changePrice();
     }
 

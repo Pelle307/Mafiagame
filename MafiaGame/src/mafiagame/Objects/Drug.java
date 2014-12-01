@@ -6,6 +6,8 @@
 package mafiagame.Objects;
 
 import java.util.Random;
+import java.util.Calendar;
+import java.util.TimeZone;
 
 /**
  *
@@ -116,18 +118,39 @@ public class Drug {
         }
     }
 
-    public void changeTwoChoice(int turn) {      
-        if ( turn %2 == 0) {
+    public void changeTwoChoice(int turn) {
+        int randomNumber;
+        randomNumber = r.nextInt(100)+1;
+        if (turn % 2 == 0) {
             price = 90;
             availability = 50;
         } else {
             price = 300;
             availability = 180;
         }
+
+        if (randomNumber <= goldenNumber) {
+            if (positive()) {
+                price = price * 10;
+            } else {
+                price = price / 10;
+            }
+        }
     }
 
     public void changePriceSecondsOfTheClock() {
+        int randomNumber;
+        randomNumber = r.nextInt(100) + 1;
+        Calendar cal = Calendar.getInstance(TimeZone.getDefault());
+        price = 2 * cal.get(Calendar.SECOND);
 
+        if (randomNumber <= goldenNumber) {
+            if (positive()) {
+                price = price * 10;
+            } else {
+                price = price / 10;
+            }
+        }
     }
 
     public void changeAvailability() {

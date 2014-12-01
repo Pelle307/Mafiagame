@@ -30,7 +30,7 @@ public class Country {
         this.countryName = name;
         r = new Random();
         heroin = new Drug("Heroin", 1600, 15);
-        cocain = new Drug("Cocain", 1200, 30);
+        cocain = new Drug("Cocain", 1000, 100);
         amphetamine = new Drug("Amphetamine", 200, 50);
         acid = new Drug("Acid", 550, 33);
         angelDust = new Drug("Angel dust", 400, 60);
@@ -121,6 +121,44 @@ public class Country {
                 }
 
             }
+        }
+    }
+
+    public void changePriceOldMemory(int turn) {
+        Drug drug = this.cocain;
+        int holder;
+        int change;
+        int goldenNumber;
+
+        holder = r.nextInt(55) + 10;
+        change = (drug.getPrice() * holder) / 100;
+        goldenNumber = r.nextInt(100) + 1;
+
+        if (turn == 1) {
+            if (positive()) {
+                drug.setPrice(drug.getPrice() + change);
+            } else {
+                drug.setPrice(drug.getPrice() - change);
+            }
+
+        } else {
+            holder = r.nextInt(25) + 10;
+            change = (drug.getPrice() * holder) / 100;
+
+            if (positive()) {
+                drug.setPrice(drug.getPrice() + change);
+            } else {
+                drug.setPrice(drug.getPrice() - change);
+            }
+        }
+
+        if (goldenNumber <= 10) {
+            if (positive()) {
+                drug.setPrice(drug.getPrice() * 10);
+            } else {
+                drug.setPrice(drug.getPrice() / 10);
+            }
+
         }
     }
 
@@ -260,7 +298,8 @@ public class Country {
         }
         return drugAvailability;
     }
-    public void setDrugAvailability(String drug, int i){
+
+    public void setDrugAvailability(String drug, int i) {
         switch (drug) {
             case "cocain":
                 cocain.setAvailability(i);
@@ -293,6 +332,6 @@ public class Country {
                 valium.setAvailability(i);
                 break;
         }
-        
+
     }
 }

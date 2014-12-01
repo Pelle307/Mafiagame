@@ -19,29 +19,28 @@ import mafiagame.Readers.Filehandler;
  */
 public class Controller implements ControlInterface {
 
-    ArrayList<Score> scoreArray;
-
-    Random r;
-    Player paul;
-    Country denmark;
-    Country columbia;
-    Country germany;
-    Country usa;
-    Country france;
-    Country afghanistan;
-    Country currentCountry;
+    private ArrayList<Score> scoreArray;
+    private Random r;
+    private Player paul;
+    private Country denmark;
+    private Country columbia;
+    private Country germany;
+    private Country usa;
+    private Country france;
+    private Country afghanistan;
+    private Country currentCountry;
 
     public Controller() {
         r = new Random();
         scoreArray = new ArrayList();
         paul = new Player();
-        denmark = new Country("Denmark");
-        currentCountry = denmark;
+        denmark = new Country("Denmark");       
         columbia = new Country("Columbia");
         germany = new Country("Germany");
         usa = new Country("USA");
         france = new Country("France");
         afghanistan = new Country("Afghanistan");
+        currentCountry = denmark;
     }
 
     @Override
@@ -51,8 +50,6 @@ public class Controller implements ControlInterface {
             case "cocain":
                 if ((paul.getDollars() >= currentCountry.getDrugPrice("cocain")) && currentCountry.getDrugAvailability("cocain") > 0) {
                     paul.setDrugs("cocain", 1);
-                    System.out.println(paul.getDollars());
-                    System.out.println(paul.getDrug("cocain"));
                     paul.setDollars(-currentCountry.getDrugPrice("cocain"));
                     currentCountry.setDrugAvailability("cocain", -1);
                     didBuy = true;

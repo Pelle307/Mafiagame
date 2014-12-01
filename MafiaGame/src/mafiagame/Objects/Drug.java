@@ -12,7 +12,7 @@ package mafiagame.Objects;
  */
 public class Drug{
 
-    String name;
+    private String name;
     private int price;
     private int basePrice;
     private int availability;

@@ -10,11 +10,9 @@ package mafiagame.Objects;
  * @author pellecarlsen
  */
 public class Player {
-    
-    int dollars;
-    int hp;
-    int turn;
-    int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid, valium = 0;
+
+    private int dollars, hp, turn;
+    private int cocain, heroin, hash, angelDust, crystalMeth, weed, amphetamine, mushrooms, acid, valium = 0;
 
     public Player() {
         dollars = 5000;
@@ -76,6 +74,10 @@ public class Player {
         this.dollars += dollars;
     }
 
+    public void setTurn(int turn) {
+        this.turn -= turn;
+    }
+
     public void setHp(int hp) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -116,9 +118,4 @@ public class Player {
 
         }
     }
-
-    public void setTurn(int turn) {
-        this.turn -= turn;
-    }
-
 }

@@ -11,8 +11,8 @@ package mafiagame.Objects;
  * @author Ebbe
  */
 public class Score {
-    String name;
-    int score;
+    private String name;
+    private int score;
     
     public Score(String name, int score) {
         this.name = name;

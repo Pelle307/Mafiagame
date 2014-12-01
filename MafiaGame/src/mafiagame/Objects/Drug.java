@@ -5,25 +5,30 @@
  */
 package mafiagame.Objects;
 
+import java.util.Random;
 
 /**
  *
  * @author pellecarlsen
  */
-public class Drug{
+public class Drug {
 
+    private Random r;
     private String name;
     private int price;
     private int basePrice;
     private int availability;
     private int baseAvailability;
+    private int goldenNumber;
 
-    public Drug(String name, int price, int availability) {
+    public Drug(String name, int price, int availability, int goldenNumber) {
+        r = new Random();
         this.name = name;
         this.price = price;
         this.basePrice = price;
         this.availability = availability;
         this.baseAvailability = availability;
+        this.goldenNumber = goldenNumber;
     }
 
     public int getPrice() {
@@ -46,13 +51,104 @@ public class Drug{
         return this.name;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setAvailability(int availability) {
+        this.availability += availability;
     }
 
-    public void setAvailability(int j) {
-        int i = j;
-        this.availability += j;
+    public void changePrice() {
+        int holder;
+        int change;
+        int randomNumber;
+
+        if (positive()) {
+            holder = r.nextInt((85) + 1);
+            change = (basePrice * holder) / 100;
+            price = basePrice + change;
+        } else {
+            holder = r.nextInt((85) + 1);
+            change = (basePrice * holder) / 100;
+            price = basePrice - change;
+        }
+        randomNumber = r.nextInt((100) + 1);
+        if (randomNumber <= goldenNumber) {
+            if (positive()) {
+                price = price * 10;
+            } else {
+                price = price / 10;
+            }
+
+        }
     }
 
+    public void changePriceOldMemory(int turn) {
+        int holder;
+        int change;
+        int randomNumber;
+
+        holder = r.nextInt(55) + 10;
+        change = (price * holder) / 100;
+        randomNumber = r.nextInt(100) + 1;
+
+        if (turn == 1) {
+            if (positive()) {
+                price = price + change;
+            } else {
+                price = price - change;
+            }
+
+        } else {
+            holder = r.nextInt(25) + 10;
+            change = (getPrice() * holder) / 100;
+
+            if (positive()) {
+                price = price + change;
+            } else {
+                price = price - change;
+            }
+        }
+
+        if (randomNumber <= goldenNumber) {
+            if (positive()) {
+                price = price * 10;
+            } else {
+                price = price / 10;
+            }
+        }
+    }
+
+    public void changeTwoChoice(int turn) {      
+        if ( turn %2 == 0) {
+            price = 90;
+            availability = 50;
+        } else {
+            price = 300;
+            availability = 180;
+        }
+    }
+
+    public void changePriceSecondsOfTheClock() {
+
+    }
+
+    public void changeAvailability() {
+        int holder, change;
+        if (positive()) {
+            holder = r.nextInt((40) + 15);
+            change = (baseAvailability * holder) / 100;
+            availability = baseAvailability + change;
+        } else {
+            holder = r.nextInt((40) + 15);
+            change = (baseAvailability * holder) / 100;
+            availability = baseAvailability - change;
+        }
+    }
+
+    public boolean positive() {
+        int a = r.nextInt(2);
+        if (a == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

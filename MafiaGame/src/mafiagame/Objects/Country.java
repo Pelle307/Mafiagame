@@ -29,16 +29,16 @@ public class Country {
     public Country(String name) {
         this.countryName = name;
         r = new Random();
-        heroin = new Drug("Heroin", 1600, 15);
-        cocain = new Drug("Cocain", 1000, 100);
-        amphetamine = new Drug("Amphetamine", 200, 50);
-        acid = new Drug("Acid", 550, 33);
-        angelDust = new Drug("Angel dust", 400, 60);
-        crystalMeth = new Drug("Crystal meth", 800, 38);
-        hash = new Drug("Hash", 180, 100);
-        weed = new Drug("Weed", 150, 115);
-        mushrooms = new Drug("Mushrooms", 120, 95);
-        valium = new Drug("Valium", 290, 80);
+        heroin = new Drug("Heroin", 1600, 15, 15);
+        cocain = new Drug("Cocain", 1000, 100, 10);
+        amphetamine = new Drug("Amphetamine", 200, 50, 7);
+        acid = new Drug("Acid", 550, 33, 5);
+        angelDust = new Drug("Angel dust", 400, 60, 7);
+        crystalMeth = new Drug("Crystal meth", 800, 38, 12);
+        hash = new Drug("Hash", 90, 50, 4);
+        weed = new Drug("Weed", 150, 115, 5);
+        mushrooms = new Drug("Mushrooms", 120, 95, 7);
+        valium = new Drug("Valium", 290, 80, 7);
 
     }
 
@@ -51,177 +51,30 @@ public class Country {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void changePrice() {
-        Drug drug = this.heroin;
-        int price;
-        int holder;
-        int change;
-        int goldenNumber = 0;
-        int randomNumber;
-        for (int i = 0; i < 9; i++) {
-            switch (i) {
-                case 0:
-                    drug = this.heroin;
-                    goldenNumber = 15;
-                    break;
-                case 1:
-                    drug = this.hash;
-                    goldenNumber = 4;
-                    break;
-                case 2:
-                    drug = this.weed;
-                    goldenNumber = 5;
-                    break;
-                case 3:
-                    drug = this.crystalMeth;
-                    goldenNumber = 12;
-                    break;
-                case 4:
-                    drug = this.cocain;
-                    goldenNumber = 10;
-                    break;
-                case 5:
-                    drug = this.mushrooms;
-                    goldenNumber = 7;
-                    break;
-                case 6:
-                    drug = this.angelDust;
-                    goldenNumber = 7;
-                    break;
-                case 7:
-                    drug = this.acid;
-                    goldenNumber = 5;
-                    break;
-                case 8:
-                    drug = this.amphetamine;
-                    goldenNumber = 7;
-                    break;
-                case 9:
-                    drug = this.valium;
-                    goldenNumber = 7;
-                    break;
-            }
-            if (positive()) {
-                holder = r.nextInt((85) + 1);
-                change = (drug.getBasePrice() * holder) / 100;
-                price = drug.getBasePrice() + change;
-                drug.setPrice(price);
-            } else {
-                holder = r.nextInt((85) + 1);
-                change = (drug.getBasePrice() * holder) / 100;
-                price = drug.getBasePrice() - change;
-                drug.setPrice(price);
-            }
-            randomNumber = r.nextInt((100) + 1);
-            if (randomNumber <= goldenNumber) {
-                if (positive()) {
-                    drug.setPrice(drug.getPrice() * 10);
-                } else {
-                    drug.setPrice(drug.getPrice() / 10);
-                }
-
-            }
-        }
-    }
-
-    public void changePriceOldMemory(int turn) {
-        Drug drug = this.cocain;
-        int holder;
-        int change;
-        int goldenNumber;
-
-        holder = r.nextInt(55) + 10;
-        change = (drug.getPrice() * holder) / 100;
-        goldenNumber = r.nextInt(100) + 1;
-
-        if (turn == 1) {
-            if (positive()) {
-                drug.setPrice(drug.getPrice() + change);
-            } else {
-                drug.setPrice(drug.getPrice() - change);
-            }
-
-        } else {
-            holder = r.nextInt(25) + 10;
-            change = (drug.getPrice() * holder) / 100;
-
-            if (positive()) {
-                drug.setPrice(drug.getPrice() + change);
-            } else {
-                drug.setPrice(drug.getPrice() - change);
-            }
-        }
-
-        if (goldenNumber <= 10) {
-            if (positive()) {
-                drug.setPrice(drug.getPrice() * 10);
-            } else {
-                drug.setPrice(drug.getPrice() / 10);
-            }
-
-        }
+    public void changePrice(int turn) {
+        
+        this.heroin.changePrice();
+        this.cocain.changePriceOldMemory(turn);
+        this.amphetamine.changePrice();
+        this.acid.changePrice();
+        this.angelDust.changePrice();
+        this.crystalMeth.changePrice();
+        this.hash.changeTwoChoice(turn);
+        this.weed.changePrice();
+        this.mushrooms.changePrice();
+        this.valium.changePrice();
     }
 
     public void changeAvailability() {
-        Drug drug = this.heroin;
-        int availability;
-        int holder;
-        int change;
-
-        for (int i = 0; i < 9; i++) {
-            switch (i) {
-                case 0:
-                    drug = this.heroin;
-                    break;
-                case 1:
-                    drug = this.hash;
-                    break;
-                case 2:
-                    drug = this.weed;
-                    break;
-                case 3:
-                    drug = this.crystalMeth;
-                    break;
-                case 4:
-                    drug = this.cocain;
-                    break;
-                case 5:
-                    drug = this.mushrooms;
-                    break;
-                case 6:
-                    drug = this.angelDust;
-                    break;
-                case 7:
-                    drug = this.acid;
-                    break;
-                case 8:
-                    drug = this.amphetamine;
-                    break;
-                case 9:
-                    drug = this.valium;
-                    break;
-            }
-            if (positive()) {
-                holder = r.nextInt((40) + 15);
-                change = (drug.getBaseAvailability() * holder) / 100;
-                availability = drug.getBaseAvailability() + change;
-                drug.setAvailability(availability);
-            } else {
-                holder = r.nextInt((40) + 15);
-                change = (drug.getBaseAvailability() * holder) / 100;
-                availability = drug.getBaseAvailability() - change;
-                drug.setAvailability(availability);
-            }
-        }
-    }
-
-    public boolean positive() {
-        int a = r.nextInt(2);
-        if (a == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        this.heroin.changeAvailability();
+        this.cocain.changeAvailability();
+        this.amphetamine.changeAvailability();
+        this.acid.changeAvailability();
+        this.angelDust.changeAvailability();
+        this.crystalMeth.changeAvailability();
+        this.weed.changeAvailability();
+        this.mushrooms.changeAvailability();
+        this.valium.changeAvailability();
     }
 
     public int getDrugPrice(String drug) {

@@ -139,7 +139,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         start.add(startGamejButton);
-        startGamejButton.setBounds(250, 450, 130, 25);
+        startGamejButton.setBounds(250, 450, 130, 29);
 
         highScorejButton.setText("High Score");
         highScorejButton.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +148,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         start.add(highScorejButton);
-        highScorejButton.setBounds(250, 490, 130, 25);
+        highScorejButton.setBounds(250, 490, 130, 29);
 
         pictureMafia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/mobster-drawing2.jpg"))); // NOI18N
         start.add(pictureMafia);
@@ -253,7 +253,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(toWorldDenmark);
-        toWorldDenmark.setBounds(500, 570, 90, 25);
+        toWorldDenmark.setBounds(500, 570, 90, 29);
 
         sellCocain.setText("SELL");
         sellCocain.addActionListener(new java.awt.event.ActionListener() {
@@ -262,7 +262,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellCocain);
-        sellCocain.setBounds(150, 50, 130, 25);
+        sellCocain.setBounds(150, 50, 130, 29);
 
         buyHeroin.setText("BUY");
         buyHeroin.addActionListener(new java.awt.event.ActionListener() {
@@ -271,7 +271,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyHeroin);
-        buyHeroin.setBounds(410, 80, 130, 25);
+        buyHeroin.setBounds(410, 80, 130, 29);
 
         buyAmphetamine.setText("BUY");
         buyAmphetamine.addActionListener(new java.awt.event.ActionListener() {
@@ -280,7 +280,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyAmphetamine);
-        buyAmphetamine.setBounds(410, 110, 130, 25);
+        buyAmphetamine.setBounds(410, 110, 130, 29);
 
         buyAcid.setText("BUY");
         buyAcid.addActionListener(new java.awt.event.ActionListener() {
@@ -289,7 +289,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyAcid);
-        buyAcid.setBounds(410, 140, 130, 25);
+        buyAcid.setBounds(410, 140, 130, 29);
 
         buyAngelDust.setText("BUY");
         buyAngelDust.addActionListener(new java.awt.event.ActionListener() {
@@ -298,7 +298,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyAngelDust);
-        buyAngelDust.setBounds(410, 170, 130, 25);
+        buyAngelDust.setBounds(410, 170, 130, 29);
 
         buyCrystalMeth.setText("BUY");
         buyCrystalMeth.addActionListener(new java.awt.event.ActionListener() {
@@ -307,7 +307,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyCrystalMeth);
-        buyCrystalMeth.setBounds(410, 200, 130, 25);
+        buyCrystalMeth.setBounds(410, 200, 130, 29);
 
         buyHash.setText("BUY");
         buyHash.addActionListener(new java.awt.event.ActionListener() {
@@ -316,7 +316,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyHash);
-        buyHash.setBounds(410, 230, 130, 25);
+        buyHash.setBounds(410, 230, 130, 29);
 
         buyWeed.setText("BUY");
         buyWeed.addActionListener(new java.awt.event.ActionListener() {
@@ -325,7 +325,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyWeed);
-        buyWeed.setBounds(410, 260, 130, 25);
+        buyWeed.setBounds(410, 260, 130, 29);
 
         buyMushrooms.setText("BUY");
         buyMushrooms.addActionListener(new java.awt.event.ActionListener() {
@@ -334,7 +334,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyMushrooms);
-        buyMushrooms.setBounds(410, 290, 130, 25);
+        buyMushrooms.setBounds(410, 290, 130, 29);
 
         sellHeroin.setText("SELL");
         sellHeroin.addActionListener(new java.awt.event.ActionListener() {
@@ -343,7 +343,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellHeroin);
-        sellHeroin.setBounds(150, 80, 130, 25);
+        sellHeroin.setBounds(150, 80, 130, 29);
 
         sellAmphetamine.setText("SELL");
         sellAmphetamine.addActionListener(new java.awt.event.ActionListener() {
@@ -352,7 +352,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellAmphetamine);
-        sellAmphetamine.setBounds(150, 110, 130, 25);
+        sellAmphetamine.setBounds(150, 110, 130, 29);
 
         sellAcid.setText("SELL");
         sellAcid.addActionListener(new java.awt.event.ActionListener() {
@@ -361,7 +361,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellAcid);
-        sellAcid.setBounds(150, 140, 130, 25);
+        sellAcid.setBounds(150, 140, 130, 29);
 
         sellAngelDust.setText("SELL");
         sellAngelDust.addActionListener(new java.awt.event.ActionListener() {
@@ -370,7 +370,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellAngelDust);
-        sellAngelDust.setBounds(150, 170, 130, 25);
+        sellAngelDust.setBounds(150, 170, 130, 29);
 
         sellCrystalMeth.setText("SELL");
         sellCrystalMeth.addActionListener(new java.awt.event.ActionListener() {
@@ -379,7 +379,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellCrystalMeth);
-        sellCrystalMeth.setBounds(150, 200, 130, 25);
+        sellCrystalMeth.setBounds(150, 200, 130, 29);
 
         sellHash.setText("SELL");
         sellHash.addActionListener(new java.awt.event.ActionListener() {
@@ -388,7 +388,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellHash);
-        sellHash.setBounds(150, 230, 130, 25);
+        sellHash.setBounds(150, 230, 130, 29);
 
         sellWeed.setText("SELL");
         sellWeed.addActionListener(new java.awt.event.ActionListener() {
@@ -397,7 +397,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellWeed);
-        sellWeed.setBounds(150, 260, 130, 25);
+        sellWeed.setBounds(150, 260, 130, 29);
 
         sellValium.setText("SELL");
         sellValium.addActionListener(new java.awt.event.ActionListener() {
@@ -406,7 +406,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellValium);
-        sellValium.setBounds(150, 320, 130, 25);
+        sellValium.setBounds(150, 320, 130, 29);
 
         sellMushrooms.setText("SELL");
         sellMushrooms.addActionListener(new java.awt.event.ActionListener() {
@@ -415,7 +415,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(sellMushrooms);
-        sellMushrooms.setBounds(150, 290, 130, 25);
+        sellMushrooms.setBounds(150, 290, 130, 29);
 
         buyValium.setText("BUY");
         buyValium.addActionListener(new java.awt.event.ActionListener() {
@@ -424,7 +424,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyValium);
-        buyValium.setBounds(410, 320, 130, 25);
+        buyValium.setBounds(410, 320, 130, 29);
 
         buyCocain.setText("BUY");
         buyCocain.addActionListener(new java.awt.event.ActionListener() {
@@ -433,7 +433,7 @@ public class MainGui extends javax.swing.JFrame {
             }
         });
         denmark.add(buyCocain);
-        buyCocain.setBounds(410, 50, 130, 25);
+        buyCocain.setBounds(410, 50, 130, 29);
 
         jLabel2.setText("Heroin");
         denmark.add(jLabel2);
@@ -449,7 +449,7 @@ public class MainGui extends javax.swing.JFrame {
 
         jLabel5.setText("Angel Dust");
         denmark.add(jLabel5);
-        jLabel5.setBounds(50, 170, 61, 16);
+        jLabel5.setBounds(50, 170, 70, 16);
 
         jLabel6.setText("Crystal Meth");
         denmark.add(jLabel6);
@@ -475,52 +475,52 @@ public class MainGui extends javax.swing.JFrame {
         denmark.add(jLabel1);
         jLabel1.setBounds(50, 320, 90, 16);
         denmark.add(jFieldSellHeroin);
-        jFieldSellHeroin.setBounds(290, 80, 40, 22);
+        jFieldSellHeroin.setBounds(290, 80, 40, 28);
         denmark.add(jFieldSellAmphetamine);
-        jFieldSellAmphetamine.setBounds(290, 110, 40, 22);
+        jFieldSellAmphetamine.setBounds(290, 110, 40, 28);
         denmark.add(jFieldSellAcid);
-        jFieldSellAcid.setBounds(290, 140, 40, 22);
+        jFieldSellAcid.setBounds(290, 140, 40, 28);
         denmark.add(jFieldSellAngelDust);
-        jFieldSellAngelDust.setBounds(290, 170, 40, 22);
+        jFieldSellAngelDust.setBounds(290, 170, 40, 28);
         denmark.add(jFieldSellCrystalMeth);
-        jFieldSellCrystalMeth.setBounds(290, 200, 40, 22);
+        jFieldSellCrystalMeth.setBounds(290, 200, 40, 28);
         denmark.add(jFieldSellHash);
-        jFieldSellHash.setBounds(290, 230, 40, 22);
+        jFieldSellHash.setBounds(290, 230, 40, 28);
         denmark.add(jFieldSellWeed);
-        jFieldSellWeed.setBounds(290, 260, 40, 22);
+        jFieldSellWeed.setBounds(290, 260, 40, 28);
         denmark.add(jFieldSellMushrooms);
-        jFieldSellMushrooms.setBounds(290, 290, 40, 22);
+        jFieldSellMushrooms.setBounds(290, 290, 40, 28);
         denmark.add(jFieldSellValium);
-        jFieldSellValium.setBounds(290, 320, 40, 22);
+        jFieldSellValium.setBounds(290, 320, 40, 28);
         denmark.add(jFieldBuyCocain);
-        jFieldBuyCocain.setBounds(550, 50, 40, 22);
+        jFieldBuyCocain.setBounds(550, 50, 40, 28);
         denmark.add(jFieldBuyHeroin);
-        jFieldBuyHeroin.setBounds(550, 80, 40, 22);
+        jFieldBuyHeroin.setBounds(550, 80, 40, 28);
         denmark.add(jFieldBuyAmphetamine);
-        jFieldBuyAmphetamine.setBounds(550, 110, 40, 22);
+        jFieldBuyAmphetamine.setBounds(550, 110, 40, 28);
         denmark.add(jFieldBuyAcid);
-        jFieldBuyAcid.setBounds(550, 140, 40, 22);
+        jFieldBuyAcid.setBounds(550, 140, 40, 28);
         denmark.add(jFieldBuyAngelDust);
-        jFieldBuyAngelDust.setBounds(550, 170, 40, 22);
+        jFieldBuyAngelDust.setBounds(550, 170, 40, 28);
         denmark.add(jFieldBuyCrystalMeth);
-        jFieldBuyCrystalMeth.setBounds(550, 200, 40, 22);
+        jFieldBuyCrystalMeth.setBounds(550, 200, 40, 28);
         denmark.add(jFieldBuyHash);
-        jFieldBuyHash.setBounds(550, 230, 40, 22);
+        jFieldBuyHash.setBounds(550, 230, 40, 28);
         denmark.add(jFieldBuyWeed);
-        jFieldBuyWeed.setBounds(550, 260, 40, 22);
+        jFieldBuyWeed.setBounds(550, 260, 40, 28);
         denmark.add(jFieldBuyMushrooms);
-        jFieldBuyMushrooms.setBounds(550, 290, 40, 22);
+        jFieldBuyMushrooms.setBounds(550, 290, 40, 28);
         denmark.add(jFieldBuyValium);
-        jFieldBuyValium.setBounds(550, 320, 40, 22);
+        jFieldBuyValium.setBounds(550, 320, 40, 28);
         denmark.add(jFieldSellCocain);
-        jFieldSellCocain.setBounds(290, 50, 40, 22);
+        jFieldSellCocain.setBounds(290, 50, 40, 28);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel11.setText("Player Currency:");
         denmark.add(jLabel11);
         jLabel11.setBounds(60, 440, 130, 17);
         denmark.add(playerCurrency);
-        playerCurrency.setBounds(60, 470, 120, 22);
+        playerCurrency.setBounds(60, 470, 120, 28);
 
         pictureDenmark.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mafiagame/pictures/denmark.png"))); // NOI18N
         denmark.add(pictureDenmark);
@@ -648,6 +648,7 @@ public class MainGui extends javax.swing.JFrame {
 
     private void toWorldDenmarkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toWorldDenmarkActionPerformed
         if (control.endGame()) {
+            control.sellAllDrugs();
             savePopupWindow();
             for (int i = 0; i < control.getScoreArray().size(); i++) {
                 model.addElement(control.getScoreArray().get(i));

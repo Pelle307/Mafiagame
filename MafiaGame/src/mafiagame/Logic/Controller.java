@@ -34,7 +34,7 @@ public class Controller implements ControlInterface {
         r = new Random();
         scoreArray = new ArrayList();
         paul = new Player();
-        denmark = new Country("Denmark");       
+        denmark = new Country("Denmark");
         columbia = new Country("Columbia");
         germany = new Country("Germany");
         usa = new Country("USA");
@@ -393,7 +393,7 @@ public class Controller implements ControlInterface {
     public void saveScore() {
         Filehandler.saveScore(scoreArray, "highScore.txt");
     }
-    
+
     public void addToList(String s, int i) {
         Score score = new Score(s, i);
         scoreArray.add(score);
@@ -402,6 +402,19 @@ public class Controller implements ControlInterface {
     public ArrayList<Score> getScoreArray() {
         return scoreArray;
     }
-    
-    
+
+    public void sellAllDrugs() {
+        paul.setDollars(paul.getDrug("cocain") * currentCountry.getDrugPrice("cocain"));
+        paul.setDollars(paul.getDrug("heroin") * currentCountry.getDrugPrice("heroin"));
+        paul.setDollars(paul.getDrug("amphetamine") * currentCountry.getDrugPrice("amphetamine"));
+        paul.setDollars(paul.getDrug("acid") * currentCountry.getDrugPrice("acid"));
+        paul.setDollars(paul.getDrug("angelDust") * currentCountry.getDrugPrice("angelDust"));
+        paul.setDollars(paul.getDrug("crystalMeth") * currentCountry.getDrugPrice("crystalMeth"));
+        paul.setDollars(paul.getDrug("valium") * currentCountry.getDrugPrice("valium"));
+        paul.setDollars(paul.getDrug("mushrooms") * currentCountry.getDrugPrice("mushrooms"));
+        paul.setDollars(paul.getDrug("hash") * currentCountry.getDrugPrice("hash"));
+        paul.setDollars(paul.getDrug("weed")*currentCountry.getDrugPrice("weed"));
+
+    }
+
 }

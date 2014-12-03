@@ -6,6 +6,7 @@
 package mafiagame.Objects;
 
 import java.util.Random;
+import mafiagame.Logic.Change10Percent;
 import mafiagame.Logic.ChangeNormal;
 import mafiagame.Logic.ChangeOldMemory;
 import mafiagame.Logic.ChangeSecondsOfTheClock;
@@ -37,7 +38,7 @@ public class Country {
         cocain = new Drug("Cocain", 1000, 100, 10,new ChangeOldMemory());
         amphetamine = new Drug("Amphetamine", 200, 50, 7,new ChangeNormal());
         acid = new Drug("Acid", 550, 33, 5,new ChangeNormal());
-        angelDust = new Drug("Angel dust", 400, 60, 7,new ChangeNormal());
+        angelDust = new Drug("Angel dust", 180, 40, 7,new Change10Percent());
         crystalMeth = new Drug("Crystal meth", 800, 38, 12,new ChangeNormal());
         hash = new Drug("Hash", 90, 50, 4,new ChangeTwoMethod());
         weed = new Drug("Weed", 150, 115, 5,new ChangeNormal());

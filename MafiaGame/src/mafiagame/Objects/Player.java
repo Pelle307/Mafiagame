@@ -17,7 +17,7 @@ public class Player {
     public Player() {
         dollars = 5000;
         hp = 100;
-        turn = 18;
+        turn = 1;
     }
 
     public int getDollars() {

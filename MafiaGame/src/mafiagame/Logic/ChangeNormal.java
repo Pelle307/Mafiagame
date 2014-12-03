@@ -16,7 +16,7 @@ import mafiagame.Objects.Drug;
 public class ChangeNormal implements ChangeInterface {
 
     @Override
-    public int ChangePrice(Object o,int turn) {
+    public int ChangePrice(Object o) {
         Drug drug = (Drug) o;
         Random r = new Random();
         int holder;
@@ -47,7 +47,7 @@ public class ChangeNormal implements ChangeInterface {
     }
 
     @Override
-    public int ChangeAvailability(Object o,int turn) {
+    public int ChangeAvailability(Object o) {
         Drug drug = (Drug) o;
         int holder, change;
         Random r = new Random();

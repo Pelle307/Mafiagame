@@ -14,9 +14,11 @@ import mafiagame.Objects.Drug;
  * @author pellecarlsen
  */
 public class ChangeOldMemory implements ChangeInterface {
+    int turn;
+    public ChangeOldMemory(){turn = 1;}
 
     @Override
-    public int ChangePrice(Object o, int turn) {
+    public int ChangePrice(Object o) {
         Drug drug = (Drug) o;
         Random r = new Random();
         int holder;
@@ -53,11 +55,12 @@ public class ChangeOldMemory implements ChangeInterface {
                 price = price / 10;
             }
         }
+        turn++;
         return price;
     }
 
     @Override
-    public int ChangeAvailability(Object o, int turn) {
+    public int ChangeAvailability(Object o) {
         Drug drug = (Drug) o;
         int holder, change;
         Random r = new Random();

@@ -286,8 +286,8 @@ public class Controller implements ControlInterface {
                 break;
         }
         paul.setTurn(-1);
-        currentCountry.changeAvailability(paul.getTurn());
-        currentCountry.changePrice(paul.getTurn());
+        currentCountry.changeAvailability();
+        currentCountry.changePrice();
         System.out.println(currentCountry);
     }
 

@@ -18,7 +18,7 @@ import mafiagame.Objects.Drug;
 public class ChangeSecondsOfTheClock implements ChangeInterface {
 
     @Override
-    public int ChangePrice(Object o, int turn) {
+    public int ChangePrice(Object o) {
         Random r = new Random();
         Drug drug = (Drug) o;
         int randomNumber;
@@ -38,7 +38,8 @@ public class ChangeSecondsOfTheClock implements ChangeInterface {
     }
 
     @Override
-    public int ChangeAvailability(Object o, int turn) {
+    public int ChangeAvailability(Object o) {
+        
         Drug drug = (Drug) o;
         int holder, change;
         Random r = new Random();

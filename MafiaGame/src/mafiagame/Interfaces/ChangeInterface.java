@@ -10,6 +10,6 @@ package mafiagame.Interfaces;
  * @author pellecarlsen
  */
 public interface ChangeInterface {
-    int ChangePrice(Object o,int turn);
-    int ChangeAvailability(Object o,int turn);
+    int ChangePrice(Object o);
+    int ChangeAvailability(Object o);
 }

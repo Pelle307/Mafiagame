@@ -51,30 +51,30 @@ public class Country {
         return "countryName =" + countryName;
     }
 
-    public void changePrice(int turn) {
+    public void changePrice() {
         
-        this.heroin.changePrice(turn);
-        this.cocain.changePrice(turn);
-        this.amphetamine.changePrice(turn);
-        this.acid.changePrice(turn);
-        this.angelDust.changePrice(turn);
-        this.crystalMeth.changePrice(turn);
-        this.hash.changePrice(turn);
-        this.weed.changePrice(turn);
-        this.mushrooms.changePrice(turn);
-        this.valium.changePrice(turn);
+        this.heroin.changePrice();
+        this.cocain.changePrice();
+        this.amphetamine.changePrice();
+        this.acid.changePrice();
+        this.angelDust.changePrice();
+        this.crystalMeth.changePrice();
+        this.hash.changePrice();
+        this.weed.changePrice();
+        this.mushrooms.changePrice();
+        this.valium.changePrice();
     }
 
-    public void changeAvailability(int turn) {
-        this.heroin.changeAvailability(turn);
-        this.cocain.changeAvailability(turn);
-        this.amphetamine.changeAvailability(turn);
-        this.acid.changeAvailability(turn);
-        this.angelDust.changeAvailability(turn);
-        this.crystalMeth.changeAvailability(turn);
-        this.weed.changeAvailability(turn);
-        this.mushrooms.changeAvailability(turn);
-        this.valium.changeAvailability(turn);
+    public void changeAvailability() {
+        this.heroin.changeAvailability();
+        this.cocain.changeAvailability();
+        this.amphetamine.changeAvailability();
+        this.acid.changeAvailability();
+        this.angelDust.changeAvailability();
+        this.crystalMeth.changeAvailability();
+        this.weed.changeAvailability();
+        this.mushrooms.changeAvailability();
+        this.valium.changeAvailability();
     }
 
     public int getDrugPrice(String drug) {

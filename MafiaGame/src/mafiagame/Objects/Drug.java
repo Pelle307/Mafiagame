@@ -8,6 +8,7 @@ package mafiagame.Objects;
 import java.util.Random;
 import java.util.Calendar;
 import java.util.TimeZone;
+import mafiagame.Interfaces.ChangeInterface;
 
 /**
  *
@@ -22,8 +23,9 @@ public class Drug {
     private int availability;
     private int baseAvailability;
     private int goldenNumber;
+    ChangeInterface priceStrategy;
 
-    public Drug(String name, int price, int availability, int goldenNumber) {
+    public Drug(String name, int price, int availability, int goldenNumber, ChangeInterface priceInterface) {
         r = new Random();
         this.name = name;
         this.price = price;
@@ -31,6 +33,7 @@ public class Drug {
         this.availability = availability;
         this.baseAvailability = availability;
         this.goldenNumber = goldenNumber;
+        this.priceStrategy = priceInterface;
     }
 
     public int getPrice() {
@@ -57,29 +60,8 @@ public class Drug {
         this.availability += availability;
     }
 
-    public void changePrice() {
-        int holder;
-        int change;
-        int randomNumber;
-
-        if (positive()) {
-            holder = r.nextInt((85) + 1);
-            change = (basePrice * holder) / 100;
-            price = basePrice + change;
-        } else {
-            holder = r.nextInt((85) + 1);
-            change = (basePrice * holder) / 100;
-            price = basePrice - change;
-        }
-        randomNumber = r.nextInt((100) + 1);
-        if (randomNumber <= goldenNumber) {
-            if (positive()) {
-                price = price * 10;
-            } else {
-                price = price / 10;
-            }
-
-        }
+    public void changePrice(int i) {
+        price = priceStrategy.ChangePrice(this,i);
     }
 
     public void changePriceOldMemory(int turn) {
@@ -118,9 +100,13 @@ public class Drug {
         }
     }
 
+    public int getGoldenNumber() {
+        return goldenNumber;
+    }
+
     public void changeTwoChoice(int turn) {
         int randomNumber;
-        randomNumber = r.nextInt(100)+1;
+        randomNumber = r.nextInt(100) + 1;
         if (turn % 2 == 0) {
             price = 90;
             availability = 50;
@@ -153,17 +139,8 @@ public class Drug {
         }
     }
 
-    public void changeAvailability() {
-        int holder, change;
-        if (positive()) {
-            holder = r.nextInt((40) + 15);
-            change = (baseAvailability * holder) / 100;
-            availability = baseAvailability + change;
-        } else {
-            holder = r.nextInt((40) + 15);
-            change = (baseAvailability * holder) / 100;
-            availability = baseAvailability - change;
-        }
+    public void changeAvailability(int i) {
+        priceStrategy.ChangeAvailability(this,i);
     }
 
     public boolean positive() {

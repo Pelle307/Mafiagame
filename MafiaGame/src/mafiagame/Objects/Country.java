@@ -6,6 +6,10 @@
 package mafiagame.Objects;
 
 import java.util.Random;
+import mafiagame.Logic.ChangeNormal;
+import mafiagame.Logic.ChangeOldMemory;
+import mafiagame.Logic.ChangeSecondsOfTheClock;
+import mafiagame.Logic.ChangeTwoMethod;
 
 /**
  *
@@ -29,16 +33,16 @@ public class Country {
     public Country(String name) {
         this.countryName = name;
         r = new Random();
-        heroin = new Drug("Heroin", 1600, 15, 15);
-        cocain = new Drug("Cocain", 1000, 100, 10);
-        amphetamine = new Drug("Amphetamine", 200, 50, 7);
-        acid = new Drug("Acid", 550, 33, 5);
-        angelDust = new Drug("Angel dust", 400, 60, 7);
-        crystalMeth = new Drug("Crystal meth", 800, 38, 12);
-        hash = new Drug("Hash", 90, 50, 4);
-        weed = new Drug("Weed", 150, 115, 5);
-        mushrooms = new Drug("Mushrooms", 120, 95, 7);
-        valium = new Drug("Valium", 290, 80, 7);
+        heroin = new Drug("Heroin", 1600, 15, 15,new ChangeNormal());
+        cocain = new Drug("Cocain", 1000, 100, 10,new ChangeOldMemory());
+        amphetamine = new Drug("Amphetamine", 200, 50, 7,new ChangeNormal());
+        acid = new Drug("Acid", 550, 33, 5,new ChangeNormal());
+        angelDust = new Drug("Angel dust", 400, 60, 7,new ChangeNormal());
+        crystalMeth = new Drug("Crystal meth", 800, 38, 12,new ChangeNormal());
+        hash = new Drug("Hash", 90, 50, 4,new ChangeTwoMethod());
+        weed = new Drug("Weed", 150, 115, 5,new ChangeNormal());
+        mushrooms = new Drug("Mushrooms", 120, 95, 7,new ChangeSecondsOfTheClock());
+        valium = new Drug("Valium", 290, 80, 7,new ChangeNormal());
 
     }
 
@@ -49,28 +53,28 @@ public class Country {
 
     public void changePrice(int turn) {
         
-        this.heroin.changePrice();
-        this.cocain.changePriceOldMemory(turn);
-        this.amphetamine.changePrice();
-        this.acid.changePrice();
-        this.angelDust.changePrice();
-        this.crystalMeth.changePrice();
-        this.hash.changeTwoChoice(turn);
-        this.weed.changePrice();
-        this.mushrooms.changePriceSecondsOfTheClock();
-        this.valium.changePrice();
+        this.heroin.changePrice(turn);
+        this.cocain.changePrice(turn);
+        this.amphetamine.changePrice(turn);
+        this.acid.changePrice(turn);
+        this.angelDust.changePrice(turn);
+        this.crystalMeth.changePrice(turn);
+        this.hash.changePrice(turn);
+        this.weed.changePrice(turn);
+        this.mushrooms.changePrice(turn);
+        this.valium.changePrice(turn);
     }
 
-    public void changeAvailability() {
-        this.heroin.changeAvailability();
-        this.cocain.changeAvailability();
-        this.amphetamine.changeAvailability();
-        this.acid.changeAvailability();
-        this.angelDust.changeAvailability();
-        this.crystalMeth.changeAvailability();
-        this.weed.changeAvailability();
-        this.mushrooms.changeAvailability();
-        this.valium.changeAvailability();
+    public void changeAvailability(int turn) {
+        this.heroin.changeAvailability(turn);
+        this.cocain.changeAvailability(turn);
+        this.amphetamine.changeAvailability(turn);
+        this.acid.changeAvailability(turn);
+        this.angelDust.changeAvailability(turn);
+        this.crystalMeth.changeAvailability(turn);
+        this.weed.changeAvailability(turn);
+        this.mushrooms.changeAvailability(turn);
+        this.valium.changeAvailability(turn);
     }
 
     public int getDrugPrice(String drug) {
